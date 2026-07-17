@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "BART Silicon Valley Phase II" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-121.8757, 37.3707],
+          [-121.8769, 37.3668],
+          [-121.8784, 37.3623],
+          [-121.8801, 37.3575],
+          [-121.8820, 37.3524],
+          [-121.8845, 37.3467],
+          [-121.8868, 37.3415],
+          [-121.8891, 37.3363],
+          [-121.8938, 37.3329],
+          [-121.9025, 37.3299],
+          [-121.9120, 37.3322],
+          [-121.9230, 37.3376],
+          [-121.9340, 37.3432],
+          [-121.9430, 37.3487],
+          [-121.9503, 37.3539]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Berryessa/North San Jose (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-121.8757, 37.3707] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Downtown San Jose" },
+      "geometry": { "type": "Point", "coordinates": [-121.8891, 37.3363] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Diridon" },
+      "geometry": { "type": "Point", "coordinates": [-121.9025, 37.3299] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Santa Clara" },
+      "geometry": { "type": "Point", "coordinates": [-121.9503, 37.3539] }
+    }
+  ]
+}

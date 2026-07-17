@@ -1,0 +1,96 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  const states = [...new Set(projects.map(p => p.data.state))];
+  return states.map(state => ({
+    params: { state },
+    props: {
+      projects: projects
+        .filter(p => p.data.state === state)
+        .sort((a, b) => {
+          const da = a.data.lastUpdated?.getTime() ?? 0;
+          const db = b.data.lastUpdated?.getTime() ?? 0;
+          return db - da;
+        }),
+    },
+  }));
+}
+
+const { state } = Astro.params;
+const { projects } = Astro.props;
+
+function agencySlug(p: typeof projects[0]): string {
+  return (p.data.agencyAbbr ?? p.data.agency).toLowerCase().replace(/\s+/g, '-');
+}
+
+function formatDate(d?: Date): string {
+  if (!d) return '—';
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
+const stateNames: Record<string, string> = {
+  AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California',
+  CO: 'Colorado', CT: 'Connecticut', DE: 'Delaware', FL: 'Florida', GA: 'Georgia',
+  HI: 'Hawaii', ID: 'Idaho', IL: 'Illinois', IN: 'Indiana', IA: 'Iowa',
+  KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine', MD: 'Maryland',
+  MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi', MO: 'Missouri',
+  MT: 'Montana', NE: 'Nebraska', NV: 'Nevada', NH: 'New Hampshire', NJ: 'New Jersey',
+  NM: 'New Mexico', NY: 'New York', NC: 'North Carolina', ND: 'North Dakota', OH: 'Ohio',
+  OK: 'Oklahoma', OR: 'Oregon', PA: 'Pennsylvania', RI: 'Rhode Island', SC: 'South Carolina',
+  SD: 'South Dakota', TN: 'Tennessee', TX: 'Texas', UT: 'Utah', VT: 'Vermont',
+  VA: 'Virginia', WA: 'Washington', WV: 'West Virginia', WI: 'Wisconsin', WY: 'Wyoming',
+  DC: 'Washington D.C.',
+};
+
+const stateName = stateNames[state!] ?? state;
+---
+
+<BaseLayout title={`Projects in ${stateName}`}>
+  <nav class="text-sm text-gray-500 mb-6 flex gap-1.5 items-center">
+    <a href="/" class="hover:text-blue-700">All Projects</a>
+    <span>/</span>
+    <a href="/states" class="hover:text-blue-700">States</a>
+    <span>/</span>
+    <span class="text-gray-900">{state}</span>
+  </nav>
+
+  <div class="mb-6">
+    <h1 class="text-2xl font-bold text-gray-900 mb-1">Projects in {stateName}</h1>
+    <p class="text-gray-500 text-sm">{projects.length} project{projects.length !== 1 ? 's' : ''}</p>
+  </div>
+
+  <div class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+    <table class="w-full text-sm text-left">
+      <thead class="bg-gray-100 text-gray-600 text-xs uppercase tracking-wide">
+        <tr>
+          <th class="px-4 py-3 font-semibold">Project</th>
+          <th class="px-4 py-3 font-semibold">Agency</th>
+          <th class="px-4 py-3 font-semibold">Mode</th>
+          <th class="px-4 py-3 font-semibold">Status</th>
+          <th class="px-4 py-3 font-semibold">Alignment</th>
+          <th class="px-4 py-3 font-semibold whitespace-nowrap">Last Updated</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-100">
+        {projects.map(p => (
+          <tr class="bg-white hover:bg-blue-50 transition-colors">
+            <td class="px-4 py-3 font-medium">
+              <a href={`/projects/${p.id}`} class="text-blue-700 hover:underline">{p.data.projectName}</a>
+            </td>
+            <td class="px-4 py-3 text-gray-700">
+              <a href={`/agencies/${agencySlug(p)}`} class="hover:underline">{p.data.agencyAbbr ?? p.data.agency}</a>
+            </td>
+            <td class="px-4 py-3 text-gray-600 capitalize">{p.data.mode?.replace('-', ' ') ?? '—'}</td>
+            <td class="px-4 py-3"><StatusBadge status={p.data.status} /></td>
+            <td class="px-4 py-3 text-gray-600 max-w-xs">{p.data.alignmentSummary}</td>
+            <td class="px-4 py-3 text-gray-500 whitespace-nowrap">{formatDate(p.data.lastUpdated)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</BaseLayout>

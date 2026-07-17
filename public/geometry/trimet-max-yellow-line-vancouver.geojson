@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "MAX Yellow Line Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.6873, 45.5911],
+          [-122.6871, 45.6115],
+          [-122.6820, 45.6217],
+          [-122.6650, 45.6350]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Expo Center (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.6873, 45.5911] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Hayden Island" },
+      "geometry": { "type": "Point", "coordinates": [-122.6871, 45.6115] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Vancouver Waterfront" },
+      "geometry": { "type": "Point", "coordinates": [-122.6820, 45.6217] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Evergreen Boulevard" },
+      "geometry": { "type": "Point", "coordinates": [-122.6650, 45.6350] }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Central Subway North Beach Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.4058, 37.7946],
+          [-122.4103, 37.8060],
+          [-122.4177, 37.8087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Chinatown–Rose Pak (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.4058, 37.7946] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "North Beach (Columbus & Union)" },
+      "geometry": { "type": "Point", "coordinates": [-122.4103, 37.8060] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Fisherman's Wharf (longer alternative)" },
+      "geometry": { "type": "Point", "coordinates": [-122.4177, 37.8087] }
+    }
+  ]
+}

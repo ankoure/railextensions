@@ -1,0 +1,42 @@
+---
+interface Reference {
+  title: string;
+  url: string;
+  publication?: string;
+  date?: Date;
+}
+
+interface Props {
+  references: Reference[];
+}
+
+const { references } = Astro.props;
+
+function formatDate(d: Date): string {
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+---
+
+{references.length > 0 ? (
+  <ul class="space-y-3">
+    {references.map((ref) => (
+      <li class="flex flex-col gap-0.5">
+        <a
+          href={ref.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-700 hover:underline font-medium text-sm"
+        >
+          {ref.title}
+        </a>
+        <span class="text-xs text-gray-500">
+          {ref.publication && <span>{ref.publication}</span>}
+          {ref.publication && ref.date && <span> · </span>}
+          {ref.date && <span>{formatDate(ref.date)}</span>}
+        </span>
+      </li>
+    ))}
+  </ul>
+) : (
+  <p class="text-sm text-gray-400 italic">No references yet.</p>
+)}

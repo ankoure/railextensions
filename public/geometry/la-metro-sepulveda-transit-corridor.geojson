@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Sepulveda Transit Corridor" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-118.4487, 34.1866],
+          [-118.4480, 34.1600],
+          [-118.4473, 34.1300],
+          [-118.4470, 34.0928],
+          [-118.4430, 34.0600],
+          [-118.4396, 34.0252]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Van Nuys (existing Metrolink)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-118.4487, 34.1866] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Sepulveda Pass / Getty Center" },
+      "geometry": { "type": "Point", "coordinates": [-118.4470, 34.0928] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "UCLA / Westwood" },
+      "geometry": { "type": "Point", "coordinates": [-118.4430, 34.0600] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Expo/Sepulveda (existing E Line)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-118.4396, 34.0252] }
+    }
+  ]
+}

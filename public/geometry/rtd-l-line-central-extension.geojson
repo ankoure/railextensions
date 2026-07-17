@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "L Line Central Rail Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-104.9629, 39.7595],
+          [-104.9640, 39.7650],
+          [-104.9660, 39.7690],
+          [-104.9714, 39.7712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "30th & Downing (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-104.9629, 39.7595] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "33rd & Downing" },
+      "geometry": { "type": "Point", "coordinates": [-104.9640, 39.7650] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "35th & Downing" },
+      "geometry": { "type": "Point", "coordinates": [-104.9660, 39.7690] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "38th & Blake (existing A Line)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-104.9714, 39.7712] }
+    }
+  ]
+}

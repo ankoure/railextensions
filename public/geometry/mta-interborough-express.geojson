@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Interborough Express (IBX)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-74.0193, 40.6459],
+          [-73.9954, 40.6300],
+          [-73.9600, 40.6250],
+          [-73.9060, 40.6550],
+          [-73.9100, 40.6950],
+          [-73.9070, 40.7250],
+          [-73.8900, 40.7350],
+          [-73.8827, 40.7469]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Brooklyn Army Terminal (Bay Ridge)" },
+      "geometry": { "type": "Point", "coordinates": [-74.0193, 40.6459] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Broadway Junction (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-73.9060, 40.6550] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bushwick" },
+      "geometry": { "type": "Point", "coordinates": [-73.9100, 40.6950] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Jackson Heights (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-73.8827, 40.7469] }
+    }
+  ]
+}

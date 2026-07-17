@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const projects = await getCollection('projects');
+
+function toSlug(agencyAbbr?: string, agencyFull?: string): string {
+  return ((agencyAbbr ?? agencyFull) ?? '').toLowerCase().replace(/\s+/g, '-');
+}
+
+const agencyMap = new Map<string, { name: string; abbr?: string; count: number }>();
+for (const p of projects) {
+  const slug = toSlug(p.data.agencyAbbr, p.data.agency);
+  if (!agencyMap.has(slug)) {
+    agencyMap.set(slug, { name: p.data.agency, abbr: p.data.agencyAbbr, count: 0 });
+  }
+  agencyMap.get(slug)!.count++;
+}
+
+const agencies = [...agencyMap.entries()]
+  .sort((a, b) => a[1].name.localeCompare(b[1].name))
+  .map(([slug, info]) => ({ slug, ...info }));
+---
+
+<BaseLayout title="Projects by Agency">
+  <div class="mb-6">
+    <h1 class="text-2xl font-bold text-gray-900 mb-1">Projects by Agency</h1>
+    <p class="text-gray-500 text-sm">{agencies.length} agenc{agencies.length !== 1 ? 'ies' : 'y'} with tracked projects</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+    {agencies.map(a => (
+      <a
+        href={`/agencies/${a.slug}`}
+        class="flex items-start justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 hover:border-blue-400 hover:bg-blue-50 transition-colors shadow-sm gap-3"
+      >
+        <div class="min-w-0">
+          {a.abbr && <div class="font-semibold text-gray-800 text-sm">{a.abbr}</div>}
+          <div class="text-gray-600 text-xs truncate">{a.name}</div>
+        </div>
+        <span class="shrink-0 text-xs text-gray-500 bg-gray-100 rounded-full px-2 py-0.5 mt-0.5">{a.count}</span>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

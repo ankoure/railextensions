@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "North Corridor Metrorail Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-80.2178, 25.8508],
+          [-80.2320, 25.8750],
+          [-80.2430, 25.9010],
+          [-80.2400, 25.9280],
+          [-80.2389, 25.9580],
+          [-80.2390, 25.9700]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Dr. Martin Luther King Jr. Station (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-80.2178, 25.8508] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Opa-locka" },
+      "geometry": { "type": "Point", "coordinates": [-80.2430, 25.9010] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Miami Gardens / Hard Rock Stadium" },
+      "geometry": { "type": "Point", "coordinates": [-80.2389, 25.9580] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Broward County Line" },
+      "geometry": { "type": "Point", "coordinates": [-80.2390, 25.9700] }
+    }
+  ]
+}

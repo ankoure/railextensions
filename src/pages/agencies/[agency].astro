@@ -1,0 +1,88 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StatusBadge from '../../components/StatusBadge.astro';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+
+  function toSlug(agencyAbbr?: string, agencyFull?: string): string {
+    return ((agencyAbbr ?? agencyFull) ?? '').toLowerCase().replace(/\s+/g, '-');
+  }
+
+  // Group by computed agency slug
+  const map = new Map<string, { name: string; projects: typeof projects }>();
+  for (const p of projects) {
+    const slug = toSlug(p.data.agencyAbbr, p.data.agency);
+    if (!map.has(slug)) {
+      map.set(slug, { name: p.data.agency, projects: [] });
+    }
+    map.get(slug)!.projects.push(p);
+  }
+
+  return [...map.entries()].map(([agency, { name, projects }]) => ({
+    params: { agency },
+    props: {
+      agencyName: name,
+      projects: projects.sort((a, b) => {
+        const da = a.data.lastUpdated?.getTime() ?? 0;
+        const db = b.data.lastUpdated?.getTime() ?? 0;
+        return db - da;
+      }),
+    },
+  }));
+}
+
+const { agencyName, projects } = Astro.props;
+
+function formatDate(d?: Date): string {
+  if (!d) return '—';
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+---
+
+<BaseLayout title={`Projects by ${agencyName}`}>
+  <nav class="text-sm text-gray-500 mb-6 flex gap-1.5 items-center">
+    <a href="/" class="hover:text-blue-700">All Projects</a>
+    <span>/</span>
+    <a href="/agencies" class="hover:text-blue-700">Agencies</a>
+    <span>/</span>
+    <span class="text-gray-900">{agencyName}</span>
+  </nav>
+
+  <div class="mb-6">
+    <h1 class="text-2xl font-bold text-gray-900 mb-1">{agencyName}</h1>
+    <p class="text-gray-500 text-sm">{projects.length} tracked project{projects.length !== 1 ? 's' : ''}</p>
+  </div>
+
+  <div class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+    <table class="w-full text-sm text-left">
+      <thead class="bg-gray-100 text-gray-600 text-xs uppercase tracking-wide">
+        <tr>
+          <th class="px-4 py-3 font-semibold">Project</th>
+          <th class="px-4 py-3 font-semibold">State</th>
+          <th class="px-4 py-3 font-semibold">Mode</th>
+          <th class="px-4 py-3 font-semibold">Status</th>
+          <th class="px-4 py-3 font-semibold">Alignment</th>
+          <th class="px-4 py-3 font-semibold whitespace-nowrap">Last Updated</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-100">
+        {projects.map(p => (
+          <tr class="bg-white hover:bg-blue-50 transition-colors">
+            <td class="px-4 py-3 font-medium">
+              <a href={`/projects/${p.id}`} class="text-blue-700 hover:underline">{p.data.projectName}</a>
+            </td>
+            <td class="px-4 py-3">
+              <a href={`/states/${p.data.state}`} class="font-medium text-blue-600 hover:underline">{p.data.state}</a>
+            </td>
+            <td class="px-4 py-3 text-gray-600 capitalize">{p.data.mode?.replace('-', ' ') ?? '—'}</td>
+            <td class="px-4 py-3"><StatusBadge status={p.data.status} /></td>
+            <td class="px-4 py-3 text-gray-600 max-w-xs">{p.data.alignmentSummary}</td>
+            <td class="px-4 py-3 text-gray-500 whitespace-nowrap">{formatDate(p.data.lastUpdated)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</BaseLayout>

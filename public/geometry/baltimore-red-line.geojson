@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Baltimore Red Line" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-76.7391, 39.3223],
+          [-76.7000, 39.3100],
+          [-76.6600, 39.3000],
+          [-76.6300, 39.2950],
+          [-76.6122, 39.2904],
+          [-76.5800, 39.2880],
+          [-76.5460, 39.2865]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Woodlawn" },
+      "geometry": { "type": "Point", "coordinates": [-76.7391, 39.3223] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Downtown Baltimore / Inner Harbor" },
+      "geometry": { "type": "Point", "coordinates": [-76.6122, 39.2904] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bayview / Highlandtown" },
+      "geometry": { "type": "Point", "coordinates": [-76.5460, 39.2865] }
+    }
+  ]
+}

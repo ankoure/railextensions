@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "METRO Blue Line Extension (Bottineau LRT)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-93.2777, 44.9862],
+          [-93.2950, 45.0100],
+          [-93.3200, 45.0200],
+          [-93.3383, 45.0330],
+          [-93.3500, 45.0600],
+          [-93.3563, 45.0941]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Target Field (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-93.2777, 44.9862] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Golden Valley" },
+      "geometry": { "type": "Point", "coordinates": [-93.3200, 45.0200] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Robbinsdale" },
+      "geometry": { "type": "Point", "coordinates": [-93.3383, 45.0330] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Brooklyn Park" },
+      "geometry": { "type": "Point", "coordinates": [-93.3563, 45.0941] }
+    }
+  ]
+}

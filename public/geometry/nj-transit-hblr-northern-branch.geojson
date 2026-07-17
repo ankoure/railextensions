@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Northern Branch Corridor Project" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-74.0090, 40.7745],
+          [-74.0000, 40.8000],
+          [-73.9950, 40.8280],
+          [-73.9900, 40.8500],
+          [-73.9857, 40.8681],
+          [-73.9726, 40.8929]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Tonnelle Avenue (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-74.0090, 40.7745] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ridgefield" },
+      "geometry": { "type": "Point", "coordinates": [-73.9950, 40.8280] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Leonia" },
+      "geometry": { "type": "Point", "coordinates": [-73.9857, 40.8681] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Englewood Hospital" },
+      "geometry": { "type": "Point", "coordinates": [-73.9726, 40.8929] }
+    }
+  ]
+}

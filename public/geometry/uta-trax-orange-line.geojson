@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "TRAX Orange Line" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-111.8380, 40.7608],
+          [-111.8420, 40.7660],
+          [-111.8700, 40.7650],
+          [-111.8910, 40.7650],
+          [-111.9000, 40.7600]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "University South Campus (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-111.8380, 40.7608] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Research Park" },
+      "geometry": { "type": "Point", "coordinates": [-111.8420, 40.7660] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "West Temple / Pioneer Park" },
+      "geometry": { "type": "Point", "coordinates": [-111.8910, 40.7650] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "400 West / 300 South (existing trackage)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-111.9000, 40.7600] }
+    }
+  ]
+}

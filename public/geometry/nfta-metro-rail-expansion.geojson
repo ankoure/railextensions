@@ -1,0 +1,62 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Metro Rail Expansion (University Station–UB North Campus)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-78.8206, 42.9547],
+          [-78.8230, 42.9650],
+          [-78.8228, 42.9857],
+          [-78.8175, 42.9895],
+          [-78.7985, 42.9970],
+          [-78.7900, 43.0010],
+          [-78.7850, 43.0090],
+          [-78.7830, 43.0180]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "University Station (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-78.8206, 42.9547] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Proposed Station 1" },
+      "geometry": { "type": "Point", "coordinates": [-78.8230, 42.9650] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Proposed Station 2" },
+      "geometry": { "type": "Point", "coordinates": [-78.8228, 42.9857] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Proposed Station 3" },
+      "geometry": { "type": "Point", "coordinates": [-78.8175, 42.9895] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Proposed Station 4" },
+      "geometry": { "type": "Point", "coordinates": [-78.7985, 42.9970] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Proposed Station 5" },
+      "geometry": { "type": "Point", "coordinates": [-78.7900, 43.0010] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Proposed Station 6" },
+      "geometry": { "type": "Point", "coordinates": [-78.7850, 43.0090] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Proposed Station 7" },
+      "geometry": { "type": "Point", "coordinates": [-78.7830, 43.0180] }
+    }
+  ]
+}

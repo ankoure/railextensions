@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Everett Link Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2938, 47.8221],
+          [-122.2890, 47.8460],
+          [-122.2740, 47.8720],
+          [-122.2570, 47.9000],
+          [-122.2450, 47.9300],
+          [-122.2350, 47.9550],
+          [-122.2035, 47.9762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lynnwood City Center (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.2938, 47.8221] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ash Way" },
+      "geometry": { "type": "Point", "coordinates": [-122.2740, 47.8720] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Mariner" },
+      "geometry": { "type": "Point", "coordinates": [-122.2570, 47.9000] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "SR 526 / Evergreen" },
+      "geometry": { "type": "Point", "coordinates": [-122.2350, 47.9550] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Everett Station" },
+      "geometry": { "type": "Point", "coordinates": [-122.2035, 47.9762] }
+    }
+  ]
+}

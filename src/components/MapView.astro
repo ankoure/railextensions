@@ -1,0 +1,80 @@
+---
+interface Props {
+  entryId: string;
+  coordinates?: { lat: number; lng: number };
+}
+
+const { entryId, coordinates } = Astro.props;
+const containerId = `map-${entryId.replace(/[^a-z0-9]/gi, '-')}`;
+const geoJsonPath = `/geometry/${entryId}.geojson`;
+---
+
+<section class="mb-8">
+  <h2 class="text-lg font-semibold text-gray-800 mb-3">Alignment Map</h2>
+  <div id={containerId} class="w-full h-80 rounded-lg border border-gray-200 shadow-sm bg-gray-100"></div>
+  <p class="text-xs text-gray-400 mt-1">
+    Map tiles © <a href="https://www.openstreetmap.org/copyright" class="underline" target="_blank" rel="noopener">OpenStreetMap</a> contributors.
+    Alignment is approximate.
+  </p>
+</section>
+
+<script define:vars={{ containerId, geoJsonPath, coordinates }}>
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+  document.head.appendChild(link);
+
+  const script = document.createElement('script');
+  script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+  script.onload = () => {
+    const L = window.L;
+    const el = document.getElementById(containerId);
+    if (!el) return;
+
+    const defaultCenter = coordinates ? [coordinates.lat, coordinates.lng] : [39.5, -98.35];
+    const map = L.map(el, { scrollWheelZoom: false }).setView(defaultCenter, coordinates ? 12 : 4);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '',
+    }).addTo(map);
+
+    fetch(geoJsonPath)
+      .then(r => { if (!r.ok) throw new Error('no file'); return r.json(); })
+      .then(data => {
+        const layer = L.geoJSON(data, {
+          style: feat => {
+            const t = feat?.geometry?.type;
+            if (t === 'LineString' || t === 'MultiLineString') {
+              return { color: '#1d4ed8', weight: 5, opacity: 0.85 };
+            }
+            return {};
+          },
+          pointToLayer: (feat, latlng) => {
+            const existing = feat.properties?.existing === true;
+            return L.circleMarker(latlng, {
+              radius: 7,
+              fillColor: existing ? '#6b7280' : '#1d4ed8',
+              color: '#ffffff',
+              weight: 2.5,
+              fillOpacity: 1,
+            });
+          },
+          onEachFeature: (feat, layer) => {
+            const name = feat.properties?.name;
+            if (name) layer.bindPopup(`<span style="font-size:13px;font-weight:600">${name}</span>`);
+          },
+        }).addTo(map);
+
+        try { map.fitBounds(layer.getBounds().pad(0.15)); } catch (_) {}
+      })
+      .catch(() => {
+        if (coordinates) {
+          L.circleMarker([coordinates.lat, coordinates.lng], {
+            radius: 9, fillColor: '#1d4ed8', color: '#fff', weight: 2.5, fillOpacity: 1,
+          }).addTo(map);
+        }
+      });
+  };
+  document.head.appendChild(script);
+</script>

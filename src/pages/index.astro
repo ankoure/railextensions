@@ -1,0 +1,153 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import StatusBadge from '../components/StatusBadge.astro';
+
+const allProjects = await getCollection('projects');
+
+// Sort: lastUpdated desc, nulls last
+const projects = allProjects.sort((a, b) => {
+  const da = a.data.lastUpdated?.getTime() ?? 0;
+  const db = b.data.lastUpdated?.getTime() ?? 0;
+  return db - da;
+});
+
+// Unique filter options
+const states = [...new Set(projects.map(p => p.data.state))].sort();
+const agencies = [...new Set(projects.map(p => p.data.agencyAbbr ?? p.data.agency))].sort();
+const statuses = [...new Set(projects.map(p => p.data.status).filter(Boolean))].sort() as string[];
+
+function agencySlug(p: typeof projects[0]): string {
+  return (p.data.agencyAbbr ?? p.data.agency).toLowerCase().replace(/\s+/g, '-');
+}
+
+function formatDate(d?: Date): string {
+  if (!d) return '—';
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+---
+
+<BaseLayout title="All Projects">
+  <div class="mb-6">
+    <h1 class="text-2xl font-bold text-gray-900 mb-1">Rail Extension Tracker</h1>
+    <p class="text-gray-500 text-sm">
+      {projects.length} project{projects.length !== 1 ? 's' : ''} tracked. Filter by state, agency, or status.
+    </p>
+  </div>
+
+  <!-- Filters -->
+  <div class="flex flex-wrap gap-3 mb-6" id="filters">
+    <select id="filter-state" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <option value="">All States</option>
+      {states.map(s => <option value={s}>{s}</option>)}
+    </select>
+
+    <select id="filter-agency" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <option value="">All Agencies</option>
+      {agencies.map(a => <option value={a}>{a}</option>)}
+    </select>
+
+    <select id="filter-status" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <option value="">All Statuses</option>
+      {statuses.map(s => <option value={s}>{s}</option>)}
+    </select>
+
+    <button id="clear-filters" class="text-sm text-blue-600 hover:underline px-2">Clear filters</button>
+
+    <span id="filter-count" class="text-sm text-gray-400 self-center"></span>
+  </div>
+
+  <!-- Table -->
+  <div class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+    <table class="w-full text-sm text-left">
+      <thead class="bg-gray-100 text-gray-600 text-xs uppercase tracking-wide">
+        <tr>
+          <th class="px-4 py-3 font-semibold">Project</th>
+          <th class="px-4 py-3 font-semibold">Agency</th>
+          <th class="px-4 py-3 font-semibold">State</th>
+          <th class="px-4 py-3 font-semibold">Mode</th>
+          <th class="px-4 py-3 font-semibold">Status</th>
+          <th class="px-4 py-3 font-semibold">Alignment</th>
+          <th class="px-4 py-3 font-semibold whitespace-nowrap">Last Updated</th>
+        </tr>
+      </thead>
+      <tbody id="project-table-body" class="divide-y divide-gray-100">
+        {projects.map(p => (
+          <tr
+            class="bg-white hover:bg-blue-50 transition-colors"
+            data-state={p.data.state}
+            data-agency={p.data.agencyAbbr ?? p.data.agency}
+            data-status={p.data.status ?? ''}
+          >
+            <td class="px-4 py-3 font-medium">
+              <a href={`/projects/${p.id}`} class="text-blue-700 hover:underline">
+                {p.data.projectName}
+              </a>
+            </td>
+            <td class="px-4 py-3 text-gray-700">
+              <a href={`/agencies/${agencySlug(p)}`} class="hover:underline">
+                {p.data.agencyAbbr ?? p.data.agency}
+              </a>
+            </td>
+            <td class="px-4 py-3">
+              <a href={`/states/${p.data.state}`} class="font-medium text-blue-600 hover:underline">
+                {p.data.state}
+              </a>
+            </td>
+            <td class="px-4 py-3 text-gray-600 capitalize">{p.data.mode?.replace('-', ' ') ?? '—'}</td>
+            <td class="px-4 py-3">
+              <StatusBadge status={p.data.status} />
+            </td>
+            <td class="px-4 py-3 text-gray-600 max-w-xs">{p.data.alignmentSummary}</td>
+            <td class="px-4 py-3 text-gray-500 whitespace-nowrap">{formatDate(p.data.lastUpdated)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <p id="no-results" class="hidden text-center text-gray-500 py-12">No projects match the selected filters.</p>
+</BaseLayout>
+
+<script>
+  const stateEl = document.getElementById('filter-state') as HTMLSelectElement;
+  const agencyEl = document.getElementById('filter-agency') as HTMLSelectElement;
+  const statusEl = document.getElementById('filter-status') as HTMLSelectElement;
+  const clearBtn = document.getElementById('clear-filters') as HTMLButtonElement;
+  const countEl = document.getElementById('filter-count') as HTMLSpanElement;
+  const noResults = document.getElementById('no-results') as HTMLParagraphElement;
+  const rows = document.querySelectorAll<HTMLTableRowElement>('#project-table-body tr');
+
+  function applyFilters() {
+    const state = stateEl.value;
+    const agency = agencyEl.value;
+    const status = statusEl.value;
+    let visible = 0;
+
+    rows.forEach(row => {
+      const match =
+        (!state  || row.dataset.state  === state)  &&
+        (!agency || row.dataset.agency === agency)  &&
+        (!status || row.dataset.status === status);
+
+      row.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+
+    countEl.textContent = state || agency || status
+      ? `${visible} of ${rows.length} shown`
+      : '';
+    noResults.classList.toggle('hidden', visible > 0);
+  }
+
+  stateEl.addEventListener('change', applyFilters);
+  agencyEl.addEventListener('change', applyFilters);
+  statusEl.addEventListener('change', applyFilters);
+
+  clearBtn.addEventListener('click', () => {
+    stateEl.value = '';
+    agencyEl.value = '';
+    statusEl.value = '';
+    applyFilters();
+  });
+</script>

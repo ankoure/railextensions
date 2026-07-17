@@ -1,0 +1,34 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "West Phoenix Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-112.0740, 33.4956],
+          [-112.1200, 33.4956],
+          [-112.1560, 33.4956],
+          [-112.1560, 33.4800],
+          [-112.1610, 33.4800]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Indian School / Central Ave (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-112.0740, 33.4956] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Indian School Rd / 75th Ave" },
+      "geometry": { "type": "Point", "coordinates": [-112.1560, 33.4956] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Desert Sky Transit Center" },
+      "geometry": { "type": "Point", "coordinates": [-112.1610, 33.4800] }
+    }
+  ]
+}

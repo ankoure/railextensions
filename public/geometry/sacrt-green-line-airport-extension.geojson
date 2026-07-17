@@ -1,0 +1,34 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Green Line Extension to the Airport" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-121.5020, 38.5875],
+          [-121.5200, 38.6100],
+          [-121.5400, 38.6400],
+          [-121.5650, 38.6650],
+          [-121.5910, 38.6954]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "7th & Railyards (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-121.5020, 38.5875] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "North Natomas" },
+      "geometry": { "type": "Point", "coordinates": [-121.5400, 38.6400] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Sacramento International Airport" },
+      "geometry": { "type": "Point", "coordinates": [-121.5910, 38.6954] }
+    }
+  ]
+}

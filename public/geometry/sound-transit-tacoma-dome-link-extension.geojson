@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Tacoma Dome Link Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.3126, 47.3223],
+          [-122.3350, 47.2950],
+          [-122.3592, 47.2397],
+          [-122.3850, 47.2430],
+          [-122.4262, 47.2384]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Federal Way (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.3126, 47.3223] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Fife" },
+      "geometry": { "type": "Point", "coordinates": [-122.3592, 47.2397] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "East Tacoma / Portland Avenue" },
+      "geometry": { "type": "Point", "coordinates": [-122.3850, 47.2430] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Tacoma Dome" },
+      "geometry": { "type": "Point", "coordinates": [-122.4262, 47.2384] }
+    }
+  ]
+}

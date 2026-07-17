@@ -1,0 +1,185 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = await getCollection('projects');
+
+function agencySlug(p: (typeof projects)[number]): string {
+  return (p.data.agencyAbbr ?? p.data.agency).toLowerCase().replace(/\s+/g, '-');
+}
+
+const mapProjects = projects
+  .filter(p => p.data.coordinates)
+  .map(p => ({
+    id: p.id,
+    projectName: p.data.projectName,
+    agency: p.data.agencyAbbr ?? p.data.agency,
+    agencySlug: agencySlug(p),
+    state: p.data.state,
+    status: p.data.status ?? null,
+    coordinates: p.data.coordinates,
+    hasGeometry: p.data.hasGeometry ?? false,
+  }));
+
+const skipped = projects.length - mapProjects.length;
+---
+
+<BaseLayout title="Map" description="Explore all tracked rail extension projects on one map.">
+  <div class="mb-6">
+    <h1 class="text-2xl font-bold text-gray-900 mb-1">Project Map</h1>
+    <p class="text-gray-500 text-sm">
+      {mapProjects.length} project{mapProjects.length !== 1 ? 's' : ''} plotted. Click a marker or alignment to open its project page.
+      {skipped > 0 && ` ${skipped} project${skipped !== 1 ? 's' : ''} without coordinates not shown.`}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+    <div class="lg:col-span-3">
+      <div id="overview-map" class="w-full h-[32rem] rounded-lg border border-gray-200 shadow-sm bg-gray-100"></div>
+      <p class="text-xs text-gray-400 mt-1">
+        Map tiles © <a href="https://www.openstreetmap.org/copyright" class="underline" target="_blank" rel="noopener">OpenStreetMap</a> contributors.
+        Alignments are approximate.
+      </p>
+    </div>
+
+    <aside class="lg:col-span-1">
+      <div class="rounded-lg border border-gray-200 bg-white p-4 text-sm shadow-sm">
+        <h2 class="font-semibold text-gray-800 text-base mb-3">Status</h2>
+        <ul class="space-y-2" id="map-legend"></ul>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>
+
+<script define:vars={{ mapProjects }}>
+  const STATUS_COLORS = {
+    'proposed': '#6b7280',
+    'planning': '#2563eb',
+    'environmental-review': '#9333ea',
+    'funded': '#0d9488',
+    'under-construction': '#ca8a04',
+    'on-hold': '#ea580c',
+    'completed': '#16a34a',
+    'cancelled': '#dc2626',
+  };
+  const STATUS_LABELS = {
+    'proposed': 'Proposed',
+    'planning': 'Planning',
+    'environmental-review': 'Env. Review',
+    'funded': 'Funded',
+    'under-construction': 'Under Construction',
+    'on-hold': 'On Hold',
+    'completed': 'Completed',
+    'cancelled': 'Cancelled',
+  };
+  const DEFAULT_COLOR = '#1d4ed8';
+
+  function colorFor(status) {
+    return (status && STATUS_COLORS[status]) || DEFAULT_COLOR;
+  }
+
+  const legendEl = document.getElementById('map-legend');
+  const usedStatuses = [...new Set(mapProjects.map(p => p.status).filter(Boolean))];
+  Object.keys(STATUS_LABELS)
+    .filter(s => usedStatuses.includes(s))
+    .forEach(status => {
+      const li = document.createElement('li');
+      li.className = 'flex items-center gap-2';
+      li.innerHTML = `<span class="inline-block w-3 h-3 rounded-full shrink-0" style="background:${colorFor(status)}"></span><span class="text-gray-600 text-xs">${STATUS_LABELS[status]}</span>`;
+      legendEl.appendChild(li);
+    });
+  if (mapProjects.some(p => !p.status)) {
+    const li = document.createElement('li');
+    li.className = 'flex items-center gap-2';
+    li.innerHTML = `<span class="inline-block w-3 h-3 rounded-full shrink-0" style="background:${DEFAULT_COLOR}"></span><span class="text-gray-600 text-xs">Unspecified</span>`;
+    legendEl.appendChild(li);
+  }
+
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+  document.head.appendChild(link);
+
+  const script = document.createElement('script');
+  script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+  script.onload = () => {
+    const L = window.L;
+    const el = document.getElementById('overview-map');
+    if (!el) return;
+
+    const map = L.map(el, { scrollWheelZoom: true }).setView([39.5, -98.35], 4);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '',
+    }).addTo(map);
+
+    const allLayers = [];
+
+    function refitBounds() {
+      try { map.fitBounds(L.featureGroup(allLayers).getBounds().pad(0.1)); } catch (_) {}
+    }
+
+    function popupHtml(p) {
+      return `
+        <div style="font-size:13px;min-width:180px">
+          <div style="font-weight:600;margin-bottom:2px">${p.projectName}</div>
+          <div style="color:#6b7280;margin-bottom:6px">${p.agency} &middot; ${p.state}</div>
+          <a href="/projects/${p.id}" style="color:#1d4ed8;font-weight:600;text-decoration:none">View project &rarr;</a>
+        </div>
+      `;
+    }
+
+    function addFallbackMarker(p) {
+      const marker = L.circleMarker([p.coordinates.lat, p.coordinates.lng], {
+        radius: 8,
+        fillColor: colorFor(p.status),
+        color: '#ffffff',
+        weight: 2,
+        fillOpacity: 0.9,
+      }).addTo(map).bindPopup(popupHtml(p));
+      allLayers.push(marker);
+    }
+
+    mapProjects.forEach(p => {
+      if (!p.hasGeometry) {
+        addFallbackMarker(p);
+        return;
+      }
+
+      fetch(`/geometry/${p.id}.geojson`)
+        .then(r => { if (!r.ok) throw new Error('no geometry'); return r.json(); })
+        .then(data => {
+          const color = colorFor(p.status);
+          const layer = L.geoJSON(data, {
+            style: feat => {
+              const t = feat?.geometry?.type;
+              if (t === 'LineString' || t === 'MultiLineString') {
+                return { color, weight: 4, opacity: 0.85 };
+              }
+              return {};
+            },
+            pointToLayer: (feat, latlng) => {
+              const existing = feat.properties?.existing === true;
+              return L.circleMarker(latlng, {
+                radius: 5,
+                fillColor: existing ? '#6b7280' : color,
+                color: '#ffffff',
+                weight: 1.5,
+                fillOpacity: 1,
+              });
+            },
+          }).bindPopup(popupHtml(p)).addTo(map);
+          allLayers.push(layer);
+          refitBounds();
+        })
+        .catch(() => {
+          addFallbackMarker(p);
+          refitBounds();
+        });
+    });
+
+    setTimeout(refitBounds, 300);
+  };
+  document.head.appendChild(script);
+</script>

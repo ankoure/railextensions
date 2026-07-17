@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Red Line Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-87.5935524, 41.6575166],
+          [-87.5956859, 41.6608801],
+          [-87.5990428, 41.6647886],
+          [-87.6051353, 41.6716115],
+          [-87.6094268, 41.674817],
+          [-87.6126884, 41.6784712],
+          [-87.6159499, 41.6806507],
+          [-87.6192973, 41.6822533],
+          [-87.6228871, 41.6841352],
+          [-87.6276229, 41.6867403],
+          [-87.6303695, 41.6880864],
+          [-87.6318286, 41.6896246],
+          [-87.6326011, 41.6914193],
+          [-87.6326869, 41.6943675],
+          [-87.6331448, 41.707093],
+          [-87.6334594, 41.7142964],
+          [-87.6330302, 41.7147449],
+          [-87.629597, 41.7150012],
+          [-87.6271937, 41.7158981],
+          [-87.6254771, 41.7174998],
+          [-87.6246188, 41.7194859],
+          [-87.6243888, 41.721268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "95th Street (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-87.6243888, 41.721268] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "103rd Street" },
+      "geometry": { "type": "Point", "coordinates": [-87.6331475, 41.7071511] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "111th Street" },
+      "geometry": { "type": "Point", "coordinates": [-87.6326352, 41.6925666] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Michigan Avenue" },
+      "geometry": { "type": "Point", "coordinates": [-87.621149, 41.6832057] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "130th Street" },
+      "geometry": { "type": "Point", "coordinates": [-87.5935524, 41.6575166] }
+    }
+  ]
+}

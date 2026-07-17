@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "TCC T Line Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.4530, 47.2530],
+          [-122.4750, 47.2480],
+          [-122.5000, 47.2400],
+          [-122.5257, 47.2359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Hilltop (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.4530, 47.2530] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "St. Joseph Hospital" },
+      "geometry": { "type": "Point", "coordinates": [-122.4750, 47.2480] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Tacoma Community College" },
+      "geometry": { "type": "Point", "coordinates": [-122.5257, 47.2359] }
+    }
+  ]
+}

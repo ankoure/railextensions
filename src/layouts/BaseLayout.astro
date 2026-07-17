@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Tracking rail extension and expansion projects across the United States.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} · Rail Extension Tracker</title>
+  </head>
+  <body class="min-h-screen bg-gray-50 text-gray-900">
+    <header class="bg-white border-b border-gray-200">
+      <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="text-lg font-bold text-blue-700 hover:text-blue-900 transition-colors">
+          Rail Extension Tracker
+        </a>
+        <div class="flex gap-6 text-sm font-medium text-gray-600">
+          <a href="/" class="hover:text-blue-700 transition-colors">All Projects</a>
+          <a href="/states" class="hover:text-blue-700 transition-colors">By State</a>
+          <a href="/agencies" class="hover:text-blue-700 transition-colors">By Agency</a>
+          <a href="/map" class="hover:text-blue-700 transition-colors">Map</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="mt-16 border-t border-gray-200 bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-500 flex justify-between items-center">
+        <span>Rail Extension Tracker — data maintained via Markdown files in git.</span>
+        <span>Built with <a href="https://astro.build" class="underline hover:text-gray-700">Astro</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

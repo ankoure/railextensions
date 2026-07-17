@@ -1,0 +1,86 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Colorado Connector (Fort Collins–Pueblo)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-105.0844, 40.5853],
+          [-105.0748, 40.3978],
+          [-105.1019, 40.1672],
+          [-105.2705, 40.0150],
+          [-105.1319, 39.9778],
+          [-105.0866, 39.9205],
+          [-105.0372, 39.8367],
+          [-104.9903, 39.7539],
+          [-105.0166, 39.6133],
+          [-104.8561, 39.3722],
+          [-104.8214, 38.8339],
+          [-104.6091, 38.2544]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Fort Collins" },
+      "geometry": { "type": "Point", "coordinates": [-105.0844, 40.5853] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Loveland" },
+      "geometry": { "type": "Point", "coordinates": [-105.0748, 40.3978] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Longmont" },
+      "geometry": { "type": "Point", "coordinates": [-105.1019, 40.1672] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Boulder" },
+      "geometry": { "type": "Point", "coordinates": [-105.2705, 40.0150] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Louisville" },
+      "geometry": { "type": "Point", "coordinates": [-105.1319, 39.9778] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Broomfield" },
+      "geometry": { "type": "Point", "coordinates": [-105.0866, 39.9205] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Westminster" },
+      "geometry": { "type": "Point", "coordinates": [-105.0372, 39.8367] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Denver Union Station (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-104.9903, 39.7539] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Littleton" },
+      "geometry": { "type": "Point", "coordinates": [-105.0166, 39.6133] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Castle Rock" },
+      "geometry": { "type": "Point", "coordinates": [-104.8561, 39.3722] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Colorado Springs" },
+      "geometry": { "type": "Point", "coordinates": [-104.8214, 38.8339] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pueblo" },
+      "geometry": { "type": "Point", "coordinates": [-104.6091, 38.2544] }
+    }
+  ]
+}

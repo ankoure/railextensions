@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "San Diego Trolley Purple Line" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-117.0281, 32.5478],
+          [-117.0992, 32.6781],
+          [-117.1150, 32.7580],
+          [-117.1611, 32.8130],
+          [-117.2103, 32.8710]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "San Ysidro Transit Center (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-117.0281, 32.5478] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "National City" },
+      "geometry": { "type": "Point", "coordinates": [-117.0992, 32.6781] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "City Heights" },
+      "geometry": { "type": "Point", "coordinates": [-117.1150, 32.7580] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Kearny Mesa" },
+      "geometry": { "type": "Point", "coordinates": [-117.1611, 32.8130] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "University Town Center (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-117.2103, 32.8710] }
+    }
+  ]
+}
