@@ -1,0 +1,99 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Phase I: Lathrop to Ceres" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-121.26347, 37.79832],
+          [-121.26303, 37.79907],
+          [-121.26244, 37.80063],
+          [-121.26181, 37.80352],
+          [-121.26172, 37.805],
+          [-121.262, 37.811],
+          [-121.2619, 37.814],
+          [-121.2612, 37.817],
+          [-121.26, 37.8192],
+          [-121.25887, 37.82],
+          [-121.13373, 37.74652],
+          [-121.1259, 37.74182],
+          [-121.12186, 37.73914],
+          [-121.11548, 37.73444],
+          [-121.10668, 37.72714],
+          [-120.99963, 37.63734],
+          [-120.99721, 37.63498],
+          [-120.99538, 37.63254],
+          [-120.99479, 37.63133],
+          [-120.99273, 37.62505],
+          [-120.99198, 37.62331],
+          [-120.99108, 37.6217],
+          [-120.98984, 37.62005],
+          [-120.9878, 37.61807],
+          [-120.95703, 37.59114]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Phase II: Ceres to Merced" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-120.95703, 37.59114],
+          [-120.90201, 37.54294],
+          [-120.76546, 37.42275],
+          [-120.75354, 37.41213],
+          [-120.74904, 37.40763],
+          [-120.73939, 37.39622],
+          [-120.73686, 37.39386],
+          [-120.73395, 37.39183],
+          [-120.73104, 37.39024],
+          [-120.72856, 37.3892],
+          [-120.48579, 37.30033]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lathrop/Manteca (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-121.26347, 37.79832] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Manteca" },
+      "geometry": { "type": "Point", "coordinates": [-121.21638, 37.79504] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ripon" },
+      "geometry": { "type": "Point", "coordinates": [-121.11882, 37.73698] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Modesto" },
+      "geometry": { "type": "Point", "coordinates": [-121.00189, 37.63927] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ceres" },
+      "geometry": { "type": "Point", "coordinates": [-120.95703, 37.59114] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Turlock" },
+      "geometry": { "type": "Point", "coordinates": [-120.86134, 37.50713] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Livingston" },
+      "geometry": { "type": "Point", "coordinates": [-120.72311, 37.38722] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Merced" },
+      "geometry": { "type": "Point", "coordinates": [-120.48579, 37.30033] }
+    }
+  ]
+}

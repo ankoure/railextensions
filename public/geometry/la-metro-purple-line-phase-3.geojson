@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "D Line Subway Extension Section 3" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-118.41297, 34.06069],
+          [-118.41519, 34.05934],
+          [-118.41719, 34.05787],
+          [-118.418, 34.05752],
+          [-118.4189, 34.05738],
+          [-118.42035, 34.05759],
+          [-118.42493, 34.05908],
+          [-118.43283, 34.0609],
+          [-118.4341, 34.06106],
+          [-118.43539, 34.061],
+          [-118.4481, 34.0578],
+          [-118.44972, 34.05696],
+          [-118.45168, 34.05535],
+          [-118.45469, 34.05371]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Century City/Constellation", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-118.41282, 34.06023] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Westwood/UCLA" },
+      "geometry": { "type": "Point", "coordinates": [-118.44698, 34.05832] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Westwood/VA Hospital" },
+      "geometry": { "type": "Point", "coordinates": [-118.45365, 34.05415] }
+    }
+  ]
+}

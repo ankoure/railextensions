@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Second Avenue Subway Phase 2" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-73.94715, 40.78432],
+          [-73.94509, 40.78722],
+          [-73.94213, 40.7904],
+          [-73.93809, 40.79726],
+          [-73.93674, 40.79861],
+          [-73.93432, 40.80213],
+          [-73.9344, 40.8029],
+          [-73.93546, 40.80352],
+          [-73.93689, 40.80405]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "96 St (existing Q terminus)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-73.94715, 40.78432] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "106 St" },
+      "geometry": { "type": "Point", "coordinates": [-73.94213, 40.7904] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "116 St" },
+      "geometry": { "type": "Point", "coordinates": [-73.93809, 40.79726] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "125 St" },
+      "geometry": { "type": "Point", "coordinates": [-73.9362, 40.8038] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "125 St (4/5/6, existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-73.9376, 40.8041] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Harlem\u2013125 St (Metro-North, existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-73.93891, 40.80524] }
+    }
+  ]
+}

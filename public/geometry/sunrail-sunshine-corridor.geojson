@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Option 3A: SunRail main line to Orlando International Airport (OUC track; shared by 3B)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-81.30835, 28.41172],
+          [-81.30827, 28.40426],
+          [-81.30857, 28.40284],
+          [-81.30946, 28.40149],
+          [-81.31211, 28.39902],
+          [-81.31267, 28.39869],
+          [-81.31339, 28.39849],
+          [-81.31524, 28.39846],
+          [-81.31878, 28.39818],
+          [-81.32852, 28.39906],
+          [-81.33145, 28.39914],
+          [-81.33297, 28.39989],
+          [-81.33692, 28.40268],
+          [-81.33824, 28.40325],
+          [-81.3396, 28.4035],
+          [-81.37101, 28.4035],
+          [-81.37282, 28.40405],
+          [-81.37417, 28.40499],
+          [-81.37516, 28.4063],
+          [-81.37551, 28.40717],
+          [-81.37565, 28.40798],
+          [-81.3758, 28.41019],
+          [-81.37561, 28.41195],
+          [-81.37275, 28.42153]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Option 3B: Airport to Convention Center (Taft-Vineland Rd / SR 528)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-81.37275, 28.42153],
+          [-81.3765, 28.4216],
+          [-81.3928, 28.4214],
+          [-81.4025, 28.4214],
+          [-81.4077, 28.4204],
+          [-81.4124, 28.4178],
+          [-81.4176, 28.4169],
+          [-81.4214, 28.4164],
+          [-81.43, 28.42],
+          [-81.43512, 28.42128],
+          [-81.43691, 28.42116],
+          [-81.44226, 28.42111],
+          [-81.44534, 28.4212],
+          [-81.44988, 28.42107],
+          [-81.4596, 28.4211]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Option 3C: Convention Center to South International Drive (I-4)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-81.4596, 28.4211],
+          [-81.467, 28.4209],
+          [-81.4699, 28.4213],
+          [-81.4753, 28.4108],
+          [-81.4874, 28.397],
+          [-81.4992, 28.3838]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Option 3D (optional): South International Drive to Disney Springs" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-81.4992, 28.3838],
+          [-81.5184, 28.3712]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Orlando International Airport (existing Brightline station)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-81.30776, 28.41172] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "SunRail interchange station at Taft-Vineland Rd (proposed, Option 3BT)" },
+      "geometry": { "type": "Point", "coordinates": [-81.37275, 28.42153] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Orange County Convention Center (proposed)" },
+      "geometry": { "type": "Point", "coordinates": [-81.4596, 28.4211] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "South International Drive (proposed)" },
+      "geometry": { "type": "Point", "coordinates": [-81.4992, 28.3838] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Disney Springs (optional)" },
+      "geometry": { "type": "Point", "coordinates": [-81.5184, 28.3712] }
+    }
+  ]
+}

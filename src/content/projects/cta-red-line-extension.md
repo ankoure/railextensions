@@ -1,48 +1,82 @@
 ---
-projectName: "CTA Red Line Extension"
+projectName: "Red Line Extension"
 agency: "Chicago Transit Authority"
 agencyAbbr: "CTA"
 state: "IL"
-location: "95th/Dan Ryan to 130th St, Chicago, IL"
-alignmentSummary: "5.6-mile southern extension of the Red Line from 95th St to a new terminal at 130th St, with four new elevated stations."
-status: "funded"
+location: "95th/Dan Ryan to 130th St, Far South Side, Chicago, IL"
+alignmentSummary: "5.5-mile extension of the CTA Red Line south from 95th/Dan Ryan to 130th Street, mostly elevated alongside the Union Pacific Railroad, with four new stations and a new rail yard. Construction formally began in April 2026 and service is targeted for 2030, while a lawsuit over a 2025 federal funding freeze is in settlement talks."
+status: "under-construction"
 mode: "heavy-rail"
-lengthMiles: 5.6
-estimatedCost: "$3.6B"
-proposedOpening: "2029"
-coordinates: { lat: 41.7225, lng: -87.6241 }
+lengthMiles: 5.5
+estimatedCost: "$5.75B (2025 budget)"
+proposedOpening: "2030"
+coordinates: { lat: 41.6930, lng: -87.6325 }
 hasGeometry: true
-lastUpdated: 2026-02-10
+lastUpdated: 2026-11-13
 references:
-  - title: "Red Line Extension project page"
+  - title: "Red Line Extension (RLE) Project"
     url: "https://www.transitchicago.com/rle/"
-    publication: "CTA"
-  - title: "CTA breaks ground on Red Line Extension"
-    url: "https://www.chicagotribune.com/2024/10/18/cta-red-line-extension-groundbreaking/"
+    publication: "Chicago Transit Authority"
+  - title: "As CTA prepares to break ground on the 5.5-mile Red Line Extension Project in early 2026, agency provides Far South Side residents with construction overview"
+    url: "https://www.transitchicago.com/as-cta-prepares-to-break-ground-on-the-55-mile-red-line-extension-project-in-early-2026-agency-provides-far-south-side-residents-with-construction-overview/"
+    publication: "Chicago Transit Authority"
+    date: 2025-04-21
+  - title: "CTA President Carter, FTA Deputy Administrator Vanterpool, Mayor Johnson and other officials announce finalization of $1.9 billion funding for transformational Red Line Extension Project"
+    url: "https://www.transitchicago.com/cta-president-carter-fta-deputy-administrator-vanterpool-mayor-johnson-and-other-officials-announce-finalization-of-19-billion-funding-for-transformational-red-line-extension-project-/"
+    publication: "Chicago Transit Authority"
+    date: 2025-01-10
+  - title: "Promised more than 50 years ago, the Red Line Extension (RLE) Project moves closer to groundbreaking with award of construction contract to Walsh-VINCI Transit Community Partners"
+    url: "https://www.transitchicago.com/promised-more-than-50-years-ago-the-red-line-extension-rle-project-moves-closer-to-groundbreaking-with-award-of-construction-contract-to-walsh-vinci-transit-community-partners/"
+    publication: "Chicago Transit Authority"
+    date: 2024-08-14
+  - title: "CTA in settlement talks with feds in Red Line Extension lawsuit"
+    url: "https://www.chicagotribune.com/2026/10/05/cta-red-line-extension-lawsuit/"
     publication: "Chicago Tribune"
-    date: 2024-10-18
-  - title: "$2.5B in federal CIG funding finalized for Red Line Extension"
-    url: "https://www.chicagotribune.com/2024/05/01/red-line-extension-federal-funding/"
-    publication: "Chicago Tribune"
-    date: 2024-05-01
+    date: 2026-10-05
+  - title: "CTA Red Line Extension breaks ground after judge made Trump administration release $2 billion in funding"
+    url: "https://www.cbsnews.com/chicago/news/cta-red-line-extension-groundbreaking/"
+    publication: "CBS News Chicago"
+    date: 2026-04-24
+  - title: "Final EIS/ROD issued for CTA's Red Line Extension project"
+    url: "https://www.masstransitmag.com/rail/infrastructure/article/21277299/final-eisrod-issued-for-ctas-red-line-extension-project"
+    publication: "Mass Transit"
+    date: 2022-08-15
+  - title: "CTA Unveils Preferred Route For Red Line Extension Project"
+    url: "https://www.cbsnews.com/chicago/news/cta-red-line-extension-route/"
+    publication: "CBS News Chicago"
+    date: 2018-01-26
 ---
 
 ## Alignment
 
-The Red Line Extension (RLE) runs 5.6 miles south from the current southern terminus at 95th Street/Dan Ryan elevated station to a new at-grade terminal at 130th Street, near the Riverdale and Altgeld Gardens neighborhoods. Four new elevated stations are planned at 103rd Street, 111th Street, Michigan Avenue, and 130th Street.
+The Red Line Extension (RLE) carries the Red Line 5.5 miles south from its current terminal at **95th/Dan Ryan**, in the Dan Ryan Expressway median, to 130th Street on the Far South Side. CTA described the route as 5.6 miles until 2024. Under the preferred route unveiled in 2018, the line curves south from 95th Street along I-57, then runs beside the Union Pacific Railroad tracks. It stays west of the UP tracks to about 109th Street, crosses to their east side, continues to 119th Street, crosses the Metra Electric tracks there, and goes on to 130th Street.
 
-The extension would serve communities on Chicago's Far South Side that currently have no direct rail access to the CTA system. The alignment runs along the Union Pacific Railroad right-of-way for most of its length before transitioning to street-running through the 130th Street area.
+Four new accessible stations are planned: **103rd Street** (near Eggleston Avenue), **111th Street**, **Michigan Avenue** (near 116th Street), and a terminal at **130th Street**. Each station will have bus, bike, pedestrian and park-and-ride facilities. The track is elevated from 95th/Dan Ryan to 119th Street, built from precast concrete segments placed with a construction gantry, and runs at ground level south of there. A new rail yard and related facilities near 120th Street are part of the project. CTA estimates riders from 130th Street will save up to 30 minutes on trips to the Loop.
+
+The budget is $5.75 billion. Funding includes a federal Capital Investment Grant of about $1.97 billion and a Transit TIF district, created by the City Council in 2022, which can provide up to $959 million. CTA said it would cover the 2024 cost increase with CTA-issued bonds. Walsh-VINCI Transit Community Partners holds the design-build contract and is building the line in six geographic zones.
 
 ## Updates
 
-### 2026-02 — Site preparation and utility relocation underway
-The CTA reports that utility relocation along the 103rd–111th Street corridor is approximately 40% complete. Early civil work has begun on the 130th Street terminal site.
+### 2026-10 — CTA and federal government in settlement talks
+In a joint motion dated September 9, the CTA and the U.S. Department of Transportation told the court they had a "reasonable possibility" of settling the funding lawsuit. Judge Thomas M. Durkin paused rulings on summary judgment motions to allow the talks, and the parties were due to file a joint update by November 9. The department said it was in discussions to ensure federal money does not fund "unconstitutional, discriminatory practices."
 
-### 2024-10 — Groundbreaking ceremony
-Mayor Brandon Johnson joined CTA and federal officials for a groundbreaking ceremony at the future 103rd Street station site. Construction contracts were awarded to a joint venture for the main elevated guideway structure.
+### 2026-04 — Ceremonial groundbreaking
+The CTA, Mayor Brandon Johnson and other officials held the project's formal groundbreaking on April 24, 2026, at 115th Street and Michigan Avenue. The CTA calls it the largest capital project in its history. Officials said construction should be complete by 2030.
 
-### 2024-05 — Full funding grant agreement executed
-The FTA signed the Full Funding Grant Agreement (FFGA) with the CTA, committing $2.5 billion in federal Capital Investment Grant funds — the largest federal transit grant ever awarded to a Chicago project. This locked in the project schedule and financing plan.
+### 2026-03 — Court orders frozen federal funds released
+The Trump administration froze the RLE's federal funding in 2025, citing an investigation into racial preferences in contracting. The freeze also hit the Red and Purple Modernization project. The CTA sued in March 2026, and Judge Durkin granted a temporary restraining order that released the funds while the case continues.
 
-### 2023-03 — Record of Decision issued
-The FTA issued a Record of Decision for the Red Line Extension, completing the federal environmental review process under NEPA and clearing the project to advance into final design and procurement.
+### 2025-04 — Construction plan outlined
+Ahead of construction, the CTA said work would be split into six zones so crews could build track structure, stations and systems at the same time. Bridge segments for the elevated section from 95th to 119th Street would be cast off-site and assembled with a gantry. At the time, the CTA expected groundbreaking in early 2026, with construction running from 2026 to 2030.
+
+### 2025-01 — Full Funding Grant Agreement signed
+The FTA and CTA signed the Full Funding Grant Agreement on January 10, 2025, days before the end of the Biden administration. The CTA described it as $1.9 billion, and a congressional statement in the release gave $1.973 billion. Officials called the grant the final piece of funding for the $5.7 billion project and targeted service in 2030.
+
+### 2024-08 — $2.9 billion design-build contract; budget rises to $5.3 billion
+The Chicago Transit Board awarded a $2.9 billion contract to Walsh-VINCI Transit Community Partners, a team including Walsh Construction, VINCI Construction, EXP and Systra, after a two-year procurement. The project budget rose to $5.3 billion including financing, up from $3.6 billion before finance charges ($4.1 billion with them). Advance work such as demolition and utility relocation was to start in fall 2024.
+
+### 2022-08 — Environmental review completed
+The FTA and CTA issued a combined Final Environmental Impact Statement and Record of Decision, completing federal environmental review. The CTA then planned to enter the New Starts Engineering phase in fall 2022. It aimed for a funding agreement by the end of 2023 and service in mid-2029; both dates later slipped.
+
+### 2018-01 — Preferred route unveiled
+The CTA unveiled its preferred route, which builds new tracks alongside the existing Union Pacific and Metra tracks. At the time, officials said construction would take about four years once funding was secured and could start in 2022 at the earliest.

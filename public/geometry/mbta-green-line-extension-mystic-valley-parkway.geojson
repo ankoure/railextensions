@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Green Line Extension to Mystic Valley Parkway (Route 16)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-71.11731, 42.40829],
+          [-71.11866, 42.40977],
+          [-71.12753, 42.4169]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Medford/Tufts", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-71.11731, 42.40829] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Mystic Valley Parkway (Route 16)" },
+      "geometry": { "type": "Point", "coordinates": [-71.12753, 42.4169] }
+    }
+  ]
+}
