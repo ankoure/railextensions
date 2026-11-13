@@ -1,0 +1,88 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "East San Fernando Valley Light Rail (Van Nuys Blvd)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-118.4487, 34.1805],
+          [-118.44865, 34.19756],
+          [-118.44884, 34.20184],
+          [-118.44885, 34.20685],
+          [-118.44871, 34.20712],
+          [-118.4487, 34.21401],
+          [-118.44885, 34.21408],
+          [-118.44872, 34.21788],
+          [-118.44885, 34.21829],
+          [-118.44886, 34.22152],
+          [-118.44871, 34.22417],
+          [-118.44886, 34.22423],
+          [-118.44919, 34.22575],
+          [-118.45016, 34.22713],
+          [-118.45024, 34.22798],
+          [-118.45016, 34.24537],
+          [-118.44972, 34.24595],
+          [-118.44819, 34.24709],
+          [-118.4221, 34.26611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Van Nuys (G Line)" },
+      "geometry": { "type": "Point", "coordinates": [-118.4487, 34.1805] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Victory" },
+      "geometry": { "type": "Point", "coordinates": [-118.4487, 34.18667] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Vanowen" },
+      "geometry": { "type": "Point", "coordinates": [-118.44871, 34.19394] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Sherman Way" },
+      "geometry": { "type": "Point", "coordinates": [-118.44881, 34.2012] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Van Nuys Metrolink" },
+      "geometry": { "type": "Point", "coordinates": [-118.44853, 34.21057] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Roscoe" },
+      "geometry": { "type": "Point", "coordinates": [-118.44886, 34.22152] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Nordhoff" },
+      "geometry": { "type": "Point", "coordinates": [-118.45021, 34.23541] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Woodman" },
+      "geometry": { "type": "Point", "coordinates": [-118.44819, 34.24709] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Arleta" },
+      "geometry": { "type": "Point", "coordinates": [-118.43871, 34.25401] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Laurel Canyon" },
+      "geometry": { "type": "Point", "coordinates": [-118.43214, 34.25879] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "San Fernando (Pacoima)" },
+      "geometry": { "type": "Point", "coordinates": [-118.4221, 34.26611] }
+    }
+  ]
+}

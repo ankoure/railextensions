@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Red-Blue Connector (Blue Line extension under Cambridge St)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-71.06202, 42.36138],
+          [-71.0703, 42.36104]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bowdoin (existing; would close)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-71.06202, 42.36138] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Charles/MGH (new Blue Line platform)" },
+      "geometry": { "type": "Point", "coordinates": [-71.0703, 42.36104] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Charles/MGH (Red Line)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-71.07134, 42.36119] }
+    }
+  ]
+}

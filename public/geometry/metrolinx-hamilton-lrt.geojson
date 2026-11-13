@@ -1,0 +1,142 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Hamilton LRT (McMaster\u2013Eastgate)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-79.92102, 43.25772],
+          [-79.91377, 43.25789],
+          [-79.91106, 43.25802],
+          [-79.90618, 43.25857],
+          [-79.90047, 43.25937],
+          [-79.89707, 43.26017],
+          [-79.89332, 43.26057],
+          [-79.89276, 43.26059],
+          [-79.89218, 43.26053],
+          [-79.88905, 43.25981],
+          [-79.88889, 43.25988],
+          [-79.88799, 43.26202],
+          [-79.88773, 43.26211],
+          [-79.87889, 43.2594],
+          [-79.86926, 43.25673],
+          [-79.86562, 43.25551],
+          [-79.85922, 43.2535],
+          [-79.85421, 43.25272],
+          [-79.84391, 43.25146],
+          [-79.84261, 43.25138],
+          [-79.8357, 43.25122],
+          [-79.83484, 43.25109],
+          [-79.83328, 43.25046],
+          [-79.82927, 43.24842],
+          [-79.82776, 43.24731],
+          [-79.82495, 43.24431],
+          [-79.82444, 43.24383],
+          [-79.82389, 43.24353],
+          [-79.81477, 43.2414],
+          [-79.80967, 43.24038],
+          [-79.80515, 43.23924],
+          [-79.80218, 43.23834],
+          [-79.80152, 43.23806],
+          [-79.80013, 43.23635],
+          [-79.79983, 43.2361],
+          [-79.79937, 43.23593],
+          [-79.79279, 43.23443],
+          [-79.78538, 43.23251],
+          [-79.78083, 43.23166],
+          [-79.77368, 43.22994],
+          [-79.76758, 43.22875],
+          [-79.76652, 43.22872],
+          [-79.76549, 43.22851]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "McMaster" },
+      "geometry": { "type": "Point", "coordinates": [-79.92102, 43.25772] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Longwood" },
+      "geometry": { "type": "Point", "coordinates": [-79.90235, 43.25911] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Dundurn" },
+      "geometry": { "type": "Point", "coordinates": [-79.88888, 43.2599] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Queen" },
+      "geometry": { "type": "Point", "coordinates": [-79.87874, 43.25936] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "James" },
+      "geometry": { "type": "Point", "coordinates": [-79.86908, 43.25667] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Mary" },
+      "geometry": { "type": "Point", "coordinates": [-79.86422, 43.25507] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Wellington" },
+      "geometry": { "type": "Point", "coordinates": [-79.85927, 43.25352] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Wentworth" },
+      "geometry": { "type": "Point", "coordinates": [-79.84897, 43.25208] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Sherman" },
+      "geometry": { "type": "Point", "coordinates": [-79.83841, 43.25128] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Scott Park" },
+      "geometry": { "type": "Point", "coordinates": [-79.83259, 43.25011] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Gage Park" },
+      "geometry": { "type": "Point", "coordinates": [-79.82867, 43.24798] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ottawa" },
+      "geometry": { "type": "Point", "coordinates": [-79.81973, 43.24256] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Kenilworth" },
+      "geometry": { "type": "Point", "coordinates": [-79.80994, 43.24043] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Queenston" },
+      "geometry": { "type": "Point", "coordinates": [-79.8011, 43.23754] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Parkdale" },
+      "geometry": { "type": "Point", "coordinates": [-79.79288, 43.23445] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Nash" },
+      "geometry": { "type": "Point", "coordinates": [-79.77383, 43.22998] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Eastgate" },
+      "geometry": { "type": "Point", "coordinates": [-79.76549, 43.22851] }
+    }
+  ]
+}

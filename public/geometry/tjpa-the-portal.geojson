@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "The Portal (Downtown Rail Extension)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.39865, 37.76938],
+          [-122.40168, 37.77183],
+          [-122.3911, 37.78018],
+          [-122.3907, 37.78075],
+          [-122.39826, 37.78677],
+          [-122.39845, 37.78705],
+          [-122.39658, 37.78898],
+          [-122.3946, 37.7906]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "4th & King (Caltrain)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.39477, 37.77641] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Fourth & Townsend" },
+      "geometry": { "type": "Point", "coordinates": [-122.39496, 37.77715] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Salesforce Transit Center" },
+      "geometry": { "type": "Point", "coordinates": [-122.39686, 37.78912] }
+    }
+  ]
+}

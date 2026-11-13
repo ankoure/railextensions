@@ -1,0 +1,143 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Green Line Phase 1 \u2013 SE Segment (Shepard to Event Centre/Grand Central)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-113.96519, 50.93599],
+          [-113.97164, 50.93596],
+          [-113.97303, 50.93632],
+          [-113.97449, 50.93712],
+          [-113.97497, 50.93782],
+          [-113.97545, 50.93937],
+          [-113.97605, 50.9405],
+          [-113.97894, 50.94464],
+          [-113.98031, 50.94621],
+          [-113.98075, 50.94743],
+          [-113.98101, 50.94924],
+          [-113.9817, 50.94997],
+          [-113.98278, 50.95027],
+          [-113.98576, 50.95047],
+          [-113.99314, 50.95041],
+          [-113.99391, 50.95054],
+          [-113.99494, 50.95088],
+          [-113.99803, 50.95295],
+          [-113.99861, 50.95402],
+          [-113.99861, 50.95665],
+          [-113.99874, 50.95693],
+          [-114.00066, 50.95763],
+          [-114.00132, 50.95816],
+          [-114.00144, 50.95845],
+          [-114.00128, 50.96687],
+          [-114.00041, 50.96876],
+          [-113.99457, 50.9756],
+          [-113.99398, 50.97678],
+          [-113.99396, 50.97985],
+          [-113.9944, 50.98286],
+          [-113.99501, 50.98447],
+          [-113.99627, 50.98608],
+          [-114.00085, 50.99081],
+          [-114.00195, 50.99148],
+          [-114.01207, 51.0019],
+          [-114.01329, 51.00229],
+          [-114.0166, 51.00229],
+          [-114.01804, 51.00248],
+          [-114.01923, 51.00278],
+          [-114.02325, 51.00461],
+          [-114.02824, 51.00719],
+          [-114.0286, 51.00758],
+          [-114.0288, 51.00844],
+          [-114.02801, 51.01024],
+          [-114.02796, 51.01099],
+          [-114.03307, 51.02115],
+          [-114.0347, 51.02775],
+          [-114.03514, 51.02855],
+          [-114.03809, 51.03113],
+          [-114.03846, 51.03178],
+          [-114.03841, 51.03283],
+          [-114.0363, 51.03479],
+          [-114.03574, 51.03574],
+          [-114.03558, 51.03695],
+          [-114.03594, 51.03797],
+          [-114.04001, 51.04185],
+          [-114.04162, 51.04263],
+          [-114.0432, 51.04302],
+          [-114.04536, 51.04314],
+          [-114.04595, 51.04304],
+          [-114.04778, 51.04216],
+          [-114.04862, 51.04196]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Green Line Phase 1 \u2013 Downtown Segment (10 Avenue S, at grade)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-114.04862, 51.04196],
+          [-114.053, 51.043],
+          [-114.0672, 51.04343]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Shepard" },
+      "geometry": { "type": "Point", "coordinates": [-113.96519, 50.93599] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Douglas Glen" },
+      "geometry": { "type": "Point", "coordinates": [-113.99668, 50.95204] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Quarry Park" },
+      "geometry": { "type": "Point", "coordinates": [-114.00135, 50.96371] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "South Hill" },
+      "geometry": { "type": "Point", "coordinates": [-113.99394, 50.97765] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ogden" },
+      "geometry": { "type": "Point", "coordinates": [-113.99915, 50.98906] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lynnwood/Millican" },
+      "geometry": { "type": "Point", "coordinates": [-114.01015, 50.99987] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Highfield" },
+      "geometry": { "type": "Point", "coordinates": [-114.03252, 51.02004] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "26 Avenue SE" },
+      "geometry": { "type": "Point", "coordinates": [-114.03635, 51.02962] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ramsay/Inglewood" },
+      "geometry": { "type": "Point", "coordinates": [-114.03684, 51.03883] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Event Centre/Grand Central (approximate)" },
+      "geometry": { "type": "Point", "coordinates": [-114.04862, 51.04196] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "10 Avenue & 2 Street SW (approximate)" },
+      "geometry": { "type": "Point", "coordinates": [-114.0672, 51.04343] }
+    }
+  ]
+}

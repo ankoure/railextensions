@@ -1,0 +1,182 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Green Line Extension: Target Field to SouthWest Station" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-93.27745, 44.98304],
+          [-93.28027, 44.98404],
+          [-93.28214, 44.98406],
+          [-93.28269, 44.98393],
+          [-93.28303, 44.98365],
+          [-93.28313, 44.98333],
+          [-93.28304, 44.9807],
+          [-93.28255, 44.97995],
+          [-93.28287, 44.97942],
+          [-93.28466, 44.97866],
+          [-93.29378, 44.97555],
+          [-93.29484, 44.97498],
+          [-93.3018, 44.9704],
+          [-93.30328, 44.96984],
+          [-93.30803, 44.96863],
+          [-93.31029, 44.96754],
+          [-93.31134, 44.96683],
+          [-93.31266, 44.96561],
+          [-93.31465, 44.96283],
+          [-93.31481, 44.96217],
+          [-93.3147, 44.95939],
+          [-93.31519, 44.95754],
+          [-93.3157, 44.95662],
+          [-93.32, 44.95262],
+          [-93.32143, 44.95025],
+          [-93.3221, 44.94945],
+          [-93.32572, 44.94682],
+          [-93.32654, 44.94636],
+          [-93.32748, 44.946],
+          [-93.32885, 44.94568],
+          [-93.33277, 44.94547],
+          [-93.33439, 44.94526],
+          [-93.33818, 44.94426],
+          [-93.36041, 44.93671],
+          [-93.36551, 44.93475],
+          [-93.36917, 44.93373],
+          [-93.38702, 44.92756],
+          [-93.3949, 44.92502],
+          [-93.4002, 44.92317],
+          [-93.42202, 44.9174],
+          [-93.42216, 44.91714],
+          [-93.42236, 44.91372],
+          [-93.422, 44.90689],
+          [-93.42137, 44.90626],
+          [-93.41894, 44.90525],
+          [-93.41606, 44.90346],
+          [-93.41512, 44.90278],
+          [-93.41455, 44.90214],
+          [-93.41416, 44.90141],
+          [-93.41396, 44.90058],
+          [-93.41399, 44.89537],
+          [-93.41416, 44.89353],
+          [-93.41405, 44.89286],
+          [-93.41338, 44.892],
+          [-93.40929, 44.88944],
+          [-93.40874, 44.88877],
+          [-93.40873, 44.88838],
+          [-93.40902, 44.88776],
+          [-93.41145, 44.88443],
+          [-93.41175, 44.88365],
+          [-93.41084, 44.87952],
+          [-93.40984, 44.87621],
+          [-93.40981, 44.87428],
+          [-93.41039, 44.87359],
+          [-93.41306, 44.87195],
+          [-93.41483, 44.87143],
+          [-93.41537, 44.8711],
+          [-93.4167, 44.86791],
+          [-93.41745, 44.86707],
+          [-93.42025, 44.86562],
+          [-93.42307, 44.86447],
+          [-93.42426, 44.86368],
+          [-93.42547, 44.86235],
+          [-93.4263, 44.86045],
+          [-93.42706, 44.85984],
+          [-93.42916, 44.85928],
+          [-93.43451, 44.85875],
+          [-93.4378, 44.85869],
+          [-93.43891, 44.85892],
+          [-93.44017, 44.85958],
+          [-93.44178, 44.86066],
+          [-93.44247, 44.86063],
+          [-93.44372, 44.86015]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Target Field", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-93.27717, 44.98321] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Royalston Avenue/Farmers Market" },
+      "geometry": { "type": "Point", "coordinates": [-93.28305, 44.98124] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bassett Creek Valley" },
+      "geometry": { "type": "Point", "coordinates": [-93.29573, 44.9743] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bryn Mawr" },
+      "geometry": { "type": "Point", "coordinates": [-93.30913, 44.96806] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "West 21st Street" },
+      "geometry": { "type": "Point", "coordinates": [-93.31466, 44.96068] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "West Lake Street" },
+      "geometry": { "type": "Point", "coordinates": [-93.32342, 44.94851] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Beltline Boulevard" },
+      "geometry": { "type": "Point", "coordinates": [-93.33945, 44.94379] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Wooddale Avenue" },
+      "geometry": { "type": "Point", "coordinates": [-93.35476, 44.93859] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Louisiana Avenue" },
+      "geometry": { "type": "Point", "coordinates": [-93.36502, 44.93486] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Blake Road" },
+      "geometry": { "type": "Point", "coordinates": [-93.38672, 44.92756] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Downtown Hopkins" },
+      "geometry": { "type": "Point", "coordinates": [-93.40919, 44.92077] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Shady Oak" },
+      "geometry": { "type": "Point", "coordinates": [-93.42097, 44.9178] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Opus" },
+      "geometry": { "type": "Point", "coordinates": [-93.41396, 44.89777] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "City West" },
+      "geometry": { "type": "Point", "coordinates": [-93.41099, 44.89054] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Golden Triangle" },
+      "geometry": { "type": "Point", "coordinates": [-93.41009, 44.8772] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Eden Prairie Town Center" },
+      "geometry": { "type": "Point", "coordinates": [-93.43129, 44.85909] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "SouthWest Station" },
+      "geometry": { "type": "Point", "coordinates": [-93.44372, 44.86015] }
+    }
+  ]
+}

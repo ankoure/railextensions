@@ -1,0 +1,76 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Line 4: Ginecología–Pablo González" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-100.29694, 25.66928],
+          [-100.299, 25.66818],
+          [-100.30078, 25.66737],
+          [-100.30221, 25.66661],
+          [-100.30517, 25.6646],
+          [-100.30628, 25.66393],
+          [-100.30813, 25.66327],
+          [-100.31042, 25.66322],
+          [-100.31127, 25.66337],
+          [-100.31337, 25.66401],
+          [-100.3218, 25.66555],
+          [-100.33068, 25.66706],
+          [-100.33443, 25.66747],
+          [-100.33571, 25.66774],
+          [-100.33794, 25.66833],
+          [-100.34111, 25.66905],
+          [-100.34803, 25.671],
+          [-100.35084, 25.67188],
+          [-100.35211, 25.67251],
+          [-100.3532, 25.67333],
+          [-100.35773, 25.67438],
+          [-100.36015, 25.67509],
+          [-100.36147, 25.67523],
+          [-100.36369, 25.67502],
+          [-100.36491, 25.67502],
+          [-100.36598, 25.67477],
+          [-100.36659, 25.67451]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ginecología (shared with Line 6)" },
+      "geometry": { "type": "Point", "coordinates": [-100.29632, 25.66948] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Palacio" },
+      "geometry": { "type": "Point", "coordinates": [-100.30911, 25.6632] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Juárez" },
+      "geometry": { "type": "Point", "coordinates": [-100.31542, 25.66436] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pino Suárez (name unconfirmed)" },
+      "geometry": { "type": "Point", "coordinates": [-100.3222, 25.6656] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "ISSSTE" },
+      "geometry": { "type": "Point", "coordinates": [-100.33914, 25.66856] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Obispado" },
+      "geometry": { "type": "Point", "coordinates": [-100.34711, 25.6707] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pablo González (terminal, location approximate)" },
+      "geometry": { "type": "Point", "coordinates": [-100.36659, 25.67451] }
+    }
+  ]
+}

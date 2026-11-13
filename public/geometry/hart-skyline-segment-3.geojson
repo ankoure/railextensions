@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Segment 3 (City Center): Middle Street to Civic Center" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-157.88887, 21.33276],
+          [-157.87931, 21.32682],
+          [-157.87553, 21.32346],
+          [-157.87258, 21.32192],
+          [-157.86742, 21.31887],
+          [-157.86694, 21.31843],
+          [-157.86526, 21.31593],
+          [-157.86511, 21.31205],
+          [-157.86425, 21.30982],
+          [-157.86423, 21.30793],
+          [-157.8615, 21.30379],
+          [-157.85935, 21.30138]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Kahauiki (Middle Street\u2013Kalihi Transit Center)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-157.88887, 21.33276] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Mokauea (Kalihi)" },
+      "geometry": { "type": "Point", "coordinates": [-157.8797, 21.327] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Honolulu Community College" },
+      "geometry": { "type": "Point", "coordinates": [-157.87234, 21.32198] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Iwilei" },
+      "geometry": { "type": "Point", "coordinates": [-157.868, 21.3192] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Chinatown" },
+      "geometry": { "type": "Point", "coordinates": [-157.8651, 21.3121] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Downtown" },
+      "geometry": { "type": "Point", "coordinates": [-157.8643, 21.3085] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ka\u02bb\u0101kaukukui (Civic Center)" },
+      "geometry": { "type": "Point", "coordinates": [-157.85936, 21.30136] }
+    }
+  ]
+}

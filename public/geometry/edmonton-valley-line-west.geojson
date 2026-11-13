@@ -1,0 +1,138 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Valley Line West (102 Street to Lewis Farms)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-113.49523, 53.54317],
+          [-113.49764, 53.54308],
+          [-113.50458, 53.54313],
+          [-113.50481, 53.54338],
+          [-113.50483, 53.54601],
+          [-113.50536, 53.54625],
+          [-113.53021, 53.54623],
+          [-113.54389, 53.5479],
+          [-113.5456, 53.54792],
+          [-113.54688, 53.54766],
+          [-113.55502, 53.54505],
+          [-113.56281, 53.54332],
+          [-113.56739, 53.54303],
+          [-113.57079, 53.5421],
+          [-113.57163, 53.54198],
+          [-113.57511, 53.54218],
+          [-113.5763, 53.54212],
+          [-113.57986, 53.54138],
+          [-113.59026, 53.54135],
+          [-113.59026, 53.52668],
+          [-113.59045, 53.52668],
+          [-113.59054, 53.52493],
+          [-113.59109, 53.52425],
+          [-113.59622, 53.52119],
+          [-113.59668, 53.52051],
+          [-113.5968, 53.5194],
+          [-113.61079, 53.51945],
+          [-113.6183, 53.51968],
+          [-113.62117, 53.51995],
+          [-113.62371, 53.52036],
+          [-113.62376, 53.52025],
+          [-113.63042, 53.52121],
+          [-113.63512, 53.52156],
+          [-113.63892, 53.52158],
+          [-113.6525, 53.52127],
+          [-113.65411, 53.5215],
+          [-113.65838, 53.5226],
+          [-113.66135, 53.52311],
+          [-113.66434, 53.52333]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "102 Street", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-113.49523, 53.54317] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Alex Decoteau" },
+      "geometry": { "type": "Point", "coordinates": [-113.5011, 53.5431] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "NorQuest" },
+      "geometry": { "type": "Point", "coordinates": [-113.50482, 53.5447] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "MacEwan Arts/112 Street" },
+      "geometry": { "type": "Point", "coordinates": [-113.51335, 53.54624] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "W\u00eehkw\u00eant\u00f4win (The Yards)/116 Street" },
+      "geometry": { "type": "Point", "coordinates": [-113.52034, 53.54624] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Brewery/120 Street" },
+      "geometry": { "type": "Point", "coordinates": [-113.52734, 53.54623] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "124 Street" },
+      "geometry": { "type": "Point", "coordinates": [-113.53433, 53.54673] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Glenora" },
+      "geometry": { "type": "Point", "coordinates": [-113.55007, 53.54664] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Grovenor/142 Street" },
+      "geometry": { "type": "Point", "coordinates": [-113.56582, 53.54313] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Stony Plain Road/149 Street" },
+      "geometry": { "type": "Point", "coordinates": [-113.57806, 53.54175] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Jasper Place" },
+      "geometry": { "type": "Point", "coordinates": [-113.59026, 53.5385] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Glenwood/Sherwood" },
+      "geometry": { "type": "Point", "coordinates": [-113.59026, 53.532] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Meadowlark" },
+      "geometry": { "type": "Point", "coordinates": [-113.59054, 53.525] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Misericordia" },
+      "geometry": { "type": "Point", "coordinates": [-113.6119, 53.51948] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "West Edmonton Mall" },
+      "geometry": { "type": "Point", "coordinates": [-113.6227, 53.5202] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Aldergrove/Belmead" },
+      "geometry": { "type": "Point", "coordinates": [-113.642, 53.52151] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lewis Farms" },
+      "geometry": { "type": "Point", "coordinates": [-113.66434, 53.52333] }
+    }
+  ]
+}

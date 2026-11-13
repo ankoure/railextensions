@@ -1,0 +1,91 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Surrey Langley SkyTrain (Dave Barrett Extension)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.84468, 49.18274],
+          [-122.80597, 49.16782],
+          [-122.80389, 49.16729],
+          [-122.80164, 49.16644],
+          [-122.79758, 49.16469],
+          [-122.7792, 49.15769],
+          [-122.76711, 49.15283],
+          [-122.7653, 49.15228],
+          [-122.76121, 49.15065],
+          [-122.75993, 49.15003],
+          [-122.75834, 49.14893],
+          [-122.75248, 49.14587],
+          [-122.74098, 49.14081],
+          [-122.7385, 49.13955],
+          [-122.72732, 49.13483],
+          [-122.72406, 49.13272],
+          [-122.72326, 49.13233],
+          [-122.72204, 49.13193],
+          [-122.71909, 49.13133],
+          [-122.71501, 49.13002],
+          [-122.71135, 49.12848],
+          [-122.70413, 49.12494],
+          [-122.6949, 49.12089],
+          [-122.68977, 49.11833],
+          [-122.68782, 49.11757],
+          [-122.68092, 49.11447],
+          [-122.67942, 49.11408],
+          [-122.67706, 49.11306],
+          [-122.67521, 49.11253],
+          [-122.67131, 49.11083],
+          [-122.66837, 49.10995],
+          [-122.65861, 49.10604]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "King George", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.84468, 49.18274] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Green Timbers" },
+      "geometry": { "type": "Point", "coordinates": [-122.83395, 49.17862] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "152 Street" },
+      "geometry": { "type": "Point", "coordinates": [-122.80088, 49.16607] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Fleetwood" },
+      "geometry": { "type": "Point", "coordinates": [-122.77791, 49.15719] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bakerview\u2013166 Street" },
+      "geometry": { "type": "Point", "coordinates": [-122.76254, 49.15117] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Hillcrest\u2013184 Street" },
+      "geometry": { "type": "Point", "coordinates": [-122.71315, 49.12917] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Clayton" },
+      "geometry": { "type": "Point", "coordinates": [-122.69622, 49.12149] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Willowbrook" },
+      "geometry": { "type": "Point", "coordinates": [-122.67888, 49.11384] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Langley City Centre" },
+      "geometry": { "type": "Point", "coordinates": [-122.65861, 49.10604] }
+    }
+  ]
+}

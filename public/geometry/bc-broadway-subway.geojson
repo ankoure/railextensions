@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Broadway Subway (Millennium Line extension)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-123.07897, 49.26582],
+          [-123.08314, 49.26651],
+          [-123.08636, 49.26725],
+          [-123.09275, 49.26823],
+          [-123.09368, 49.26805],
+          [-123.09657, 49.26609],
+          [-123.09682, 49.26563],
+          [-123.09694, 49.26403],
+          [-123.09763, 49.26327],
+          [-123.09876, 49.26286],
+          [-123.139, 49.2633],
+          [-123.15263, 49.2639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "VCC\u2013Clark", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-123.07897, 49.26582] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Great Northern Way\u2013Emily Carr" },
+      "geometry": { "type": "Point", "coordinates": [-123.09489, 49.2673] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Mount Pleasant" },
+      "geometry": { "type": "Point", "coordinates": [-123.10143, 49.26264] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Broadway\u2013City Hall (Canada Line transfer)" },
+      "geometry": { "type": "Point", "coordinates": [-123.11451, 49.26284] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Oak\u2013VGH" },
+      "geometry": { "type": "Point", "coordinates": [-123.12465, 49.26311] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "South Granville" },
+      "geometry": { "type": "Point", "coordinates": [-123.139, 49.2633] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Arbutus" },
+      "geometry": { "type": "Point", "coordinates": [-123.15263, 49.26411] }
+    }
+  ]
+}

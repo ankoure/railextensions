@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Scarborough Subway Extension (Kennedy\u2013Sheppard/McCowan)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-79.2637, 43.7325],
+          [-79.2613, 43.73336],
+          [-79.25987, 43.73406],
+          [-79.25879, 43.73442],
+          [-79.25705, 43.73485],
+          [-79.24965, 43.73645],
+          [-79.24778, 43.73677],
+          [-79.2471, 43.73694],
+          [-79.24647, 43.73729],
+          [-79.24603, 43.73772],
+          [-79.24559, 43.73874],
+          [-79.24555, 43.7412],
+          [-79.24539, 43.74224],
+          [-79.24492, 43.74394],
+          [-79.24471, 43.74544],
+          [-79.24451, 43.74978],
+          [-79.2445, 43.75277],
+          [-79.24544, 43.75519],
+          [-79.24568, 43.7569],
+          [-79.25132, 43.77139],
+          [-79.25182, 43.77328],
+          [-79.2535, 43.7776],
+          [-79.25487, 43.78207],
+          [-79.25633, 43.78489],
+          [-79.25721, 43.78704],
+          [-79.25796, 43.78863],
+          [-79.25896, 43.79126]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Kennedy", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-79.2637, 43.7325] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lawrence-McCowan" },
+      "geometry": { "type": "Point", "coordinates": [-79.24545, 43.75525] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Scarborough Centre" },
+      "geometry": { "type": "Point", "coordinates": [-79.25267, 43.77546] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Sheppard-McCowan" },
+      "geometry": { "type": "Point", "coordinates": [-79.25831, 43.78954] }
+    }
+  ]
+}

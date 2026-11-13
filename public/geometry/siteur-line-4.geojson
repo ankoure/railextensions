@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Line 4: Tlajomulco Centro–Las Juntas" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-103.43709, 20.4684],
+          [-103.4343, 20.46927],
+          [-103.43352, 20.46931],
+          [-103.43313, 20.46922],
+          [-103.4316, 20.46869],
+          [-103.43079, 20.46827],
+          [-103.4281, 20.46616],
+          [-103.42723, 20.46558],
+          [-103.42664, 20.46536],
+          [-103.42597, 20.46523],
+          [-103.42515, 20.46525],
+          [-103.42446, 20.46541],
+          [-103.40891, 20.47175],
+          [-103.40835, 20.47211],
+          [-103.4078, 20.47272],
+          [-103.40758, 20.47315],
+          [-103.40739, 20.47394],
+          [-103.40682, 20.47911],
+          [-103.40686, 20.48004],
+          [-103.40719, 20.48227],
+          [-103.40702, 20.48321],
+          [-103.40671, 20.4839],
+          [-103.40635, 20.4844],
+          [-103.40091, 20.49037],
+          [-103.40034, 20.49108],
+          [-103.3997, 20.49208],
+          [-103.39915, 20.49319],
+          [-103.3928, 20.5095],
+          [-103.3924, 20.5115],
+          [-103.391, 20.52042],
+          [-103.39088, 20.52104],
+          [-103.3905, 20.52191],
+          [-103.39015, 20.52244],
+          [-103.38941, 20.52323],
+          [-103.38605, 20.52588],
+          [-103.38539, 20.52655],
+          [-103.38513, 20.52692],
+          [-103.36792, 20.55561],
+          [-103.35732, 20.57305],
+          [-103.34505, 20.59042],
+          [-103.34462, 20.59126],
+          [-103.34425, 20.59236],
+          [-103.34285, 20.59945],
+          [-103.34063, 20.60831]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Tlajomulco Centro" },
+      "geometry": { "type": "Point", "coordinates": [-103.43654, 20.46854] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "CUTLAJO" },
+      "geometry": { "type": "Point", "coordinates": [-103.415, 20.46924] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lomas del Sur" },
+      "geometry": { "type": "Point", "coordinates": [-103.40417, 20.48676] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "El Cuervo" },
+      "geometry": { "type": "Point", "coordinates": [-103.39374, 20.50687] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Concepción del Valle" },
+      "geometry": { "type": "Point", "coordinates": [-103.38396, 20.52881] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Real del Valle" },
+      "geometry": { "type": "Point", "coordinates": [-103.36552, 20.5595] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Jalisco 200 Años" },
+      "geometry": { "type": "Point", "coordinates": [-103.35594, 20.57501] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Acueducto" },
+      "geometry": { "type": "Point", "coordinates": [-103.34652, 20.58829] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Las Juntas" },
+      "geometry": { "type": "Point", "coordinates": [-103.34083, 20.60751] }
+    }
+  ]
+}

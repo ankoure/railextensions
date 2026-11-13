@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Blue Line extension (Saint-Michel\u2013Anjou)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-73.59986, 45.55976],
+          [-73.59586, 45.56411],
+          [-73.59501, 45.56457],
+          [-73.59253, 45.56535],
+          [-73.59171, 45.56596],
+          [-73.58883, 45.56925],
+          [-73.58726, 45.57139],
+          [-73.58501, 45.57397],
+          [-73.58363, 45.57579],
+          [-73.58286, 45.57722],
+          [-73.58199, 45.58098],
+          [-73.58002, 45.58608],
+          [-73.57845, 45.58845],
+          [-73.5737, 45.59367],
+          [-73.57205, 45.59484],
+          [-73.56433, 45.59698],
+          [-73.56285, 45.59765],
+          [-73.56205, 45.59822],
+          [-73.56121, 45.59918],
+          [-73.56081, 45.59987],
+          [-73.56049, 45.60091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Saint-Michel (existing terminus)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-73.59986, 45.55976] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Verti\u00e8res (Pie-IX)" },
+      "geometry": { "type": "Point", "coordinates": [-73.58999, 45.56683] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Mary-Two-Axe-Earley (Viau)" },
+      "geometry": { "type": "Point", "coordinates": [-73.58429, 45.57432] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "C\u00e9sira-Parisotto (Lacordaire)" },
+      "geometry": { "type": "Point", "coordinates": [-73.58154, 45.58339] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Madeleine-Parent (Langelier)" },
+      "geometry": { "type": "Point", "coordinates": [-73.57453, 45.59259] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Anjou" },
+      "geometry": { "type": "Point", "coordinates": [-73.55982, 45.60102] }
+    }
+  ]
+}
