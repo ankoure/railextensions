@@ -1,0 +1,244 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Purple Line: Bethesda to New Carrollton" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-77.09512, 38.9815],
+          [-77.09472, 38.98183],
+          [-77.09344, 38.98248],
+          [-77.08817, 38.9839],
+          [-77.08668, 38.98473],
+          [-77.08586, 38.98565],
+          [-77.08333, 38.98977],
+          [-77.08248, 38.99093],
+          [-77.08093, 38.99242],
+          [-77.07872, 38.99381],
+          [-77.07583, 38.99494],
+          [-77.06756, 38.99784],
+          [-77.06583, 38.99794],
+          [-77.05902, 38.99746],
+          [-77.05756, 38.99754],
+          [-77.05654, 38.99777],
+          [-77.05566, 38.99821],
+          [-77.05475, 38.99902],
+          [-77.05225, 39.00249],
+          [-77.05132, 39.00322],
+          [-77.05038, 39.00356],
+          [-77.04921, 39.00362],
+          [-77.04781, 39.00331],
+          [-77.03978, 38.99945],
+          [-77.03664, 38.99762],
+          [-77.03226, 38.99433],
+          [-77.03045, 38.99426],
+          [-77.03009, 38.99414],
+          [-77.02903, 38.99339],
+          [-77.0265, 38.99342],
+          [-77.02488, 38.99407],
+          [-77.02469, 38.99428],
+          [-77.02444, 38.99541],
+          [-77.02259, 38.99663],
+          [-77.02109, 38.9978],
+          [-77.02037, 38.9986],
+          [-77.01992, 38.99885],
+          [-77.01791, 38.99927],
+          [-77.0155, 38.99939],
+          [-77.01427, 38.99978],
+          [-77.01213, 39.00008],
+          [-77.01064, 38.99966],
+          [-77.00997, 38.99966],
+          [-77.00922, 38.99998],
+          [-77.00857, 39.00085],
+          [-77.00824, 39.00106],
+          [-77.00571, 39.00154],
+          [-77.005, 39.00155],
+          [-77.0044, 39.00137],
+          [-77.0032, 39.00073],
+          [-77.00194, 39.00042],
+          [-77.00167, 39.00004],
+          [-77.00126, 38.99873],
+          [-77.00095, 38.9985],
+          [-76.99891, 38.99873],
+          [-76.99567, 38.99959],
+          [-76.99536, 38.99955],
+          [-76.9936, 38.9971],
+          [-76.99266, 38.99437],
+          [-76.99211, 38.99342],
+          [-76.98843, 38.98963],
+          [-76.98609, 38.98788],
+          [-76.98009, 38.98434],
+          [-76.9786, 38.98369],
+          [-76.97779, 38.98357],
+          [-76.9769, 38.98362],
+          [-76.95877, 38.98537],
+          [-76.95676, 38.98566],
+          [-76.95563, 38.98559],
+          [-76.95281, 38.98502],
+          [-76.95196, 38.98634],
+          [-76.95072, 38.98704],
+          [-76.94941, 38.98727],
+          [-76.94666, 38.98728],
+          [-76.94389, 38.98759],
+          [-76.94033, 38.98759],
+          [-76.93835, 38.98677],
+          [-76.93734, 38.98575],
+          [-76.93583, 38.98533],
+          [-76.93414, 38.98521],
+          [-76.93346, 38.98505],
+          [-76.93192, 38.98389],
+          [-76.92849, 38.9827],
+          [-76.92797, 38.98229],
+          [-76.92772, 38.98185],
+          [-76.92698, 38.97978],
+          [-76.92693, 38.97913],
+          [-76.92725, 38.97838],
+          [-76.92852, 38.97742],
+          [-76.92816, 38.97781],
+          [-76.92852, 38.97742],
+          [-76.92986, 38.9737],
+          [-76.92968, 38.97318],
+          [-76.92881, 38.97227],
+          [-76.92771, 38.9703],
+          [-76.92685, 38.96953],
+          [-76.92532, 38.96859],
+          [-76.91905, 38.96724],
+          [-76.91858, 38.96695],
+          [-76.91889, 38.9657],
+          [-76.919, 38.96374],
+          [-76.91954, 38.9624],
+          [-76.91995, 38.96083],
+          [-76.91992, 38.96042],
+          [-76.91966, 38.96013],
+          [-76.91753, 38.95983],
+          [-76.91562, 38.95982],
+          [-76.91321, 38.96008],
+          [-76.9112, 38.96072],
+          [-76.91041, 38.96085],
+          [-76.90366, 38.96101],
+          [-76.90267, 38.96142],
+          [-76.90118, 38.96262],
+          [-76.90064, 38.9628],
+          [-76.90008, 38.96279],
+          [-76.89536, 38.96039],
+          [-76.8931, 38.95881],
+          [-76.8834, 38.94926],
+          [-76.88204, 38.94731],
+          [-76.88022, 38.94731],
+          [-76.8779, 38.94628],
+          [-76.8769, 38.94621],
+          [-76.87601, 38.94654],
+          [-76.87387, 38.94815],
+          [-76.87296, 38.9486]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bethesda" },
+      "geometry": { "type": "Point", "coordinates": [-77.09524, 38.98133] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Connecticut Avenue" },
+      "geometry": { "type": "Point", "coordinates": [-77.07621, 38.99482] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lyttonsville" },
+      "geometry": { "type": "Point", "coordinates": [-77.0535, 39.0005] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Woodside/16th Street" },
+      "geometry": { "type": "Point", "coordinates": [-77.0405, 38.9998] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Silver Spring Transit Center" },
+      "geometry": { "type": "Point", "coordinates": [-77.0293, 38.99345] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Silver Spring Library" },
+      "geometry": { "type": "Point", "coordinates": [-77.0246, 38.9945] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Dale Drive" },
+      "geometry": { "type": "Point", "coordinates": [-77.0182, 38.9992] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Manchester Place" },
+      "geometry": { "type": "Point", "coordinates": [-77.0095, 38.9999] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Long Branch" },
+      "geometry": { "type": "Point", "coordinates": [-77.0012, 38.9987] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Piney Branch Road" },
+      "geometry": { "type": "Point", "coordinates": [-76.993, 38.9952] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Takoma Langley Transit Center" },
+      "geometry": { "type": "Point", "coordinates": [-76.98843, 38.98963] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Riggs Road" },
+      "geometry": { "type": "Point", "coordinates": [-76.9778, 38.9836] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Adelphi Road\u2013UMGC\u2013UMD" },
+      "geometry": { "type": "Point", "coordinates": [-76.95317, 38.98505] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Campus Drive\u2013UMD" },
+      "geometry": { "type": "Point", "coordinates": [-76.94812, 38.98725] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Baltimore Avenue\u2013UMD" },
+      "geometry": { "type": "Point", "coordinates": [-76.93493, 38.98523] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "College Park\u2013UMD" },
+      "geometry": { "type": "Point", "coordinates": [-76.92758, 38.97817] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Riverdale Park North\u2013UMD" },
+      "geometry": { "type": "Point", "coordinates": [-76.92421, 38.96831] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Riverdale Park\u2013Kenilworth" },
+      "geometry": { "type": "Point", "coordinates": [-76.91874, 38.95997] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Beacon Heights\u2013East Pines" },
+      "geometry": { "type": "Point", "coordinates": [-76.90206, 38.96193] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Annapolis Road/Glenridge" },
+      "geometry": { "type": "Point", "coordinates": [-76.88517, 38.951] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "New Carrollton" },
+      "geometry": { "type": "Point", "coordinates": [-76.87296, 38.9486] }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Southeast Gateway Line (Slauson/A Line\u2013Pioneer)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-118.24332, 33.99213],
+          [-118.24327, 33.98802],
+          [-118.24296, 33.98748],
+          [-118.24225, 33.98715],
+          [-118.21113, 33.984],
+          [-118.20446, 33.98316],
+          [-118.20417, 33.98277],
+          [-118.20405, 33.98232],
+          [-118.20396, 33.97671],
+          [-118.20367, 33.97465],
+          [-118.20278, 33.9719],
+          [-118.20196, 33.97043],
+          [-118.20091, 33.9689],
+          [-118.19914, 33.96698],
+          [-118.19796, 33.96599],
+          [-118.1803, 33.9519],
+          [-118.17848, 33.95003],
+          [-118.1775, 33.94846],
+          [-118.16612, 33.922],
+          [-118.16507, 33.91927],
+          [-118.16457, 33.91647],
+          [-118.1645, 33.90605],
+          [-118.16429, 33.90546],
+          [-118.16054, 33.90381],
+          [-118.11552, 33.88075],
+          [-118.10779, 33.87611],
+          [-118.07957, 33.85868]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Slauson/A Line" },
+      "geometry": { "type": "Point", "coordinates": [-118.24329, 33.98928] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pacific/Randolph" },
+      "geometry": { "type": "Point", "coordinates": [-118.22522, 33.98543] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Florence/Salt Lake" },
+      "geometry": { "type": "Point", "coordinates": [-118.20276, 33.97187] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Firestone" },
+      "geometry": { "type": "Point", "coordinates": [-118.1796, 33.95118] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Gardendale" },
+      "geometry": { "type": "Point", "coordinates": [-118.16593, 33.92151] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "I-105/C Line" },
+      "geometry": { "type": "Point", "coordinates": [-118.16455, 33.914] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Paramount/Rosecrans" },
+      "geometry": { "type": "Point", "coordinates": [-118.1608, 33.9039] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bellflower" },
+      "geometry": { "type": "Point", "coordinates": [-118.12528, 33.88575] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pioneer" },
+      "geometry": { "type": "Point", "coordinates": [-118.07957, 33.85868] }
+    }
+  ]
+}

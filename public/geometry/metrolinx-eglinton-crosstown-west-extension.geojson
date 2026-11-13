@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Eglinton Crosstown West Extension (Mount Dennis\u2013Renforth)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-79.4875, 43.6877],
+          [-79.49427, 43.68607],
+          [-79.49922, 43.68471],
+          [-79.5014, 43.68423],
+          [-79.50198, 43.68422],
+          [-79.50321, 43.68435],
+          [-79.50548, 43.68482],
+          [-79.50704, 43.68486],
+          [-79.51083, 43.68432],
+          [-79.51295, 43.6838],
+          [-79.51418, 43.68362],
+          [-79.52064, 43.6834],
+          [-79.5229, 43.68312],
+          [-79.52725, 43.68219],
+          [-79.53113, 43.68149],
+          [-79.53939, 43.6798],
+          [-79.56266, 43.67456],
+          [-79.56436, 43.67434],
+          [-79.56777, 43.67401],
+          [-79.57086, 43.67237],
+          [-79.57356, 43.67159],
+          [-79.57756, 43.67076],
+          [-79.58077, 43.67049],
+          [-79.5818, 43.6703],
+          [-79.58548, 43.66935],
+          [-79.58619, 43.66907],
+          [-79.58678, 43.66877],
+          [-79.58725, 43.6684],
+          [-79.58775, 43.66781],
+          [-79.58868, 43.66628],
+          [-79.59152, 43.66353]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Mount Dennis", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-79.4875, 43.6877] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Jane" },
+      "geometry": { "type": "Point", "coordinates": [-79.49895, 43.68478] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Scarlett" },
+      "geometry": { "type": "Point", "coordinates": [-79.5112, 43.68423] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Royal York" },
+      "geometry": { "type": "Point", "coordinates": [-79.52672, 43.6823] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Islington" },
+      "geometry": { "type": "Point", "coordinates": [-79.53924, 43.67983] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Kipling" },
+      "geometry": { "type": "Point", "coordinates": [-79.55106, 43.67717] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Martin Grove" },
+      "geometry": { "type": "Point", "coordinates": [-79.56332, 43.67447] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Renforth" },
+      "geometry": { "type": "Point", "coordinates": [-79.59083, 43.66418] }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Hudson Tunnel Project (Secaucus to Penn Station)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-74.068, 40.7647],
+          [-74.05287, 40.77163],
+          [-74.05145, 40.77213],
+          [-74.04938, 40.77245],
+          [-74.0466, 40.7723],
+          [-74.0446, 40.7713],
+          [-74.0428, 40.7701],
+          [-74.0316, 40.7584],
+          [-74.0064, 40.7552],
+          [-74.0006, 40.7528],
+          [-73.9944, 40.751],
+          [-73.9935, 40.7506]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Secaucus Junction", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-74.07575, 40.76133] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "New York Penn Station", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-73.99281, 40.75024] }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "type": "alignment",
+    "name": "Northeast Corridor commuter rail (MiamiCentral–Aventura)"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.19606,
+      25.78018
+     ],
+     [
+      -80.19631,
+      25.78718
+     ],
+     [
+      -80.1962,
+      25.78844
+     ],
+     [
+      -80.19152,
+      25.80844
+     ],
+     [
+      -80.18771,
+      25.8255
+     ],
+     [
+      -80.18892,
+      25.84939
+     ],
+     [
+      -80.18893,
+      25.8506
+     ],
+     [
+      -80.18877,
+      25.85149
+     ],
+     [
+      -80.16935,
+      25.89363
+     ],
+     [
+      -80.16806,
+      25.89543
+     ],
+     [
+      -80.16074,
+      25.90287
+     ],
+     [
+      -80.16002,
+      25.90386
+     ],
+     [
+      -80.15934,
+      25.90519
+     ],
+     [
+      -80.15891,
+      25.90681
+     ],
+     [
+      -80.15805,
+      25.9136
+     ],
+     [
+      -80.15774,
+      25.91515
+     ],
+     [
+      -80.14723,
+      25.9487
+     ],
+     [
+      -80.14706,
+      25.95061
+     ],
+     [
+      -80.14736,
+      25.95836
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "type": "station",
+    "name": "MiamiCentral (existing Brightline station)",
+    "existing": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.19614,
+     25.77994
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "type": "station",
+    "name": "Wynwood/Edgewater (NE 27th St)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.19288,
+     25.80263
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "type": "station",
+    "name": "Design District (NE 39th St)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.19053,
+     25.81286
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "type": "station",
+    "name": "Little Haiti (NE 61st St)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.18807,
+     25.83257
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "type": "station",
+    "name": "North Miami (NE 125th St)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.17067,
+     25.89077
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "type": "station",
+    "name": "FIU/Biscayne (NE 151st St)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.15777,
+     25.91501
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "type": "station",
+    "name": "Aventura (existing Brightline station)",
+    "existing": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.14782,
+     25.95854
+    ]
+   }
+  }
+ ]
+}

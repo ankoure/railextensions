@@ -1,0 +1,136 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "38th Street to Oltorf (via Guadalupe, 3rd St, Trinity St and South Congress)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-97.7378, 30.304],
+          [-97.73815, 30.30275],
+          [-97.74281, 30.29542],
+          [-97.74119, 30.29205],
+          [-97.74208, 30.28222],
+          [-97.7418, 30.28122],
+          [-97.74732, 30.26624],
+          [-97.74037, 30.26429],
+          [-97.742, 30.2605],
+          [-97.744, 30.258],
+          [-97.7455, 30.2565],
+          [-97.7476, 30.2553],
+          [-97.75236, 30.24241],
+          [-97.7529, 30.23972],
+          [-97.75316, 30.23926],
+          [-97.75376, 30.23866]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "East Riverside branch (Waterfront to Yellow Jacket)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-97.7455, 30.2565],
+          [-97.74468, 30.25485],
+          [-97.74363, 30.25345],
+          [-97.74119, 30.25182],
+          [-97.74012, 30.25046],
+          [-97.73788, 30.24959],
+          [-97.73717, 30.2491],
+          [-97.73617, 30.24809],
+          [-97.73433, 30.24768],
+          [-97.73363, 30.24741],
+          [-97.73088, 30.24525],
+          [-97.72638, 30.23922],
+          [-97.72482, 30.23552],
+          [-97.72357, 30.23373],
+          [-97.72322, 30.23343],
+          [-97.72257, 30.23308],
+          [-97.72018, 30.23222],
+          [-97.71766, 30.23164],
+          [-97.71444, 30.23033],
+          [-97.70906, 30.22749],
+          [-97.70488, 30.22551],
+          [-97.697, 30.22212]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "38th Street" },
+      "geometry": { "type": "Point", "coordinates": [-97.738, 30.3034] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "29th Street" },
+      "geometry": { "type": "Point", "coordinates": [-97.7413, 30.2925] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "UT" },
+      "geometry": { "type": "Point", "coordinates": [-97.7418, 30.2853] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "15th Street" },
+      "geometry": { "type": "Point", "coordinates": [-97.7431, 30.2777] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Wooldridge Square" },
+      "geometry": { "type": "Point", "coordinates": [-97.7455, 30.2716] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Congress" },
+      "geometry": { "type": "Point", "coordinates": [-97.7445, 30.2654] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Cesar Chavez" },
+      "geometry": { "type": "Point", "coordinates": [-97.7406, 30.2638] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Waterfront" },
+      "geometry": { "type": "Point", "coordinates": [-97.7455, 30.2565] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "South Congress (SoCo)" },
+      "geometry": { "type": "Point", "coordinates": [-97.7489, 30.2515] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Oltorf" },
+      "geometry": { "type": "Point", "coordinates": [-97.754, 30.238] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lakeshore" },
+      "geometry": { "type": "Point", "coordinates": [-97.729, 30.2427] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pleasant Valley" },
+      "geometry": { "type": "Point", "coordinates": [-97.724, 30.2343] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Grove" },
+      "geometry": { "type": "Point", "coordinates": [-97.7105, 30.2285] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Montopolis" },
+      "geometry": { "type": "Point", "coordinates": [-97.704, 30.2252] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Yellow Jacket" },
+      "geometry": { "type": "Point", "coordinates": [-97.6975, 30.222] }
+    }
+  ]
+}

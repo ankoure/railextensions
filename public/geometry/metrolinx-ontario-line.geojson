@@ -1,0 +1,146 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Ontario Line (Exhibition\u2013Don Valley)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-79.41898, 43.63628],
+          [-79.40806, 43.63911],
+          [-79.40627, 43.63978],
+          [-79.40478, 43.6407],
+          [-79.40359, 43.64185],
+          [-79.40014, 43.64722],
+          [-79.39927, 43.64785],
+          [-79.39818, 43.64828],
+          [-79.3754, 43.65315],
+          [-79.37216, 43.65406],
+          [-79.36833, 43.65482],
+          [-79.36734, 43.65477],
+          [-79.36663, 43.65462],
+          [-79.36525, 43.6539],
+          [-79.36461, 43.65313],
+          [-79.36346, 43.65057],
+          [-79.3627, 43.64987],
+          [-79.36201, 43.64961],
+          [-79.36128, 43.64951],
+          [-79.35807, 43.64955],
+          [-79.35652, 43.65008],
+          [-79.35106, 43.65298],
+          [-79.34851, 43.65466],
+          [-79.3474, 43.65574],
+          [-79.3466, 43.65677],
+          [-79.34614, 43.65779],
+          [-79.34565, 43.66157],
+          [-79.34498, 43.66368],
+          [-79.34371, 43.66613],
+          [-79.34161, 43.66894],
+          [-79.34132, 43.66964],
+          [-79.34128, 43.67036],
+          [-79.34304, 43.67498],
+          [-79.34364, 43.67802],
+          [-79.34435, 43.68012],
+          [-79.34491, 43.68132],
+          [-79.34621, 43.68285],
+          [-79.34728, 43.68562],
+          [-79.34895, 43.68917],
+          [-79.35021, 43.69303],
+          [-79.3529, 43.69999],
+          [-79.35308, 43.70123],
+          [-79.35297, 43.70177],
+          [-79.35253, 43.70261],
+          [-79.34941, 43.70563],
+          [-79.34907, 43.70611],
+          [-79.349, 43.70682],
+          [-79.34966, 43.70874],
+          [-79.34944, 43.70943],
+          [-79.34887, 43.71002],
+          [-79.34755, 43.71049],
+          [-79.33793, 43.71229],
+          [-79.33727, 43.71253],
+          [-79.33666, 43.71309],
+          [-79.33653, 43.71398],
+          [-79.33827, 43.71812],
+          [-79.33842, 43.72056]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Exhibition" },
+      "geometry": { "type": "Point", "coordinates": [-79.41898, 43.63628] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "King West" },
+      "geometry": { "type": "Point", "coordinates": [-79.4023, 43.64386] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Chinatown" },
+      "geometry": { "type": "Point", "coordinates": [-79.39635, 43.64867] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Osgoode" },
+      "geometry": { "type": "Point", "coordinates": [-79.38653, 43.65077] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Queen" },
+      "geometry": { "type": "Point", "coordinates": [-79.37923, 43.65233] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Moss Park" },
+      "geometry": { "type": "Point", "coordinates": [-79.36945, 43.6546] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Distillery District" },
+      "geometry": { "type": "Point", "coordinates": [-79.36384, 43.65143] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "East Harbour" },
+      "geometry": { "type": "Point", "coordinates": [-79.34798, 43.65518] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Leslieville" },
+      "geometry": { "type": "Point", "coordinates": [-79.3457, 43.66121] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Gerrard" },
+      "geometry": { "type": "Point", "coordinates": [-79.34224, 43.6681] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pape" },
+      "geometry": { "type": "Point", "coordinates": [-79.34434, 43.68009] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Cosburn" },
+      "geometry": { "type": "Point", "coordinates": [-79.34904, 43.68944] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Thorncliffe Park" },
+      "geometry": { "type": "Point", "coordinates": [-79.34993, 43.70513] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Flemingdon Park" },
+      "geometry": { "type": "Point", "coordinates": [-79.33713, 43.71266] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Don Valley" },
+      "geometry": { "type": "Point", "coordinates": [-79.33842, 43.72056] }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Tren Felipe Ángeles: Lechería–AIFA branch" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-99.18598, 19.59798],
+          [-99.18656, 19.60502],
+          [-99.18657, 19.60631],
+          [-99.18589, 19.60962],
+          [-99.18534, 19.61099],
+          [-99.18502, 19.61227],
+          [-99.18451, 19.61303],
+          [-99.11083, 19.6772],
+          [-99.10519, 19.68195],
+          [-99.08025, 19.70379],
+          [-99.05647, 19.72436],
+          [-99.05421, 19.72645],
+          [-99.05273, 19.72754],
+          [-99.05196, 19.72785],
+          [-99.05108, 19.72805],
+          [-99.03686, 19.72875],
+          [-99.03415, 19.72903],
+          [-99.03353, 19.72939],
+          [-99.0278, 19.73401],
+          [-99.02708, 19.73434],
+          [-99.02531, 19.7358]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lechería (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-99.18673, 19.59828] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Cueyamil" },
+      "geometry": { "type": "Point", "coordinates": [-99.16695, 19.62827] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "La Loma" },
+      "geometry": { "type": "Point", "coordinates": [-99.14955, 19.64342] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Teyahualco" },
+      "geometry": { "type": "Point", "coordinates": [-99.13594, 19.65526] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Prados Sur" },
+      "geometry": { "type": "Point", "coordinates": [-99.10704, 19.68042] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Cajiga" },
+      "geometry": { "type": "Point", "coordinates": [-99.08635, 19.6984] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Xaltocan" },
+      "geometry": { "type": "Point", "coordinates": [-99.05746, 19.7236] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "AIFA–Clara Krause" },
+      "geometry": { "type": "Point", "coordinates": [-99.02577, 19.73558] }
+    }
+  ]
+}

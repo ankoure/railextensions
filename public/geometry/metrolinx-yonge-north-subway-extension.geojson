@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Yonge North Subway Extension (Finch\u2013High Tech)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-79.41552, 43.78075],
+          [-79.41654, 43.78431],
+          [-79.4225, 43.80792],
+          [-79.4262, 43.8241],
+          [-79.42582, 43.82489],
+          [-79.42505, 43.82536],
+          [-79.42205, 43.82613],
+          [-79.41676, 43.82729],
+          [-79.4155, 43.82781],
+          [-79.41483, 43.82857],
+          [-79.41485, 43.82941],
+          [-79.41526, 43.83007],
+          [-79.41605, 43.83091],
+          [-79.42149, 43.83614],
+          [-79.42618, 43.84151]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Finch", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-79.41552, 43.78075] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Steeles" },
+      "geometry": { "type": "Point", "coordinates": [-79.41991, 43.79765] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Clark" },
+      "geometry": { "type": "Point", "coordinates": [-79.42235, 43.80733] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Royal Orchard" },
+      "geometry": { "type": "Point", "coordinates": [-79.42588, 43.82268] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bridge" },
+      "geometry": { "type": "Point", "coordinates": [-79.42263, 43.83744] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "High Tech" },
+      "geometry": { "type": "Point", "coordinates": [-79.42618, 43.84151] }
+    }
+  ]
+}

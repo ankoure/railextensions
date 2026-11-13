@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Line 6: Ginecología–Centro Apodaca" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-100.29632, 25.66948],
+          [-100.29205, 25.67117],
+          [-100.29171, 25.67136],
+          [-100.29141, 25.67181],
+          [-100.29109, 25.67327],
+          [-100.29075, 25.67378],
+          [-100.28834, 25.67528],
+          [-100.28686, 25.6767],
+          [-100.28657, 25.67733],
+          [-100.28616, 25.68066],
+          [-100.28604, 25.68114],
+          [-100.28559, 25.68179],
+          [-100.28487, 25.68225],
+          [-100.28416, 25.68241],
+          [-100.27883, 25.68284],
+          [-100.27778, 25.68309],
+          [-100.24923, 25.69124],
+          [-100.23815, 25.69431],
+          [-100.23525, 25.69521],
+          [-100.23087, 25.69646],
+          [-100.22965, 25.6969],
+          [-100.22899, 25.69731],
+          [-100.22853, 25.6977],
+          [-100.22755, 25.69882],
+          [-100.22723, 25.69936],
+          [-100.22524, 25.70312],
+          [-100.22348, 25.70684],
+          [-100.21613, 25.72056],
+          [-100.21539, 25.72235],
+          [-100.21197, 25.72897],
+          [-100.21169, 25.72948],
+          [-100.211, 25.73042],
+          [-100.20685, 25.73839],
+          [-100.20589, 25.73966],
+          [-100.19831, 25.75384],
+          [-100.1971, 25.75565],
+          [-100.19562, 25.75837],
+          [-100.19452, 25.76059],
+          [-100.19183, 25.76554],
+          [-100.19041, 25.76836],
+          [-100.18998, 25.76939],
+          [-100.18798, 25.7731],
+          [-100.18768, 25.77452]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Line 6 airport extension: Centro Apodaca–Aeropuerto" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-100.18768, 25.77452],
+          [-100.18732, 25.77542],
+          [-100.1869, 25.77596],
+          [-100.18602, 25.77661],
+          [-100.18507, 25.77717],
+          [-100.1839, 25.77752],
+          [-100.18278, 25.7777],
+          [-100.18173, 25.77799],
+          [-100.17862, 25.77898],
+          [-100.17755, 25.77944],
+          [-100.17504, 25.78028],
+          [-100.17208, 25.78118],
+          [-100.17026, 25.78154],
+          [-100.15671, 25.78567],
+          [-100.15365, 25.78691],
+          [-100.1505, 25.78778],
+          [-100.14893, 25.78805],
+          [-100.14307, 25.78983],
+          [-100.14263, 25.78989],
+          [-100.14168, 25.7898],
+          [-100.14042, 25.78938],
+          [-100.12988, 25.7836],
+          [-100.12799, 25.78282],
+          [-100.12244, 25.77964],
+          [-100.12041, 25.77823],
+          [-100.11908, 25.77749],
+          [-100.11883, 25.77725],
+          [-100.11805, 25.77592],
+          [-100.1157, 25.7746]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ginecología (shared with Line 4)" },
+      "geometry": { "type": "Point", "coordinates": [-100.29632, 25.66948] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Parque Fundidora" },
+      "geometry": { "type": "Point", "coordinates": [-100.29013, 25.67422] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Y Griega" },
+      "geometry": { "type": "Point", "coordinates": [-100.27992, 25.68278] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Y Griega (Line 1, existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-100.27945, 25.68328] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Churubusco" },
+      "geometry": { "type": "Point", "coordinates": [-100.2672, 25.68613] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lindavista" },
+      "geometry": { "type": "Point", "coordinates": [-100.25863, 25.68858] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Libertad" },
+      "geometry": { "type": "Point", "coordinates": [-100.24959, 25.69116] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bonifacio Salinas" },
+      "geometry": { "type": "Point", "coordinates": [-100.24061, 25.69366] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "San Rafael" },
+      "geometry": { "type": "Point", "coordinates": [-100.23127, 25.69636] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "La Victoria" },
+      "geometry": { "type": "Point", "coordinates": [-100.2248, 25.70407] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "La Talaverna" },
+      "geometry": { "type": "Point", "coordinates": [-100.22175, 25.7101] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "La Fe" },
+      "geometry": { "type": "Point", "coordinates": [-100.21644, 25.72002] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Isidoro Sepúlveda" },
+      "geometry": { "type": "Point", "coordinates": [-100.20757, 25.73716] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "El Milagro" },
+      "geometry": { "type": "Point", "coordinates": [-100.20273, 25.74565] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Concordia" },
+      "geometry": { "type": "Point", "coordinates": [-100.19934, 25.75198] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Centro Apodaca" },
+      "geometry": { "type": "Point", "coordinates": [-100.18776, 25.77435] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Arco Vial" },
+      "geometry": { "type": "Point", "coordinates": [-100.17462, 25.78043] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Aeropuerto" },
+      "geometry": { "type": "Point", "coordinates": [-100.1157, 25.7746] }
+    }
+  ]
+}

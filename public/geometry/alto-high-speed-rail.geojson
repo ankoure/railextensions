@@ -1,0 +1,87 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Alto corridor, Toronto\u2013Peterborough\u2013Ottawa\u2013Montr\u00e9al (indicative)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-79.38014, 43.64471],
+          [-79.33768, 43.85637],
+          [-78.94251, 44.10542],
+          [-78.31995, 44.3048],
+          [-77.88729, 44.43322],
+          [-77.31196, 44.47649],
+          [-77.1253, 44.6495],
+          [-76.69011, 44.7707],
+          [-76.24873, 44.89924],
+          [-76.14657, 45.14034],
+          [-75.65173, 45.41647],
+          [-75.56058, 45.52149],
+          [-75.24605, 45.59819],
+          [-75.02014, 45.61884],
+          [-74.59936, 45.62397],
+          [-74.34014, 45.65605],
+          [-73.98385, 45.63232],
+          [-73.83624, 45.63429],
+          [-73.72118, 45.55711],
+          [-73.56786, 45.50093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Alto corridor, Laval\u2013Trois-Rivi\u00e8res\u2013Qu\u00e9bec City (indicative)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-73.72118, 45.55711],
+          [-73.63501, 45.69515],
+          [-73.45283, 45.73261],
+          [-73.17471, 46.08281],
+          [-72.9475, 46.25561],
+          [-72.54285, 46.34323],
+          [-72.25056, 46.49603],
+          [-71.73008, 46.67653],
+          [-71.21387, 46.81783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Toronto (Union Station area; site not final)" },
+      "geometry": { "type": "Point", "coordinates": [-79.38014, 43.64471] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Peterborough (site not final)" },
+      "geometry": { "type": "Point", "coordinates": [-78.31995, 44.3048] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ottawa (site not final)" },
+      "geometry": { "type": "Point", "coordinates": [-75.65173, 45.41647] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Laval (site not final)" },
+      "geometry": { "type": "Point", "coordinates": [-73.72118, 45.55711] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Montr\u00e9al (Central Station area; site not final)" },
+      "geometry": { "type": "Point", "coordinates": [-73.56786, 45.50093] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Trois-Rivi\u00e8res (site not final)" },
+      "geometry": { "type": "Point", "coordinates": [-72.54285, 46.34323] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Qu\u00e9bec City (site not final)" },
+      "geometry": { "type": "Point", "coordinates": [-71.21387, 46.81783] }
+    }
+  ]
+}
