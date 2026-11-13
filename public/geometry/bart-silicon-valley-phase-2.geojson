@@ -7,43 +7,54 @@
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [-121.8757, 37.3707],
-          [-121.8769, 37.3668],
-          [-121.8784, 37.3623],
-          [-121.8801, 37.3575],
-          [-121.8820, 37.3524],
-          [-121.8845, 37.3467],
-          [-121.8868, 37.3415],
-          [-121.8891, 37.3363],
-          [-121.8938, 37.3329],
-          [-121.9025, 37.3299],
-          [-121.9120, 37.3322],
-          [-121.9230, 37.3376],
-          [-121.9340, 37.3432],
-          [-121.9430, 37.3487],
-          [-121.9503, 37.3539]
+          [-121.87448, 37.36755],
+          [-121.87374, 37.36575],
+          [-121.8721, 37.36086],
+          [-121.87149, 37.3597],
+          [-121.87051, 37.35859],
+          [-121.86618, 37.35512],
+          [-121.86561, 37.35432],
+          [-121.86499, 37.35214],
+          [-121.86486, 37.34946],
+          [-121.86513, 37.34848],
+          [-121.86575, 37.34794],
+          [-121.89934, 37.3321],
+          [-121.90696, 37.33175],
+          [-121.90784, 37.33189],
+          [-121.90831, 37.33251],
+          [-121.90921, 37.33497],
+          [-121.91019, 37.33669],
+          [-121.9126, 37.3399],
+          [-121.91722, 37.34409],
+          [-121.93418, 37.35272],
+          [-121.9373, 37.35417]
         ]
       }
     },
     {
       "type": "Feature",
-      "properties": { "type": "station", "name": "Berryessa/North San Jose (existing)", "existing": true },
-      "geometry": { "type": "Point", "coordinates": [-121.8757, 37.3707] }
+      "properties": { "type": "station", "name": "Berryessa/North San Jos\u00e9", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-121.87468, 37.36844] }
     },
     {
       "type": "Feature",
-      "properties": { "type": "station", "name": "Downtown San Jose" },
-      "geometry": { "type": "Point", "coordinates": [-121.8891, 37.3363] }
+      "properties": { "type": "station", "name": "28th Street/Little Portugal" },
+      "geometry": { "type": "Point", "coordinates": [-121.86491, 37.35092] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Downtown San Jos\u00e9" },
+      "geometry": { "type": "Point", "coordinates": [-121.89109, 37.33593] }
     },
     {
       "type": "Feature",
       "properties": { "type": "station", "name": "Diridon" },
-      "geometry": { "type": "Point", "coordinates": [-121.9025, 37.3299] }
+      "geometry": { "type": "Point", "coordinates": [-121.90173, 37.33197] }
     },
     {
       "type": "Feature",
       "properties": { "type": "station", "name": "Santa Clara" },
-      "geometry": { "type": "Point", "coordinates": [-121.9503, 37.3539] }
+      "geometry": { "type": "Point", "coordinates": [-121.9373, 37.35417] }
     }
   ]
 }

@@ -1,0 +1,106 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "West Seattle Link Extension" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.32741, 47.58126],
+          [-122.32745, 47.5765],
+          [-122.3295, 47.5726],
+          [-122.3374, 47.5708],
+          [-122.352, 47.5705],
+          [-122.357, 47.5698],
+          [-122.3625, 47.5683],
+          [-122.368, 47.5665],
+          [-122.377, 47.5638],
+          [-122.3815, 47.5622],
+          [-122.3855, 47.561]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Ballard Link Extension (2023 preferred alternative; downtown/CID route and some stations still under review)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.32741, 47.58126],
+          [-122.32748, 47.58681],
+          [-122.327, 47.592],
+          [-122.3262, 47.5958],
+          [-122.3285, 47.5995],
+          [-122.33, 47.6025],
+          [-122.3325, 47.606],
+          [-122.3362, 47.6118],
+          [-122.3388, 47.6178],
+          [-122.3405, 47.6205],
+          [-122.3436, 47.6218],
+          [-122.349, 47.622],
+          [-122.3545, 47.6229],
+          [-122.364, 47.6233],
+          [-122.367, 47.6265],
+          [-122.3715, 47.6295],
+          [-122.3772, 47.6322],
+          [-122.3795, 47.638],
+          [-122.3815, 47.6491],
+          [-122.38, 47.656],
+          [-122.3772, 47.661],
+          [-122.3762, 47.6682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "SODO (existing; to be rebuilt)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.32741, 47.58126] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Delridge" },
+      "geometry": { "type": "Point", "coordinates": [-122.3625, 47.5683] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Alaska Junction" },
+      "geometry": { "type": "Point", "coordinates": [-122.3855, 47.561] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Westlake (existing; Ballard Link platforms added)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-122.3362, 47.6118] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Denny" },
+      "geometry": { "type": "Point", "coordinates": [-122.3388, 47.6178] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "South Lake Union" },
+      "geometry": { "type": "Point", "coordinates": [-122.3436, 47.6218] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Seattle Center" },
+      "geometry": { "type": "Point", "coordinates": [-122.3545, 47.6229] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Smith Cove" },
+      "geometry": { "type": "Point", "coordinates": [-122.3772, 47.6322] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Interbay" },
+      "geometry": { "type": "Point", "coordinates": [-122.3815, 47.6491] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Ballard (Market St)" },
+      "geometry": { "type": "Point", "coordinates": [-122.3762, 47.6682] }
+    }
+  ]
+}
