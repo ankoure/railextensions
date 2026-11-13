@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import StatusBadge from '../../components/StatusBadge.astro';
+import { COUNTRY_NAMES, regionCountry, regionName } from '../../lib/regions';
 
 export async function getStaticPaths() {
   const projects = await getCollection('projects');
@@ -32,35 +33,22 @@ function formatDate(d?: Date): string {
   return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 }
 
-const stateNames: Record<string, string> = {
-  AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California',
-  CO: 'Colorado', CT: 'Connecticut', DE: 'Delaware', FL: 'Florida', GA: 'Georgia',
-  HI: 'Hawaii', ID: 'Idaho', IL: 'Illinois', IN: 'Indiana', IA: 'Iowa',
-  KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine', MD: 'Maryland',
-  MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi', MO: 'Missouri',
-  MT: 'Montana', NE: 'Nebraska', NV: 'Nevada', NH: 'New Hampshire', NJ: 'New Jersey',
-  NM: 'New Mexico', NY: 'New York', NC: 'North Carolina', ND: 'North Dakota', OH: 'Ohio',
-  OK: 'Oklahoma', OR: 'Oregon', PA: 'Pennsylvania', RI: 'Rhode Island', SC: 'South Carolina',
-  SD: 'South Dakota', TN: 'Tennessee', TX: 'Texas', UT: 'Utah', VT: 'Vermont',
-  VA: 'Virginia', WA: 'Washington', WV: 'West Virginia', WI: 'Wisconsin', WY: 'Wyoming',
-  DC: 'Washington D.C.',
-};
-
-const stateName = stateNames[state!] ?? state;
+const stateName = regionName(state!);
+const countryName = COUNTRY_NAMES[regionCountry(state!)];
 ---
 
 <BaseLayout title={`Projects in ${stateName}`}>
   <nav class="text-sm text-gray-500 mb-6 flex gap-1.5 items-center">
     <a href="/" class="hover:text-blue-700">All Projects</a>
     <span>/</span>
-    <a href="/states" class="hover:text-blue-700">States</a>
+    <a href="/states" class="hover:text-blue-700">Regions</a>
     <span>/</span>
     <span class="text-gray-900">{state}</span>
   </nav>
 
   <div class="mb-6">
     <h1 class="text-2xl font-bold text-gray-900 mb-1">Projects in {stateName}</h1>
-    <p class="text-gray-500 text-sm">{projects.length} project{projects.length !== 1 ? 's' : ''}</p>
+    <p class="text-gray-500 text-sm">{countryName} · {projects.length} project{projects.length !== 1 ? 's' : ''}</p>
   </div>
 
   <div class="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">

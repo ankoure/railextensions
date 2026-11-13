@@ -6,7 +6,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'Tracking rail extension and expansion projects across the United States.' } = Astro.props;
+const { title, description = 'Tracking rail extension and expansion projects across North America.' } = Astro.props;
 ---
 
 <!doctype html>
@@ -26,7 +26,7 @@ const { title, description = 'Tracking rail extension and expansion projects acr
         </a>
         <div class="flex gap-6 text-sm font-medium text-gray-600">
           <a href="/" class="hover:text-blue-700 transition-colors">All Projects</a>
-          <a href="/states" class="hover:text-blue-700 transition-colors">By State</a>
+          <a href="/states" class="hover:text-blue-700 transition-colors">By Region</a>
           <a href="/agencies" class="hover:text-blue-700 transition-colors">By Agency</a>
           <a href="/map" class="hover:text-blue-700 transition-colors">Map</a>
         </div>

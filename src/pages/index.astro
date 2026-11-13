@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import StatusBadge from '../components/StatusBadge.astro';
+import { COUNTRY_NAMES, COUNTRY_ORDER, regionCountry, regionName } from '../lib/regions';
 
 const allProjects = await getCollection('projects');
 
@@ -13,7 +14,15 @@ const projects = allProjects.sort((a, b) => {
 });
 
 // Unique filter options
-const states = [...new Set(projects.map(p => p.data.state))].sort();
+const regionGroups = COUNTRY_ORDER
+  .map(country => ({
+    country,
+    label: COUNTRY_NAMES[country],
+    regions: [...new Set(projects.map(p => p.data.state))]
+      .filter(code => regionCountry(code) === country)
+      .sort((a, b) => regionName(a).localeCompare(regionName(b))),
+  }))
+  .filter(g => g.regions.length > 0);
 const agencies = [...new Set(projects.map(p => p.data.agencyAbbr ?? p.data.agency))].sort();
 const statuses = [...new Set(projects.map(p => p.data.status).filter(Boolean))].sort() as string[];
 
@@ -31,15 +40,24 @@ function formatDate(d?: Date): string {
   <div class="mb-6">
     <h1 class="text-2xl font-bold text-gray-900 mb-1">Rail Extension Tracker</h1>
     <p class="text-gray-500 text-sm">
-      {projects.length} project{projects.length !== 1 ? 's' : ''} tracked. Filter by state, agency, or status.
+      {projects.length} project{projects.length !== 1 ? 's' : ''} tracked. Filter by country, region, agency, or status.
     </p>
   </div>
 
   <!-- Filters -->
   <div class="flex flex-wrap gap-3 mb-6" id="filters">
+    <select id="filter-country" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <option value="">All Countries</option>
+      {regionGroups.map(g => <option value={g.country}>{g.label}</option>)}
+    </select>
+
     <select id="filter-state" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
-      <option value="">All States</option>
-      {states.map(s => <option value={s}>{s}</option>)}
+      <option value="">All Regions</option>
+      {regionGroups.map(g => (
+        <optgroup label={g.label}>
+          {g.regions.map(code => <option value={code}>{regionName(code)} ({code})</option>)}
+        </optgroup>
+      ))}
     </select>
 
     <select id="filter-agency" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
@@ -64,7 +82,7 @@ function formatDate(d?: Date): string {
         <tr>
           <th class="px-4 py-3 font-semibold">Project</th>
           <th class="px-4 py-3 font-semibold">Agency</th>
-          <th class="px-4 py-3 font-semibold">State</th>
+          <th class="px-4 py-3 font-semibold">Region</th>
           <th class="px-4 py-3 font-semibold">Mode</th>
           <th class="px-4 py-3 font-semibold">Status</th>
           <th class="px-4 py-3 font-semibold">Alignment</th>
@@ -75,6 +93,7 @@ function formatDate(d?: Date): string {
         {projects.map(p => (
           <tr
             class="bg-white hover:bg-blue-50 transition-colors"
+            data-country={regionCountry(p.data.state)}
             data-state={p.data.state}
             data-agency={p.data.agencyAbbr ?? p.data.agency}
             data-status={p.data.status ?? ''}
@@ -90,7 +109,7 @@ function formatDate(d?: Date): string {
               </a>
             </td>
             <td class="px-4 py-3">
-              <a href={`/states/${p.data.state}`} class="font-medium text-blue-600 hover:underline">
+              <a href={`/states/${p.data.state}`} title={regionName(p.data.state)} class="font-medium text-blue-600 hover:underline">
                 {p.data.state}
               </a>
             </td>
@@ -110,6 +129,7 @@ function formatDate(d?: Date): string {
 </BaseLayout>
 
 <script>
+  const countryEl = document.getElementById('filter-country') as HTMLSelectElement;
   const stateEl = document.getElementById('filter-state') as HTMLSelectElement;
   const agencyEl = document.getElementById('filter-agency') as HTMLSelectElement;
   const statusEl = document.getElementById('filter-status') as HTMLSelectElement;
@@ -119,6 +139,7 @@ function formatDate(d?: Date): string {
   const rows = document.querySelectorAll<HTMLTableRowElement>('#project-table-body tr');
 
   function applyFilters() {
+    const country = countryEl.value;
     const state = stateEl.value;
     const agency = agencyEl.value;
     const status = statusEl.value;
@@ -126,6 +147,7 @@ function formatDate(d?: Date): string {
 
     rows.forEach(row => {
       const match =
+        (!country || row.dataset.country === country) &&
         (!state  || row.dataset.state  === state)  &&
         (!agency || row.dataset.agency === agency)  &&
         (!status || row.dataset.status === status);
@@ -134,17 +156,19 @@ function formatDate(d?: Date): string {
       if (match) visible++;
     });
 
-    countEl.textContent = state || agency || status
+    countEl.textContent = country || state || agency || status
       ? `${visible} of ${rows.length} shown`
       : '';
     noResults.classList.toggle('hidden', visible > 0);
   }
 
+  countryEl.addEventListener('change', applyFilters);
   stateEl.addEventListener('change', applyFilters);
   agencyEl.addEventListener('change', applyFilters);
   statusEl.addEventListener('change', applyFilters);
 
   clearBtn.addEventListener('click', () => {
+    countryEl.value = '';
     stateEl.value = '';
     agencyEl.value = '';
     statusEl.value = '';

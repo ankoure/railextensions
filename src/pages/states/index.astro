@@ -1,48 +1,56 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { COUNTRY_NAMES, COUNTRY_ORDER, regionCountry, regionName } from '../../lib/regions';
 
 const projects = await getCollection('projects');
 
-const stateNames: Record<string, string> = {
-  AL: 'Alabama', AK: 'Alaska', AZ: 'Arizona', AR: 'Arkansas', CA: 'California',
-  CO: 'Colorado', CT: 'Connecticut', DE: 'Delaware', FL: 'Florida', GA: 'Georgia',
-  HI: 'Hawaii', ID: 'Idaho', IL: 'Illinois', IN: 'Indiana', IA: 'Iowa',
-  KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', ME: 'Maine', MD: 'Maryland',
-  MA: 'Massachusetts', MI: 'Michigan', MN: 'Minnesota', MS: 'Mississippi', MO: 'Missouri',
-  MT: 'Montana', NE: 'Nebraska', NV: 'Nevada', NH: 'New Hampshire', NJ: 'New Jersey',
-  NM: 'New Mexico', NY: 'New York', NC: 'North Carolina', ND: 'North Dakota', OH: 'Ohio',
-  OK: 'Oklahoma', OR: 'Oregon', PA: 'Pennsylvania', RI: 'Rhode Island', SC: 'South Carolina',
-  SD: 'South Dakota', TN: 'Tennessee', TX: 'Texas', UT: 'Utah', VT: 'Vermont',
-  VA: 'Virginia', WA: 'Washington', WV: 'West Virginia', WI: 'Wisconsin', WY: 'Wyoming',
-  DC: 'Washington D.C.',
-};
-
-const stateMap = new Map<string, number>();
+const regionCounts = new Map<string, number>();
 for (const p of projects) {
-  stateMap.set(p.data.state, (stateMap.get(p.data.state) ?? 0) + 1);
+  regionCounts.set(p.data.state, (regionCounts.get(p.data.state) ?? 0) + 1);
 }
 
-const states = [...stateMap.entries()]
-  .sort((a, b) => a[0].localeCompare(b[0]))
-  .map(([code, count]) => ({ code, name: stateNames[code] ?? code, count }));
+const groups = COUNTRY_ORDER
+  .map(country => ({
+    country,
+    countryName: COUNTRY_NAMES[country],
+    regions: [...regionCounts.entries()]
+      .filter(([code]) => regionCountry(code) === country)
+      .sort((a, b) => regionName(a[0]).localeCompare(regionName(b[0])))
+      .map(([code, count]) => ({ code, name: regionName(code), count })),
+  }))
+  .filter(g => g.regions.length > 0);
+
+const regionTotal = regionCounts.size;
 ---
 
-<BaseLayout title="Projects by State">
+<BaseLayout title="Projects by Region">
   <div class="mb-6">
-    <h1 class="text-2xl font-bold text-gray-900 mb-1">Projects by State</h1>
-    <p class="text-gray-500 text-sm">{states.length} state{states.length !== 1 ? 's' : ''} with tracked projects</p>
+    <h1 class="text-2xl font-bold text-gray-900 mb-1">Projects by Region</h1>
+    <p class="text-gray-500 text-sm">
+      {regionTotal} region{regionTotal !== 1 ? 's' : ''} with tracked projects across {groups.length} countr{groups.length !== 1 ? 'ies' : 'y'}
+    </p>
   </div>
 
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-    {states.map(s => (
-      <a
-        href={`/states/${s.code}`}
-        class="flex items-center justify-between rounded-lg border border-gray-200 bg-white px-4 py-3 hover:border-blue-400 hover:bg-blue-50 transition-colors shadow-sm"
-      >
-        <span class="font-semibold text-gray-800">{s.code}</span>
-        <span class="text-xs text-gray-500 bg-gray-100 rounded-full px-2 py-0.5">{s.count}</span>
-      </a>
+  <div class="space-y-8">
+    {groups.map(g => (
+      <section>
+        <h2 class="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">{g.countryName}</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          {g.regions.map(r => (
+            <a
+              href={`/states/${r.code}`}
+              class="flex items-center justify-between gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 hover:border-blue-400 hover:bg-blue-50 transition-colors shadow-sm"
+            >
+              <span class="min-w-0">
+                <span class="block font-semibold text-gray-800">{r.code}</span>
+                <span class="block text-xs text-gray-500 truncate">{r.name}</span>
+              </span>
+              <span class="text-xs text-gray-500 bg-gray-100 rounded-full px-2 py-0.5">{r.count}</span>
+            </a>
+          ))}
+        </div>
+      </section>
     ))}
   </div>
 </BaseLayout>
