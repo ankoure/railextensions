@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Pomona to Claremont (funded, final design)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-117.75178, 34.09394],
+          [-117.75006, 34.09404],
+          [-117.73023, 34.094],
+          [-117.72782, 34.09403],
+          [-117.7165, 34.09398]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Claremont to Montclair (on hold)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-117.7165, 34.09398],
+          [-117.71114, 34.09402],
+          [-117.69789, 34.09402],
+          [-117.69484, 34.09405],
+          [-117.69648, 34.09409]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pomona North (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-117.75178, 34.09394] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Claremont" },
+      "geometry": { "type": "Point", "coordinates": [-117.7165, 34.09398] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Montclair" },
+      "geometry": { "type": "Point", "coordinates": [-117.69648, 34.09409] }
+    }
+  ]
+}

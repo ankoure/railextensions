@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Cascadia high-speed rail corridor, Vancouver BC\u2013Seattle\u2013Portland (indicative; no route chosen)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-123.0979, 49.2737],
+          [-122.91, 49.205],
+          [-122.8479, 49.1895],
+          [-122.7534, 49.0002],
+          [-122.5897, 48.8467],
+          [-122.4788, 48.7544],
+          [-122.3305, 48.4738],
+          [-122.3264, 48.4201],
+          [-122.1768, 48.0517],
+          [-122.197, 47.9736],
+          [-122.3299, 47.5985],
+          [-122.3393, 47.3135],
+          [-122.4277, 47.2397],
+          [-122.8072, 47.0264],
+          [-122.9614, 46.7205],
+          [-122.9053, 46.1421],
+          [-122.7434, 45.8168],
+          [-122.6745, 45.6307],
+          [-122.6768, 45.529]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Vancouver, BC (terminal area; site not chosen)" },
+      "geometry": { "type": "Point", "coordinates": [-123.0979, 49.2737] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Seattle (site not chosen)" },
+      "geometry": { "type": "Point", "coordinates": [-122.3299, 47.5985] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Portland, OR (terminal area; site not chosen)" },
+      "geometry": { "type": "Point", "coordinates": [-122.6768, 45.529] }
+    }
+  ]
+}

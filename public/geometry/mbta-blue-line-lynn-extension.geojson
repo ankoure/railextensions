@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Blue Line extension to Lynn (via commuter rail right-of-way)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-70.99167, 42.41348],
+          [-70.99511, 42.41651],
+          [-70.9705, 42.44904],
+          [-70.96933, 42.45024],
+          [-70.96721, 42.45204],
+          [-70.96567, 42.45316],
+          [-70.96351, 42.45444],
+          [-70.95154, 42.46012],
+          [-70.94564, 42.46278]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Wonderland", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-70.99167, 42.41348] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Lynn (new Blue Line terminal at Lynn commuter rail station)" },
+      "geometry": { "type": "Point", "coordinates": [-70.94592, 42.4627] }
+    }
+  ]
+}

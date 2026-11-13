@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Roosevelt Boulevard Subway (Erie to Neshaminy Mall, 2024 PennDOT concept)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-75.15121, 40.00924],
+          [-75.15055, 40.012],
+          [-75.1475, 40.016],
+          [-75.143, 40.0195],
+          [-75.13791, 40.02258],
+          [-75.13318, 40.024],
+          [-75.12556, 40.02537],
+          [-75.12318, 40.02557],
+          [-75.12161, 40.02611],
+          [-75.11096, 40.02748],
+          [-75.10558, 40.02936],
+          [-75.10341, 40.02975],
+          [-75.10148, 40.02922],
+          [-75.09837, 40.02722],
+          [-75.09583, 40.0264],
+          [-75.09386, 40.02677],
+          [-75.08536, 40.03146],
+          [-75.08393, 40.03197],
+          [-75.07541, 40.03405],
+          [-75.07434, 40.03393],
+          [-75.07055, 40.03506],
+          [-75.06945, 40.03501],
+          [-75.06451, 40.03674],
+          [-75.06345, 40.03672],
+          [-75.06164, 40.03749],
+          [-75.0585, 40.0407],
+          [-75.05551, 40.04317],
+          [-75.05292, 40.04605],
+          [-75.05106, 40.05056],
+          [-75.04877, 40.05452],
+          [-75.04595, 40.0573],
+          [-75.04361, 40.06072],
+          [-75.04085, 40.06693],
+          [-75.03838, 40.07076],
+          [-75.03298, 40.07639],
+          [-75.03098, 40.07809],
+          [-75.02866, 40.08088],
+          [-75.01545, 40.0946],
+          [-75.01316, 40.09672],
+          [-75.01066, 40.09861],
+          [-74.99603, 40.10847],
+          [-74.97385, 40.1241],
+          [-74.97077, 40.12673],
+          [-74.96633, 40.1326],
+          [-74.96065, 40.13877],
+          [-74.958, 40.1392],
+          [-74.95548, 40.1389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Erie (Broad Street Line)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-75.15121, 40.00924] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "9th Street" },
+      "geometry": { "type": "Point", "coordinates": [-75.13969, 40.0215] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Rising Sun Avenue" },
+      "geometry": { "type": "Point", "coordinates": [-75.12192, 40.026] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Tower Center (Adams Avenue)" },
+      "geometry": { "type": "Point", "coordinates": [-75.10322, 40.0297] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Pratt Street" },
+      "geometry": { "type": "Point", "coordinates": [-75.08982, 40.0291] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Bustleton Avenue" },
+      "geometry": { "type": "Point", "coordinates": [-75.07112, 40.03489] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Cottman Avenue" },
+      "geometry": { "type": "Point", "coordinates": [-75.05434, 40.04447] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Rhawn Street" },
+      "geometry": { "type": "Point", "coordinates": [-75.04666, 40.0566] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Welsh\u2013Grant" },
+      "geometry": { "type": "Point", "coordinates": [-75.03177, 40.07765] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Red Lion Road (elevated)" },
+      "geometry": { "type": "Point", "coordinates": [-75.01534, 40.09471] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Southampton Road (elevated)" },
+      "geometry": { "type": "Point", "coordinates": [-74.9879, 40.11424] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Old Lincoln Highway (elevated)" },
+      "geometry": { "type": "Point", "coordinates": [-74.97688, 40.12199] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Neshaminy Mall (elevated)" },
+      "geometry": { "type": "Point", "coordinates": [-74.95548, 40.1389] }
+    }
+  ]
+}

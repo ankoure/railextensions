@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Line 12 extension, Mixcoac\u2013Observatorio (tunnel, incl. tail tracks beyond Observatorio)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-99.18796, 19.37605],
+          [-99.18829, 19.3761],
+          [-99.18916, 19.37605],
+          [-99.18967, 19.37606],
+          [-99.19666, 19.37579],
+          [-99.19799, 19.37587],
+          [-99.19967, 19.37621],
+          [-99.19988, 19.3763],
+          [-99.20031, 19.37665],
+          [-99.20075, 19.37717],
+          [-99.2011, 19.37781],
+          [-99.20123, 19.37823],
+          [-99.20128, 19.37865],
+          [-99.20113, 19.38002],
+          [-99.20089, 19.38076],
+          [-99.19995, 19.38311],
+          [-99.19952, 19.38391],
+          [-99.19906, 19.3845],
+          [-99.19698, 19.38684],
+          [-99.19686, 19.38709],
+          [-99.19668, 19.38806],
+          [-99.19664, 19.38858],
+          [-99.19664, 19.38909],
+          [-99.1969, 19.39102],
+          [-99.19703, 19.39184],
+          [-99.19743, 19.39341],
+          [-99.19846, 19.39636],
+          [-99.19903, 19.3987],
+          [-99.19955, 19.39993],
+          [-99.20071, 19.40294]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Mixcoac (existing Line 12 terminus; Line 7 transfer)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-99.18796, 19.37605] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Valent\u00edn Campa" },
+      "geometry": { "type": "Point", "coordinates": [-99.20032, 19.38222] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "\u00c1lvaro Obreg\u00f3n" },
+      "geometry": { "type": "Point", "coordinates": [-99.19682, 19.39022] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Observatorio (new Line 12 terminal)" },
+      "geometry": { "type": "Point", "coordinates": [-99.19903, 19.3987] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Observatorio (existing Line 1 and interurban train station)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-99.20042, 19.39827] }
+    }
+  ]
+}

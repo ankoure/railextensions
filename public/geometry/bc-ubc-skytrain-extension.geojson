@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "Millennium Line UBC Extension (indicative alignment; business case pending)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-123.15263, 49.26411],
+          [-123.18572, 49.26465],
+          [-123.1905, 49.2654],
+          [-123.1975, 49.2662],
+          [-123.206, 49.2656],
+          [-123.215, 49.264],
+          [-123.222, 49.26372],
+          [-123.238, 49.2648],
+          [-123.25096, 49.2659]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Arbutus (Broadway Subway terminus)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-123.15263, 49.26411] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Macdonald" },
+      "geometry": { "type": "Point", "coordinates": [-123.16818, 49.26442] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Alma" },
+      "geometry": { "type": "Point", "coordinates": [-123.18572, 49.26465] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Jericho Lands (approximate)" },
+      "geometry": { "type": "Point", "coordinates": [-123.1975, 49.2662] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "UBC (University Blvd and East Mall)" },
+      "geometry": { "type": "Point", "coordinates": [-123.25096, 49.2659] }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "type": "alignment", "name": "K Line Extension to Torrance (Hawthorne Option)" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-118.36893, 33.89445],
+          [-118.3656, 33.89262],
+          [-118.364, 33.8915],
+          [-118.3607, 33.89],
+          [-118.3565, 33.887],
+          [-118.3539, 33.8852],
+          [-118.3531, 33.8844],
+          [-118.35268, 33.8834],
+          [-118.35256, 33.882],
+          [-118.35254, 33.871],
+          [-118.35258, 33.862],
+          [-118.35262, 33.8598],
+          [-118.35232, 33.859],
+          [-118.35217, 33.85805],
+          [-118.33529, 33.84549],
+          [-118.3316, 33.84273],
+          [-118.3306, 33.84195]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Redondo Beach (Marine) (existing)", "existing": true },
+      "geometry": { "type": "Point", "coordinates": [-118.36893, 33.89445] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "South Bay Galleria" },
+      "geometry": { "type": "Point", "coordinates": [-118.35254, 33.8714] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "type": "station", "name": "Torrance Transit Center" },
+      "geometry": { "type": "Point", "coordinates": [-118.3308, 33.8421] }
+    }
+  ]
+}
