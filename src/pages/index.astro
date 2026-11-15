@@ -138,6 +138,37 @@ function formatDate(d?: Date): string {
   const noResults = document.getElementById('no-results') as HTMLParagraphElement;
   const rows = document.querySelectorAll<HTMLTableRowElement>('#project-table-body tr');
 
+  // Filter param name -> select element. Values are synced to the query string
+  // (e.g. ?country=CA&status=under-construction) so filtered views can be
+  // shared, bookmarked, and restored on back navigation.
+  const filters: Record<string, HTMLSelectElement> = {
+    country: countryEl,
+    state: stateEl,
+    agency: agencyEl,
+    status: statusEl,
+  };
+
+  function readFiltersFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    for (const [key, el] of Object.entries(filters)) {
+      const value = params.get(key) ?? '';
+      // Ignore values that don't match an available option.
+      const valid = [...el.options].some(o => o.value === value);
+      el.value = valid ? value : '';
+    }
+  }
+
+  function writeFiltersToUrl() {
+    const url = new URL(window.location.href);
+    for (const [key, el] of Object.entries(filters)) {
+      if (el.value) url.searchParams.set(key, el.value);
+      else url.searchParams.delete(key);
+    }
+    if (url.href !== window.location.href) {
+      history.replaceState(history.state, '', url);
+    }
+  }
+
   function applyFilters() {
     const country = countryEl.value;
     const state = stateEl.value;
@@ -162,16 +193,28 @@ function formatDate(d?: Date): string {
     noResults.classList.toggle('hidden', visible > 0);
   }
 
-  countryEl.addEventListener('change', applyFilters);
-  stateEl.addEventListener('change', applyFilters);
-  agencyEl.addEventListener('change', applyFilters);
-  statusEl.addEventListener('change', applyFilters);
+  function onFilterChange() {
+    applyFilters();
+    writeFiltersToUrl();
+  }
+
+  for (const el of Object.values(filters)) {
+    el.addEventListener('change', onFilterChange);
+  }
 
   clearBtn.addEventListener('click', () => {
-    countryEl.value = '';
-    stateEl.value = '';
-    agencyEl.value = '';
-    statusEl.value = '';
+    for (const el of Object.values(filters)) el.value = '';
+    onFilterChange();
+  });
+
+  // Restore filters from the URL on load, and again if the page is restored
+  // from the back/forward cache (browsers may also autofill select values).
+  function syncFromUrl() {
+    readFiltersFromUrl();
     applyFilters();
+  }
+  syncFromUrl();
+  window.addEventListener('pageshow', e => {
+    if (e.persisted) syncFromUrl();
   });
 </script>
