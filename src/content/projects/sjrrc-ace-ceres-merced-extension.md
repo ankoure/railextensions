@@ -9,6 +9,7 @@ status: "under-construction"
 mode: "commuter-rail"
 lengthMiles: 58
 estimatedCost: "$1.1B available; 2026 estimates about $250M higher"
+proposedOpening: "2031 or later (Ceres)"
 coordinates: { lat: 37.5911, lng: -120.9572 }
 hasGeometry: true
 lastUpdated: 2026-11-13

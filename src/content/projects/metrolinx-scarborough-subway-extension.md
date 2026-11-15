@@ -9,6 +9,7 @@ status: "under-construction"
 mode: "heavy-rail"
 lengthMiles: 4.8
 estimatedCost: "C$10.2B (June 2025 Metrolinx estimate); C$5.5B in 2019, construction only"
+proposedOpening: "2033 (reported via internal TTC emails; not confirmed by Metrolinx)"
 coordinates: { lat: 43.7650, lng: -79.2500 }
 hasGeometry: true
 lastUpdated: 2026-11-13
