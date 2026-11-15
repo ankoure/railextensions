@@ -62,7 +62,11 @@ const geoJsonPath = `/geometry/${entryId}.geojson`;
           },
           onEachFeature: (feat, layer) => {
             const name = feat.properties?.name;
-            if (name) layer.bindPopup(`<span style="font-size:13px;font-weight:600">${name}</span>`);
+            if (name == null || name === '') return;
+            const span = document.createElement('span');
+            span.style.cssText = 'font-size:13px;font-weight:600';
+            span.textContent = String(name);
+            layer.bindPopup(span);
           },
         }).addTo(map);
 

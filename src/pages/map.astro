@@ -120,14 +120,25 @@ const skipped = projects.length - mapProjects.length;
       try { map.fitBounds(L.featureGroup(allLayers).getBounds().pad(0.1)); } catch (_) {}
     }
 
-    function popupHtml(p) {
-      return `
-        <div style="font-size:13px;min-width:180px">
-          <div style="font-weight:600;margin-bottom:2px">${p.projectName}</div>
-          <div style="color:#6b7280;margin-bottom:6px">${p.agency} &middot; ${p.state}</div>
-          <a href="/projects/${p.id}" style="color:#1d4ed8;font-weight:600;text-decoration:none">View project &rarr;</a>
-        </div>
-      `;
+    function popupEl(p) {
+      const root = document.createElement('div');
+      root.style.cssText = 'font-size:13px;min-width:180px';
+
+      const name = document.createElement('div');
+      name.style.cssText = 'font-weight:600;margin-bottom:2px';
+      name.textContent = p.projectName;
+
+      const meta = document.createElement('div');
+      meta.style.cssText = 'color:#6b7280;margin-bottom:6px';
+      meta.textContent = `${p.agency} \u00b7 ${p.state}`;
+
+      const a = document.createElement('a');
+      a.href = `/projects/${encodeURI(p.id)}`;
+      a.style.cssText = 'color:#1d4ed8;font-weight:600;text-decoration:none';
+      a.textContent = 'View project \u2192';
+
+      root.append(name, meta, a);
+      return root;
     }
 
     function addFallbackMarker(p) {
@@ -137,7 +148,7 @@ const skipped = projects.length - mapProjects.length;
         color: '#ffffff',
         weight: 2,
         fillOpacity: 0.9,
-      }).addTo(map).bindPopup(popupHtml(p));
+      }).addTo(map).bindPopup(() => popupEl(p));
       allLayers.push(marker);
     }
 
@@ -169,7 +180,7 @@ const skipped = projects.length - mapProjects.length;
                 fillOpacity: 1,
               });
             },
-          }).bindPopup(popupHtml(p)).addTo(map);
+          }).bindPopup(() => popupEl(p)).addTo(map);
           allLayers.push(layer);
           refitBounds();
         })
