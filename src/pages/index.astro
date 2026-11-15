@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { modeLabel } from '../lib/modes';
+import { MODES, modeLabel } from '../lib/modes';
 import StatusBadge from '../components/StatusBadge.astro';
 import { statusRank } from '../lib/statuses';
 import { COUNTRY_NAMES, COUNTRY_ORDER, regionCountry, regionName } from '../lib/regions';
@@ -26,6 +26,7 @@ const regionGroups = COUNTRY_ORDER
   }))
   .filter(g => g.regions.length > 0);
 const agencies = [...new Set(projects.map(p => p.data.agencyAbbr ?? p.data.agency))].sort();
+const modes = MODES.filter(m => projects.some(p => p.data.mode === m));
 const statuses = [...new Set(projects.map(p => p.data.status).filter(Boolean))]
   .sort((a, b) => statusRank(a) - statusRank(b)) as string[];
 
@@ -54,12 +55,20 @@ function formatDate(d?: Date): string {
   <div class="mb-6">
     <h1 class="text-2xl font-bold text-gray-900 mb-1">Rail Extension Tracker</h1>
     <p class="text-gray-500 text-sm">
-      {projects.length} project{projects.length !== 1 ? 's' : ''} tracked. Filter by country, region, agency, or status.
+      {projects.length} project{projects.length !== 1 ? 's' : ''} tracked. Filter by country, region, agency, mode, or status, or search by name.
     </p>
   </div>
 
   <!-- Filters -->
   <div class="flex flex-wrap gap-3 mb-6" id="filters">
+    <input
+      id="filter-search"
+      type="search"
+      placeholder="Search projects…"
+      aria-label="Search by project name, agency, or alignment"
+      class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 w-full sm:w-64"
+    />
+
     <select id="filter-country" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
       <option value="">All Countries</option>
       {regionGroups.map(g => <option value={g.country}>{g.label}</option>)}
@@ -77,6 +86,11 @@ function formatDate(d?: Date): string {
     <select id="filter-agency" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
       <option value="">All Agencies</option>
       {agencies.map(a => <option value={a}>{a}</option>)}
+    </select>
+
+    <select id="filter-mode" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <option value="">All Modes</option>
+      {modes.map(m => <option value={m}>{modeLabel(m)}</option>)}
     </select>
 
     <select id="filter-status" class="text-sm border border-gray-300 rounded px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400">
@@ -120,7 +134,10 @@ function formatDate(d?: Date): string {
             data-country={regionCountry(p.data.state)}
             data-state={p.data.state}
             data-agency={p.data.agencyAbbr ?? p.data.agency}
+            data-mode={p.data.mode ?? ''}
             data-status={p.data.status ?? ''}
+            data-search={[p.data.projectName, p.data.agency, p.data.agencyAbbr, p.data.alignmentSummary]
+              .filter(Boolean).join(' ').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()}
             data-sort-project={p.data.projectName}
             data-sort-agency={p.data.agencyAbbr ?? p.data.agency}
             data-sort-region={p.data.state}
@@ -162,7 +179,9 @@ function formatDate(d?: Date): string {
   const countryEl = document.getElementById('filter-country') as HTMLSelectElement;
   const stateEl = document.getElementById('filter-state') as HTMLSelectElement;
   const agencyEl = document.getElementById('filter-agency') as HTMLSelectElement;
+  const modeEl = document.getElementById('filter-mode') as HTMLSelectElement;
   const statusEl = document.getElementById('filter-status') as HTMLSelectElement;
+  const searchEl = document.getElementById('filter-search') as HTMLInputElement;
   const clearBtn = document.getElementById('clear-filters') as HTMLButtonElement;
   const countEl = document.getElementById('filter-count') as HTMLSpanElement;
   const noResults = document.getElementById('no-results') as HTMLParagraphElement;
@@ -176,8 +195,11 @@ function formatDate(d?: Date): string {
     country: countryEl,
     state: stateEl,
     agency: agencyEl,
+    mode: modeEl,
     status: statusEl,
   };
+  // Free-text search is synced as ?q=.
+  const SEARCH_PARAM = 'q';
 
   function readFiltersFromUrl() {
     const params = new URLSearchParams(window.location.search);
@@ -187,6 +209,7 @@ function formatDate(d?: Date): string {
       const valid = [...el.options].some(o => o.value === value);
       el.value = valid ? value : '';
     }
+    searchEl.value = params.get(SEARCH_PARAM) ?? '';
   }
 
   function writeFiltersToUrl() {
@@ -195,6 +218,9 @@ function formatDate(d?: Date): string {
       if (el.value) url.searchParams.set(key, el.value);
       else url.searchParams.delete(key);
     }
+    const q = searchEl.value.trim();
+    if (q) url.searchParams.set(SEARCH_PARAM, q);
+    else url.searchParams.delete(SEARCH_PARAM);
     if (url.href !== window.location.href) {
       history.replaceState(history.state, '', url);
     }
@@ -204,7 +230,9 @@ function formatDate(d?: Date): string {
     const country = countryEl.value;
     const state = stateEl.value;
     const agency = agencyEl.value;
+    const mode = modeEl.value;
     const status = statusEl.value;
+    const terms = searchEl.value.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().split(/\s+/).filter(Boolean);
     let visible = 0;
 
     rows.forEach(row => {
@@ -212,13 +240,15 @@ function formatDate(d?: Date): string {
         (!country || row.dataset.country === country) &&
         (!state  || row.dataset.state  === state)  &&
         (!agency || row.dataset.agency === agency)  &&
-        (!status || row.dataset.status === status);
+        (!mode   || row.dataset.mode   === mode)    &&
+        (!status || row.dataset.status === status)  &&
+        terms.every(t => row.dataset.search?.includes(t));
 
       row.classList.toggle('hidden', !match);
       if (match) visible++;
     });
 
-    countEl.textContent = country || state || agency || status
+    countEl.textContent = country || state || agency || mode || status || terms.length
       ? `${visible} of ${rows.length} shown`
       : '';
     noResults.classList.toggle('hidden', visible > 0);
@@ -232,9 +262,11 @@ function formatDate(d?: Date): string {
   for (const el of Object.values(filters)) {
     el.addEventListener('change', onFilterChange);
   }
+  searchEl.addEventListener('input', onFilterChange);
 
   clearBtn.addEventListener('click', () => {
     for (const el of Object.values(filters)) el.value = '';
+    searchEl.value = '';
     onFilterChange();
   });
 
