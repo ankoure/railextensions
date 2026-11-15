@@ -8,6 +8,7 @@ alignmentSummary: "3.5-mile extension of the T Line (Tacoma Link) streetcar-styl
 status: "planning"
 mode: "light-rail"
 lengthMiles: 3.5
+estimatedCost: "$2.5B (2026 Enterprise Initiative estimate, YOE$; ~$1.4–1.6B in 2025 dollars)"
 proposedOpening: "2043"
 coordinates: { lat: 47.2359, lng: -122.5257 }
 hasGeometry: true
@@ -22,6 +23,14 @@ references:
   - title: "T Line (Sound Transit)"
     url: "https://en.wikipedia.org/wiki/T_Line_(Sound_Transit)"
     publication: "Wikipedia"
+  - title: "Enterprise Initiative: Scenario Development & Capital Delivery (System Expansion Committee presentation)"
+    url: "https://www.soundtransit.org/st_sharepoint/download/sites/PRDA/FinalRecords/2026/Presentation%20-%20Enterprise%20Scenario%20Development%20SEC%2002-12-26.pdf"
+    publication: "Sound Transit"
+    date: 2026-02-12
+  - title: "ST3 Truncations"
+    url: "https://seattletransitblog.com/2026/03/19/sound-transit-truncations/"
+    publication: "Seattle Transit Blog"
+    date: 2026-03-19
 ---
 
 ## Alignment

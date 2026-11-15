@@ -1,0 +1,10 @@
+# Reference URLs the scheduled link check should skip.
+# Used by scripts/check-reference-links.mjs.
+#
+# One pattern per line; `#` starts a comment.
+#   - A bare hostname (e.g. example.com) skips that host and its subdomains.
+#   - A pattern containing "/" (e.g. https://example.com/path/) skips URLs
+#     starting with that prefix.
+#
+# Add a host here only if it consistently blocks the checker while the page
+# still works in a browser. Note why next to the entry.

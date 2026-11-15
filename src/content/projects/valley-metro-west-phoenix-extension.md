@@ -26,6 +26,10 @@ references:
     url: "https://www.azfamily.com/2026/01/28/phoenix-council-votes-against-capitol-light-rail-extension-shifts-focus-west/"
     publication: "azfamily.com"
     date: 2026-01-28
+  - title: "West Phoenix light rail has 2 alignment options. Valley Metro wants the public to help choose"
+    url: "https://www.kjzz.org/business/2026-10-26/west-phoenix-light-rail-has-2-alignment-options-valley-metro-wants-the-public-to-help-choose"
+    publication: "KJZZ"
+    date: 2026-10-26
 ---
 
 ## Alignment
@@ -33,6 +37,10 @@ references:
 The West Phoenix Extension is a proposed roughly 10-mile light rail line connecting to the existing Valley Metro Rail system near Indian School Road and running west along Indian School Road to 75th Avenue, then south to Thomas Road, ending at Desert Sky Transit Center (79th Avenue & Thomas Road). Valley Metro is studying two ways to connect it to the existing system: at Indian School Road and Central Avenue, or at 19th Avenue and Camelback Road. An optional add-on would continue west to 91st Avenue and Thomas Road, near Banner Estrella hospital.
 
 The project became Valley Metro's top light-rail priority in January 2026 after Phoenix City Council voted down the previously planned Capitol Extension (CAPEX) — a $624 million segment that would have connected downtown to a separate I-10 West Extension — over cost, ridership projections, and state legislature-imposed restrictions on stations near the Capitol Mall. With CAPEX cancelled, the 10-mile I-10 West Extension it was meant to connect to is no longer expected to proceed as previously planned, and the city has shifted its focus to the West Phoenix Extension instead.
+
+## Cost
+
+No public cost estimate has been released for the West Phoenix Extension as of November 2026; the corridor is still in early planning, with alignment options under public review.
 
 ## Updates
 

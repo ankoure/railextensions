@@ -8,9 +8,10 @@ alignmentSummary: "Proposed ~10-mile extension of the Hudson-Bergen Light Rail n
 status: "environmental-review"
 mode: "light-rail"
 lengthMiles: 10
+estimatedCost: "~$2B (last public estimate, as reported in 2023)"
 coordinates: { lat: 40.8929, lng: -73.9726 }
 hasGeometry: true
-lastUpdated: 2026-06-01
+lastUpdated: 2026-11-15
 references:
   - title: "Northern Branch Corridor Project"
     url: "https://www.njtransit.com/northern-branch-corridor-project"
@@ -22,6 +23,10 @@ references:
     url: "https://www.planetizen.com/news/2023/09/125384-new-jersey-transit-extension-goes-back-drawing-board-after-federal-reversal"
     publication: "Planetizen"
     date: 2023-09-01
+  - title: "Three decades later, the Hudson-Bergen Light Rail line still has no Bergen spur. How come?"
+    url: "https://www.yahoo.com/news/three-decades-later-hudson-bergen-083048282.html"
+    publication: "The Record (via Yahoo News)"
+    date: 2023-09-19
 ---
 
 ## Alignment
