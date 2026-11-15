@@ -12,8 +12,20 @@ estimatedCost: "$7.8–14.5B (full build); Starter Service funded via existing s
 proposedOpening: "2029 (Starter Service, Fort Collins–Denver)"
 coordinates: { lat: 39.7539, lng: -104.9903 }
 hasGeometry: true
-lastUpdated: 2026-07-14
+lastUpdated: 2026-11-15
 references:
+  - title: "CO: Initial tally shows Front Range Passenger Rail passing"
+    url: "https://www.masstransitmag.com/rail/news/55416838/co-initial-tally-shows-front-range-passenger-rail-passing"
+    publication: "Mass Transit"
+    date: 2026-11-05
+  - title: "Colorado Connector officials look to finalize railroad agreements after voters approve tax hike"
+    url: "https://www.kunc.org/news/2026-11-10/colorado-connector-officials-look-to-finalize-railroad-agreements-after-voters-approve-tax-hike"
+    publication: "KUNC"
+    date: 2026-11-10
+  - title: "Front Range rail board OKs Colorado Connector plan"
+    url: "https://gazette.com/2026/07/31/front-range-rail-board-oks-colorado-connector-plan/"
+    publication: "The Gazette"
+    date: 2026-08-01
   - title: "Colorado Connector — official project site"
     url: "https://coloradoconnector.com/"
     publication: "Front Range Passenger Rail District"
@@ -41,7 +53,15 @@ references:
 
 The Colorado Connector would run along roughly 190 miles of the Front Range corridor between Fort Collins and Pueblo, using existing BNSF Railway trackage north of Denver and shared Union Pacific/BNSF trackage to the south, with Denver Union Station serving as the central hub. The initial **Starter Service** phase would connect Fort Collins and Denver with three daily round trips across eight stations, including Loveland, Longmont, Boulder, Louisville, Broomfield, and Westminster. Later phases would extend service south through Littleton and Castle Rock to Colorado Springs and Pueblo, eventually building to up to 10 daily round trips on the northern segment, with new station infrastructure also planned in Trinidad on existing Amtrak trackage. Amtrak is the planned operator once service begins.
 
+The Starter Service is funded separately by RTD and the Colorado Transportation Investment Office. In November 2026, voters in the Front Range Passenger Rail District approved a permanent 0.333% sales tax, expected to raise about $295 million a year, to build and run service beyond the starter segment.
+
 ## Updates
+
+### 2026-11 — Voters approve district sales tax
+Voters approved Ballot Issue 7A on November 3, 2026, 55.1% to 44.9% in unofficial returns. The permanent 0.333% sales and use tax is expected to raise about $295 million a year and authorizes $580 million in debt to build and run service beyond the Denver–Fort Collins starter segment. The district plans to reach Colorado Springs within five years of starter service, and its materials put the cost of service to Pueblo at about $1.7 billion. After the vote, district officials turned to finalizing agreements with the host railroad.
+
+### 2026-07 — Board adopts final delivery plan
+The district board unanimously approved the Colorado Connector's final delivery plan. It adds special-event stations for the Denver Broncos and Denver Summit FC (pending host railroad approval), a new North Colorado Springs station, and a relocated downtown Colorado Springs platform, and moves the Fort Collins station to Drake Road. The board then referred a sales tax measure to the November ballot.
 
 ### 2026-07 — Train designs unveiled
 State officials and the FRPR District released exterior and interior renderings of the planned Colorado Connector rolling stock, giving the public its first look at the trains ahead of the targeted 2029 Starter Service launch.

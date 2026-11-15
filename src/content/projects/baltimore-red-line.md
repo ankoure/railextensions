@@ -12,8 +12,12 @@ estimatedCost: "$4.7–9B (full build); ~$2.2B (phased first segment)"
 proposedOpening: "2031 or later"
 coordinates: { lat: 39.2904, lng: -76.6122 }
 hasGeometry: true
-lastUpdated: 2026-05-01
+lastUpdated: 2026-11-15
 references:
+  - title: "MDOT releases proposed capital budget with $100M+ for Red Line"
+    url: "https://thedailyrecord.com/2026/09/01/mdot-budget-red-line/"
+    publication: "The Daily Record"
+    date: 2026-09-01
   - title: "Governor Moore Announces Light Rail as Recommended Mode for Baltimore's Red Line"
     url: "https://governor.maryland.gov/news/press/pages/governor-moore-announces-light-rail-as-recommended-mode-for-baltimore%E2%80%99s-red-line.aspx"
     publication: "Office of Governor Wes Moore"
@@ -32,9 +36,12 @@ references:
 
 The Red Line would be a roughly 14-mile east-west light rail line connecting Woodlawn in Baltimore County to Bayview/Highlandtown, running through downtown Baltimore and filling a long-standing east-west gap in the region's transit network (existing Light RailLink and Metro SubwayLink both run north-south/radial). The project was originally canceled by Governor Larry Hogan in 2015 after federal funding had been secured, then revived by Governor Wes Moore in June 2023.
 
-In June 2024, the state selected light rail as the project's recommended mode over bus rapid transit, with the alignment split between surface running and tunneled segments through downtown. However, federal funding uncertainty has since forced the state to reconsider scope: as of May 2026 community open houses, options under discussion include the full 14-mile light rail build, a phased first segment from Edmondson Village to Shot Tower, or converting the corridor to BRT to control costs.
+In June 2024, the state selected light rail as the project's recommended mode over bus rapid transit, with the alignment split between surface running and tunneled segments through downtown. However, federal funding uncertainty has since forced the state to reconsider scope: as of May 2026 community open houses, options under discussion include the full 14-mile light rail build, a phased first segment from Edmondson Village to Shot Tower, or converting the corridor to BRT to control costs. MDOT's draft 2026 capital program sets aside more than $100 million for planning and design, and the governor is expected to announce a decision in early 2027.
 
 ## Updates
+
+### 2026-09 — Draft capital budget funds design; decision expected early 2027
+MDOT's proposed six-year, $21.93 billion capital program set aside more than $100 million for Red Line planning and design. Transportation Secretary Kathryn Thomson said the governor is expected to announce how the project will move forward in early 2027. State officials also planned an October trip to study Cleveland's bus rapid transit line. The General Assembly still has to approve the budget.
 
 ### 2026-05 — Open houses weigh funding-driven path forward
 MTA Maryland held community open houses presenting options ranging from the full light rail build to a phased segment or a lower-cost BRT conversion, reflecting continued federal funding uncertainty.

@@ -12,7 +12,7 @@ estimatedCost: "$20–24.2B"
 proposedOpening: "2033–2035 (Initial Operating Segment)"
 coordinates: { lat: 34.1400, lng: -118.4470 }
 hasGeometry: true
-lastUpdated: 2026-05-09
+lastUpdated: 2026-11-15
 references:
   - title: "In major step forward for Sepulveda Transit Corridor Project, Metro Board selects a route and heavy rail as Locally Preferred Alternative"
     url: "https://thesource.metro.net/in-major-step-forward-for-sepulveda-transit-corridor-project-metro-board-selects-a-route-and-heavy-rail-as-locally-preferred-alternative/"

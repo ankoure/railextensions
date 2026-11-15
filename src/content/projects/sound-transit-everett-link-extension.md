@@ -12,8 +12,12 @@ estimatedCost: "$9.5B"
 proposedOpening: "2037 (Phase 1 to Paine Field); 2041 (full extension)"
 coordinates: { lat: 47.9762, lng: -122.2035 }
 hasGeometry: true
-lastUpdated: 2026-05-29
+lastUpdated: 2026-11-15
 references:
+  - title: "Sound Transit seeks input on proposed Everett Link extension"
+    url: "https://www.progressiverailroading.com/passenger_rail/news/Sound-Transit-seeks-input-on-proposed-Everett-Link-extension--77796"
+    publication: "Progressive Railroading"
+    date: 2026-09-22
   - title: "Everett Link Extension"
     url: "https://www.soundtransit.org/system-expansion/everett-link-extension"
     publication: "Sound Transit"
@@ -31,9 +35,12 @@ references:
 
 The Everett Link Extension would extend Link light rail 16 miles from Lynnwood through unincorporated Snohomish County to downtown Everett, largely following the I-5/Broadway corridor, with six stations — West Alderwood, Ash Way, Mariner, SW Everett Industrial Center, SR 526/Evergreen, and Everett Station — plus a provisional station at SR 99/Airport Road. Once complete, projected travel times are about 33 minutes to Lynnwood City Center and 60 minutes to downtown Seattle.
 
-The Sound Transit Board selected final EIS alternatives to study in July 2023, and a Draft EIS with a 45-day public comment period is expected in fall 2026. Estimated cost has risen to $9.5 billion (2026), up from $7.7 billion in 2025.
+The Sound Transit Board selected final EIS alternatives to study in July 2023, and Sound Transit and the FTA published the Draft EIS on September 18, 2026. Estimated cost has risen to $9.5 billion (2026), up from $7.7 billion in 2025.
 
 ## Updates
+
+### 2026-09 — Draft EIS published
+Sound Transit and the FTA published the Draft Environmental Impact Statement on September 18, 2026, opening a 45-day public comment period that ran through November 2. The draft covers about 16 miles of light rail and six new stations between Lynnwood and downtown Everett.
 
 ### 2026-05 — Board realignment plan keeps Everett Link intact
 Amid a systemwide funding gap, the Sound Transit Board approved a realignment plan that explicitly preserved Everett Link's schedule and all six planned stations, following advocacy from Everett's mayor and Snohomish County's executive.
