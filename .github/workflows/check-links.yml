@@ -1,0 +1,66 @@
+name: Check reference links
+
+on:
+  schedule:
+    - cron: '17 9 * * 1' # Mondays 09:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: check-links
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      LABEL: dead-links
+      TITLE: Dead reference links
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check reference URLs
+        id: check
+        run: |
+          set +e
+          node scripts/check-reference-links.mjs --output report.md
+          code=$?
+          set -e
+          # 0 = no broken links, 1 = broken links found, anything else = script error.
+          if [ "$code" -gt 1 ]; then exit "$code"; fi
+          echo "broken=$code" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Open or update issue
+        if: steps.check.outputs.broken == '1'
+        run: |
+          gh label create "$LABEL" --color B60205 \
+            --description "Reported by the scheduled reference link check" 2>/dev/null || true
+          {
+            cat report.md
+            echo
+            echo "---"
+            echo "_Updated by the [link check workflow](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}). This issue closes automatically once no links are broken._"
+          } > body.md
+          number=$(gh issue list --label "$LABEL" --state open --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --body-file body.md
+          else
+            gh issue create --title "$TITLE" --label "$LABEL" --body-file body.md
+          fi
+      - name: Close issue when links are fixed
+        if: steps.check.outputs.broken == '0'
+        run: |
+          number=$(gh issue list --label "$LABEL" --state open --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue close "$number" --comment "No broken reference links found in the latest [link check](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})."
+          fi
