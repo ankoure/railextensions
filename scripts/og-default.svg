@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f9fafb"/>
+  <rect x="0" y="0" width="1200" height="12" fill="#1d4ed8"/>
+  <g transform="translate(96 150) scale(5)">
+    <rect width="32" height="32" rx="6" fill="#1d4ed8"/>
+    <rect x="6" y="20" width="20" height="3" rx="1.5" fill="white"/>
+    <rect x="6" y="9" width="20" height="3" rx="1.5" fill="white"/>
+    <rect x="14.5" y="9" width="3" height="14" rx="1.5" fill="white"/>
+    <circle cx="10" cy="25" r="2" fill="white"/>
+    <circle cx="22" cy="25" r="2" fill="white"/>
+  </g>
+  <text x="96" y="410" font-family="Helvetica, Arial, sans-serif" font-size="76" font-weight="700" fill="#111827">Rail Extension Tracker</text>
+  <text x="96" y="475" font-family="Helvetica, Arial, sans-serif" font-size="36" fill="#4b5563">Rail extension and expansion projects across North America</text>
+  <text x="96" y="560" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="700" fill="#1d4ed8">railextensions.com</text>
+  <!-- track motif -->
+  <g stroke="#1d4ed8" stroke-width="6" opacity="0.15">
+    <line x1="700" y1="150" x2="1200" y2="150"/>
+    <line x1="700" y1="250" x2="1200" y2="250"/>
+  </g>
+  <g fill="#1d4ed8" opacity="0.15">
+    <rect x="720" y="135" width="14" height="130"/><rect x="790" y="135" width="14" height="130"/>
+    <rect x="860" y="135" width="14" height="130"/><rect x="930" y="135" width="14" height="130"/>
+    <rect x="1000" y="135" width="14" height="130"/><rect x="1070" y="135" width="14" height="130"/>
+    <rect x="1140" y="135" width="14" height="130"/>
+  </g>
+</svg>
