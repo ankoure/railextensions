@@ -38,6 +38,7 @@ const imageURL = new URL(image, Astro.site);
     <meta name="description" content={description} />
     {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalURL} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME} — Project Updates`} href={new URL('rss.xml', Astro.site)} />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph -->
@@ -79,7 +80,10 @@ const imageURL = new URL(image, Astro.site);
     <footer class="mt-16 border-t border-gray-200 bg-white">
       <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-500 flex justify-between items-center">
         <span>Rail Extension Tracker — data maintained via Markdown files in git.</span>
-        <span>Built with <a href="https://astro.build" class="underline hover:text-gray-700">Astro</a></span>
+        <span class="flex gap-4">
+          <a href="/rss.xml" class="underline hover:text-gray-700">RSS feed</a>
+          <span>Built with <a href="https://astro.build" class="underline hover:text-gray-700">Astro</a></span>
+        </span>
       </div>
     </footer>
   </body>
