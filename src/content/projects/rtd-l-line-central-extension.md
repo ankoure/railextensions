@@ -10,6 +10,7 @@ mode: "light-rail"
 lengthMiles: 0.8
 coordinates: { lat: 39.7622, lng: -104.9629 }
 hasGeometry: true
+lastUpdated: 2026-11-15
 references:
   - title: "L Line Extension"
     url: "https://www.rtd-denver.com/about-rtd/projects/fastracks/l-line"
@@ -17,6 +18,9 @@ references:
   - title: "L Line (RTD)"
     url: "https://en.wikipedia.org/wiki/L_Line_(RTD)"
     publication: "Wikipedia"
+  - title: "L Line Extension — Facts & Figures"
+    url: "https://www.rtd-denver.com/reports-and-policies/facts-figures/l-line-extension"
+    publication: "RTD-Denver"
 ---
 
 ## Alignment
