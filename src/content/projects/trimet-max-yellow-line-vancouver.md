@@ -8,10 +8,15 @@ status: "environmental-review"
 mode: "light-rail"
 lengthMiles: 1.9
 estimatedCost: "$1–2B (light rail component)"
+proposedOpening: "2036 or later (contingent on federal funding)"
 coordinates: { lat: 45.6272, lng: -122.6715 }
 hasGeometry: true
-lastUpdated: 2026-07-01
+lastUpdated: 2026-11-15
 references:
+  - title: "‘Light rail to nowhere’? Surging costs undercut I-5 bridge transit plan"
+    url: "https://washingtonstatestandard.com/2026/05/29/light-rail-to-nowhere-surging-costs-undercut-i-5-bridge-transit-plan/"
+    publication: "Washington State Standard"
+    date: 2026-05-29
   - title: "I-5 Expansion Over Columbia River Stumbles Forward with Federal Greenlight"
     url: "https://www.theurbanist.org/i-5-expansion-over-columbia-river-stumbles-forward-with-federal-greenlight/"
     publication: "The Urbanist"
@@ -34,6 +39,9 @@ FHWA and FTA jointly issued an amended Record of Decision on July 1, 2026, compl
 
 ### 2026-07 — Amended Record of Decision issued
 FHWA and FTA jointly issued an amended ROD on July 1, 2026, capping the federal environmental review process for the IBR program, including its light rail component.
+
+### 2026-05 — Light rail service not expected before 2036
+The Washington State Standard reported that light rail had been moved out of the bridge program's core scope to a later phase as costs rose. That phase depends on a roughly $1 billion federal transit grant, which is not expected to be decided before 2030, and service was not anticipated before 2036.
 
 ### 2026-04 — Vancouver council objects to scope reduction
 Vancouver City Council members expressed opposition to proposals that would shorten the planned light rail extension to reduce costs.

@@ -27,6 +27,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Validate geometry
+        run: npm run validate:geometry
       - name: Build
         run: npm run build
       - name: Upload artifact

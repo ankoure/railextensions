@@ -12,6 +12,7 @@ estimatedCost: "$390–400M"
 proposedOpening: "2032 (targeting the 2034 Winter Olympics)"
 coordinates: { lat: 40.7660, lng: -111.8420 }
 hasGeometry: true
+lastUpdated: 2026-11-15
 references:
   - title: "UTA's orange line could be operational in time for 2034 Winter Olympics. Here's its likely route"
     url: "https://www.ksl.com/article/51157726/utas-orange-line-could-be-operational-in-time-for-2034-winter-olympics-heres-its-likely-route"
@@ -22,6 +23,11 @@ references:
   - title: "UTA Studying New TRAX Orange Line Among Options for More Light Rail Service"
     url: "https://www.rideuta.com/Rider-Info/Digital-Newsroom/UTA-Studying-New-TRAX-Orange-Line-Among-Options-for-More-Light-Rail-Service"
     publication: "UTA Digital Newsroom"
+    date: 2024-03-21
+  - title: "Utah Agency Picks Preferred Route for Salt Lake City Light Rail Expansion"
+    url: "https://www.enr.com/articles/60257-utah-agency-picks-preferred-route-for-salt-lake-city-light-rail-expansion"
+    publication: "ENR"
+    date: 2025-02-05
 ---
 
 ## Alignment

@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { MODES, modeLabel } from '../lib/modes';
 import StatusBadge from '../components/StatusBadge.astro';
+import { statusRank } from '../lib/statuses';
 import { COUNTRY_NAMES, COUNTRY_ORDER, regionCountry, regionName } from '../lib/regions';
 
 const allProjects = await getCollection('projects');
@@ -26,11 +27,23 @@ const regionGroups = COUNTRY_ORDER
   .filter(g => g.regions.length > 0);
 const agencies = [...new Set(projects.map(p => p.data.agencyAbbr ?? p.data.agency))].sort();
 const modes = MODES.filter(m => projects.some(p => p.data.mode === m));
-const statuses = [...new Set(projects.map(p => p.data.status).filter(Boolean))].sort() as string[];
+const statuses = [...new Set(projects.map(p => p.data.status).filter(Boolean))]
+  .sort((a, b) => statusRank(a) - statusRank(b)) as string[];
 
 function agencySlug(p: typeof projects[0]): string {
   return (p.data.agencyAbbr ?? p.data.agency).toLowerCase().replace(/\s+/g, '-');
 }
+
+// Sortable columns: key matches the row's data-sort-<key> attribute.
+const columns: { key: string | null; label: string; nowrap?: boolean }[] = [
+  { key: 'project', label: 'Project' },
+  { key: 'agency', label: 'Agency' },
+  { key: 'region', label: 'Region' },
+  { key: 'mode', label: 'Mode' },
+  { key: 'status', label: 'Status' },
+  { key: null, label: 'Alignment' },
+  { key: 'updated', label: 'Last Updated', nowrap: true },
+];
 
 function formatDate(d?: Date): string {
   if (!d) return '—';
@@ -95,13 +108,23 @@ function formatDate(d?: Date): string {
     <table class="w-full text-sm text-left">
       <thead class="bg-gray-100 text-gray-600 text-xs uppercase tracking-wide">
         <tr>
-          <th class="px-4 py-3 font-semibold">Project</th>
-          <th class="px-4 py-3 font-semibold">Agency</th>
-          <th class="px-4 py-3 font-semibold">Region</th>
-          <th class="px-4 py-3 font-semibold">Mode</th>
-          <th class="px-4 py-3 font-semibold">Status</th>
-          <th class="px-4 py-3 font-semibold">Alignment</th>
-          <th class="px-4 py-3 font-semibold whitespace-nowrap">Last Updated</th>
+          {columns.map(col => col.key ? (
+            <th
+              class="px-4 py-3 font-semibold"
+              data-sort-key={col.key}
+              aria-sort={col.key === 'updated' ? 'descending' : 'none'}
+            >
+              <button
+                type="button"
+                class:list={['sort-btn inline-flex items-center gap-1 uppercase tracking-wide hover:text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 rounded', { 'whitespace-nowrap': col.nowrap }]}
+              >
+                {col.label}
+                <span class="sort-indicator text-gray-400" aria-hidden="true"></span>
+              </button>
+            </th>
+          ) : (
+            <th class:list={['px-4 py-3 font-semibold', { 'whitespace-nowrap': col.nowrap }]}>{col.label}</th>
+          ))}
         </tr>
       </thead>
       <tbody id="project-table-body" class="divide-y divide-gray-100">
@@ -115,6 +138,12 @@ function formatDate(d?: Date): string {
             data-status={p.data.status ?? ''}
             data-search={[p.data.projectName, p.data.agency, p.data.agencyAbbr, p.data.alignmentSummary]
               .filter(Boolean).join(' ').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()}
+            data-sort-project={p.data.projectName}
+            data-sort-agency={p.data.agencyAbbr ?? p.data.agency}
+            data-sort-region={p.data.state}
+            data-sort-mode={modeLabel(p.data.mode) ?? ''}
+            data-sort-status={p.data.status ? statusRank(p.data.status) : ''}
+            data-sort-updated={p.data.lastUpdated?.getTime() ?? ''}
           >
             <td class="px-4 py-3 font-medium">
               <a href={`/projects/${p.id}`} class="text-blue-700 hover:underline">
@@ -156,7 +185,46 @@ function formatDate(d?: Date): string {
   const clearBtn = document.getElementById('clear-filters') as HTMLButtonElement;
   const countEl = document.getElementById('filter-count') as HTMLSpanElement;
   const noResults = document.getElementById('no-results') as HTMLParagraphElement;
+  const tbody = document.getElementById('project-table-body') as HTMLTableSectionElement;
   const rows = document.querySelectorAll<HTMLTableRowElement>('#project-table-body tr');
+
+  // Filter param name -> select element. Values are synced to the query string
+  // (e.g. ?country=CA&status=under-construction) so filtered views can be
+  // shared, bookmarked, and restored on back navigation.
+  const filters: Record<string, HTMLSelectElement> = {
+    country: countryEl,
+    state: stateEl,
+    agency: agencyEl,
+    mode: modeEl,
+    status: statusEl,
+  };
+  // Free-text search is synced as ?q=.
+  const SEARCH_PARAM = 'q';
+
+  function readFiltersFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    for (const [key, el] of Object.entries(filters)) {
+      const value = params.get(key) ?? '';
+      // Ignore values that don't match an available option.
+      const valid = [...el.options].some(o => o.value === value);
+      el.value = valid ? value : '';
+    }
+    searchEl.value = params.get(SEARCH_PARAM) ?? '';
+  }
+
+  function writeFiltersToUrl() {
+    const url = new URL(window.location.href);
+    for (const [key, el] of Object.entries(filters)) {
+      if (el.value) url.searchParams.set(key, el.value);
+      else url.searchParams.delete(key);
+    }
+    const q = searchEl.value.trim();
+    if (q) url.searchParams.set(SEARCH_PARAM, q);
+    else url.searchParams.delete(SEARCH_PARAM);
+    if (url.href !== window.location.href) {
+      history.replaceState(history.state, '', url);
+    }
+  }
 
   function applyFilters() {
     const country = countryEl.value;
@@ -186,20 +254,80 @@ function formatDate(d?: Date): string {
     noResults.classList.toggle('hidden', visible > 0);
   }
 
-  countryEl.addEventListener('change', applyFilters);
-  stateEl.addEventListener('change', applyFilters);
-  agencyEl.addEventListener('change', applyFilters);
-  modeEl.addEventListener('change', applyFilters);
-  statusEl.addEventListener('change', applyFilters);
-  searchEl.addEventListener('input', applyFilters);
+  function onFilterChange() {
+    applyFilters();
+    writeFiltersToUrl();
+  }
+
+  for (const el of Object.values(filters)) {
+    el.addEventListener('change', onFilterChange);
+  }
+  searchEl.addEventListener('input', onFilterChange);
 
   clearBtn.addEventListener('click', () => {
-    countryEl.value = '';
-    stateEl.value = '';
-    agencyEl.value = '';
-    modeEl.value = '';
-    statusEl.value = '';
+    for (const el of Object.values(filters)) el.value = '';
     searchEl.value = '';
-    applyFilters();
+    onFilterChange();
   });
+
+  // Restore filters from the URL on load, and again if the page is restored
+  // from the back/forward cache (browsers may also autofill select values).
+  function syncFromUrl() {
+    readFiltersFromUrl();
+    applyFilters();
+  }
+  syncFromUrl();
+  window.addEventListener('pageshow', e => {
+    if (e.persisted) syncFromUrl();
+  });
+
+  // --- Sorting ---
+  type Dir = 'asc' | 'desc';
+  const NUMERIC_KEYS = new Set(['status', 'updated']);
+  // Columns that default to descending on first click (newest first).
+  const DESC_FIRST = new Set(['updated']);
+  const headers = document.querySelectorAll<HTMLTableCellElement>('th[data-sort-key]');
+  const collator = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
+
+  let sortKey = 'updated';
+  let sortDir: Dir = 'desc';
+
+  function sortRows() {
+    const attr = 'sort' + sortKey[0].toUpperCase() + sortKey.slice(1);
+    const numeric = NUMERIC_KEYS.has(sortKey);
+    const sign = sortDir === 'asc' ? 1 : -1;
+
+    const sorted = [...rows].sort((a, b) => {
+      const va = a.dataset[attr] ?? '';
+      const vb = b.dataset[attr] ?? '';
+      // Missing values always sort last, regardless of direction.
+      if (!va || !vb) return (va ? 0 : 1) - (vb ? 0 : 1);
+      const cmp = numeric ? Number(va) - Number(vb) : collator.compare(va, vb);
+      return cmp * sign;
+    });
+    tbody.append(...sorted);
+
+    headers.forEach(th => {
+      const active = th.dataset.sortKey === sortKey;
+      th.setAttribute('aria-sort', active ? (sortDir === 'asc' ? 'ascending' : 'descending') : 'none');
+      const indicator = th.querySelector('.sort-indicator')!;
+      indicator.textContent = active ? (sortDir === 'asc' ? '▲' : '▼') : '';
+      th.classList.toggle('text-gray-900', active);
+    });
+  }
+
+  headers.forEach(th => {
+    th.querySelector('button')!.addEventListener('click', () => {
+      const key = th.dataset.sortKey!;
+      if (key === sortKey) {
+        sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+      } else {
+        sortKey = key;
+        sortDir = DESC_FIRST.has(key) ? 'desc' : 'asc';
+      }
+      sortRows();
+    });
+  });
+
+  sortRows();
 </script>
