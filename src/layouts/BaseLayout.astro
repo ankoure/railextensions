@@ -4,9 +4,29 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  /** Path or absolute URL of the social share image. Defaults to the site-wide card. */
+  image?: string;
+  imageAlt?: string;
+  /** Open Graph object type. Use "article" for individual project pages. */
+  type?: 'website' | 'article';
+  /** Exclude the page from search indexes (e.g. 404). */
+  noindex?: boolean;
 }
 
-const { title, description = 'Tracking rail extension and expansion projects across North America.' } = Astro.props;
+const SITE_NAME = 'Rail Extension Tracker';
+
+const {
+  title,
+  description = 'Tracking rail extension and expansion projects across North America.',
+  image = '/og-default.png',
+  imageAlt = `${SITE_NAME} — rail extension and expansion projects across North America`,
+  type = 'website',
+  noindex = false,
+} = Astro.props;
+
+const fullTitle = `${title} · ${SITE_NAME}`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imageURL = new URL(image, Astro.site);
 ---
 
 <!doctype html>
@@ -14,9 +34,28 @@ const { title, description = 'Tracking rail extension and expansion projects acr
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalURL} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title} · Rail Extension Tracker</title>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={imageURL} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageURL} />
+    <meta name="twitter:image:alt" content={imageAlt} />
   </head>
   <body class="min-h-screen bg-gray-50 text-gray-900">
     <header class="bg-white border-b border-gray-200">
