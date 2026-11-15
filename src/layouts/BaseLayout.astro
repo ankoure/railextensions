@@ -16,6 +16,7 @@ const { title, description = 'Tracking rail extension and expansion projects acr
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="Rail Extension Tracker — Project Updates" href={new URL('rss.xml', Astro.site)} />
     <title>{title} · Rail Extension Tracker</title>
   </head>
   <body class="min-h-screen bg-gray-50 text-gray-900">
@@ -40,7 +41,10 @@ const { title, description = 'Tracking rail extension and expansion projects acr
     <footer class="mt-16 border-t border-gray-200 bg-white">
       <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-500 flex justify-between items-center">
         <span>Rail Extension Tracker — data maintained via Markdown files in git.</span>
-        <span>Built with <a href="https://astro.build" class="underline hover:text-gray-700">Astro</a></span>
+        <span class="flex gap-4">
+          <a href="/rss.xml" class="underline hover:text-gray-700">RSS feed</a>
+          <span>Built with <a href="https://astro.build" class="underline hover:text-gray-700">Astro</a></span>
+        </span>
       </div>
     </footer>
   </body>
