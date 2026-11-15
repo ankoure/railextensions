@@ -8,6 +8,7 @@ alignmentSummary: "Federally funded feasibility study evaluating extension of Tr
 status: "proposed"
 estimatedCost: "$10M feasibility study grant (construction cost not yet determined)"
 coordinates: { lat: 18.4655, lng: -66.1057 }
+hasGeometry: false
 lastUpdated: 2026-07-13
 references:
   - title: "Otorgan subvención de $10 millones para estudiar viabilidad de extensión del Tren Urbano"

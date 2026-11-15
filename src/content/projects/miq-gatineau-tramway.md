@@ -9,6 +9,7 @@ status: "planning"
 mode: "light-rail"
 lengthMiles: 14.9
 estimatedCost: "C$8B (MIQ preliminary estimate, June 2026, full 24 km plan)"
+proposedOpening: "2035 (STO schedule before the 2026 transfer to MIQ; under review)"
 coordinates: { lat: 45.4200, lng: -75.7600 }
 hasGeometry: true
 lastUpdated: 2026-11-13

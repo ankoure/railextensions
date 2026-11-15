@@ -9,6 +9,7 @@ status: "under-construction"
 mode: "light-rail"
 lengthMiles: 5.7
 estimatedCost: "C$4.7B (2020 estimate used for 2021 federal funding; no updated total published)"
+proposedOpening: "2031 (reported; Metrolinx has not published a firm date)"
 coordinates: { lat: 43.6812, lng: -79.5330 }
 hasGeometry: true
 lastUpdated: 2026-11-13

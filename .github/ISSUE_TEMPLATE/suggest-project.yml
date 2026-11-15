@@ -1,0 +1,79 @@
+name: Suggest a project
+description: Propose a North American rail or BRT expansion project to add to the site.
+title: "[Project]: "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a project! Please search existing issues and the site first to avoid duplicates.
+        Every project needs at least one public source (agency page, planning document, or news coverage).
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      placeholder: e.g. Austin Light Rail Phase 1
+    validations:
+      required: true
+  - type: input
+    id: agency
+    attributes:
+      label: Agency
+      description: Lead agency or sponsor, with abbreviation if commonly used.
+      placeholder: e.g. Austin Transit Partnership (ATP)
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Region
+      description: US state, Canadian province, or Mexican state, plus city/metro area.
+      placeholder: e.g. TX — Austin
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Light rail
+        - Heavy rail
+        - Commuter rail
+        - Streetcar
+        - Intercity
+        - High-speed
+        - Monorail
+        - BRT
+        - Other / not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Proposed
+        - Planning
+        - Environmental review
+        - Funded
+        - Under construction
+        - On hold
+        - Completed
+        - Cancelled
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Alignment summary
+      description: Where does it run? Termini, key stations, length, cost, or opening date if known.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Source links
+      description: One URL per line. Official agency sources preferred.
+      placeholder: |
+        https://...
+    validations:
+      required: true

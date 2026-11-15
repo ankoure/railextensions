@@ -4,8 +4,9 @@ agency: "San Diego Metropolitan Transit System"
 agencyAbbr: "MTS"
 state: "CA"
 location: "San Ysidro to University Town Center, San Diego, CA"
-alignmentSummary: "Proposed ~11-mile transit line from the San Ysidro Transit Center at the US-Mexico border through National City, City Heights, and Kearny Mesa to University Town Center/Sorrento Mesa; SANDAG has not yet finalized whether the corridor will be built as subway, above-ground rail, or Trolley (light rail)."
+alignmentSummary: "Proposed ~11-mile transit line from the San Ysidro Transit Center at the US-Mexico border through National City, City Heights, and Kearny Mesa to University Town Center/Sorrento Mesa; SANDAG's 2025 Regional Plan carries it as a light rail Trolley line from the border to Mission Valley, with the segment north to Sorrento Valley dropped from the plan."
 status: "planning"
+mode: "light-rail"
 lengthMiles: 11
 estimatedCost: "$11.3–15.6B (estimates vary by source and scope)"
 coordinates: { lat: 32.7900, lng: -117.1300 }
@@ -27,7 +28,7 @@ references:
 
 ## Alignment
 
-The Purple Line is a proposed roughly 11-mile transit corridor running from the San Ysidro Transit Center at the US-Mexico border through National City, City Heights, and Kearny Mesa to University Town Center and Sorrento Mesa. SANDAG has completed a conceptual study weighing subway, above-ground rail, and Trolley (light rail) options but has not settled on a final mode, and near-term plans call for Rapid bus service on the corridor as an interim measure.
+The Purple Line is a proposed roughly 11-mile transit corridor running from the San Ysidro Transit Center at the US-Mexico border through National City, City Heights, and Kearny Mesa to University Town Center and Sorrento Mesa. SANDAG's conceptual study weighed subway, above-ground rail, and Trolley (light rail) options; the December 2025 Regional Plan carries the corridor as a light rail Trolley line, and near-term plans call for Rapid bus service on the corridor as an interim measure.
 
 SANDAG's December 2025 Regional Plan, a $125 billion program, pushed the corridor's full completion out to 2050 (from an earlier 2035 target), with only a segment reaching Mission Valley considered realistic in the nearer term; the remainder toward Sorrento Valley/UTC/Kearny Mesa is treated as a further future extension.
 

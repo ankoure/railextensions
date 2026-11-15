@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { modeLabel } from '../../lib/modes';
 import StatusBadge from '../../components/StatusBadge.astro';
 import { COUNTRY_NAMES, regionCountry, regionName } from '../../lib/regions';
 
@@ -72,7 +73,7 @@ const countryName = COUNTRY_NAMES[regionCountry(state!)];
             <td class="px-4 py-3 text-gray-700">
               <a href={`/agencies/${agencySlug(p)}`} class="hover:underline">{p.data.agencyAbbr ?? p.data.agency}</a>
             </td>
-            <td class="px-4 py-3 text-gray-600 capitalize">{p.data.mode?.replace('-', ' ') ?? '—'}</td>
+            <td class="px-4 py-3 text-gray-600">{modeLabel(p.data.mode) ?? '—'}</td>
             <td class="px-4 py-3"><StatusBadge status={p.data.status} /></td>
             <td class="px-4 py-3 text-gray-600 max-w-xs">{p.data.alignmentSummary}</td>
             <td class="px-4 py-3 text-gray-500 whitespace-nowrap">{formatDate(p.data.lastUpdated)}</td>

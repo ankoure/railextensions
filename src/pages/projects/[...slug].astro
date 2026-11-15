@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { modeLabel } from '../../lib/modes';
 import StatusBadge from '../../components/StatusBadge.astro';
 import ReferenceList from '../../components/ReferenceList.astro';
 import MapView from '../../components/MapView.astro';
@@ -28,7 +29,7 @@ function formatDate(date?: Date): string {
 }
 ---
 
-<BaseLayout title={d.projectName} description={d.alignmentSummary}>
+<BaseLayout title={d.projectName} description={d.alignmentSummary} type="article">
   <!-- Breadcrumb -->
   <nav class="text-sm text-gray-500 mb-6 flex gap-1.5 items-center">
     <a href="/" class="hover:text-blue-700">All Projects</a>
@@ -82,7 +83,7 @@ function formatDate(date?: Date): string {
         {d.mode && (
           <div class="flex flex-col gap-0.5">
             <span class="text-xs text-gray-400 uppercase tracking-wide">Mode</span>
-            <span class="text-gray-700 capitalize">{d.mode.replace(/-/g, ' ')}</span>
+            <span class="text-gray-700">{modeLabel(d.mode)}</span>
           </div>
         )}
 

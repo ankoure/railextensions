@@ -32,7 +32,7 @@ public/
 ```
 
 - **`src/content/projects/<slug>.md`**: each project is a Markdown file. The frontmatter fields (`projectName`, `agency`, `state`, `alignmentSummary`, `status`, `mode`, `references`, and others) are validated against the schema in `src/content.config.ts`. The filename becomes the project's URL slug.
-- **`public/geometry/<slug>.geojson`**: an optional GeoJSON `FeatureCollection` with the project's alignment and stations. It must use the same slug as the Markdown file, and the project needs `hasGeometry: true` in its frontmatter so the map is shown.
+- **`public/geometry/<slug>.geojson`**: an optional GeoJSON `FeatureCollection` with the project's alignment and stations. It must use the same slug as the Markdown file, and the project needs `hasGeometry: true` in its frontmatter so the map is shown. Run `npm run validate:geometry` to check that geometry files and frontmatter are in sync, parse as valid GeoJSON, use `[lng, lat]` order within North America, and contain the project's `coordinates`. CI runs this on every pull request.
 - **`src/lib/regions.ts`**: the list of region codes allowed in the `state` field. US entries use USPS codes, Canadian entries use postal province/territory codes, and Mexican entries use ISO 3166-2:MX three-letter codes. The build fails if a project uses a code that isn't listed here.
 
 ## Contributing

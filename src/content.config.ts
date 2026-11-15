@@ -1,6 +1,8 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { isRegionCode } from './lib/regions';
+import { MODES } from './lib/modes';
+import { STATUSES } from './lib/statuses';
 
 const projects = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
@@ -12,14 +14,8 @@ const projects = defineCollection({
     state: z.string().refine(isRegionCode, { message: 'Unknown region code (see src/lib/regions.ts)' }),
     location: z.string().optional(),
     alignmentSummary: z.string(),
-    status: z.enum([
-      'proposed', 'planning', 'environmental-review', 'funded',
-      'under-construction', 'on-hold', 'completed', 'cancelled',
-    ]).optional(),
-    mode: z.enum([
-      'light-rail', 'heavy-rail', 'commuter-rail', 'streetcar',
-      'intercity', 'high-speed', 'monorail', 'brt',
-    ]).optional(),
+    status: z.enum(STATUSES).optional(),
+    mode: z.enum(MODES).optional(),
     lengthMiles: z.number().optional(),
     estimatedCost: z.string().optional(),
     proposedOpening: z.string().optional(),
