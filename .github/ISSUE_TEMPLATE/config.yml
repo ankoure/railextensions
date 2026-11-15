@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/ankoure/railextensions/blob/main/CONTRIBUTING.md
+    about: Data format, sourcing expectations, and how to open a pull request with a new project or correction.
