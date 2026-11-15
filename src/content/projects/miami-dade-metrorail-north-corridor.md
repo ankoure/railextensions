@@ -4,7 +4,7 @@ agency: "Miami-Dade Transit"
 agencyAbbr: "MDT"
 state: "FL"
 location: "Gladeview to Miami Gardens, FL"
-alignmentSummary: "Elevated ~10-mile heavy-rail Metrorail extension along NW 27th Avenue from the MLK Jr. Metrorail Station north through Opa-locka to the Broward County line, part of Miami-Dade's SMART Plan."
+alignmentSummary: "Proposed ~10-mile rapid transit extension along NW 27th Avenue from the MLK Jr. Metrorail Station north through Opa-locka to the Broward County line, part of Miami-Dade's SMART Plan; planned as elevated heavy rail, but in 2026 the county reopened the choice of mode because of cost."
 status: "planning"
 mode: "heavy-rail"
 lengthMiles: 10
@@ -12,8 +12,12 @@ estimatedCost: "$4.7B"
 proposedOpening: "2037"
 coordinates: { lat: 25.9420, lng: -80.2456 }
 hasGeometry: true
-lastUpdated: 2025-10-31
+lastUpdated: 2026-11-15
 references:
+  - title: "'All options' back on the table for transit in North Dade"
+    url: "https://www.miamitodaynews.com/?p=87200"
+    publication: "Miami Today"
+    date: 2026-07-01
   - title: "Miami-Dade's $4.7B North Corridor rail plan moves ahead amid resident input"
     url: "https://www.miamitimesonline.com/news/local/miami-dade-s-4-7-billion-north-corridor-rail-plan-moves-ahead-as-residents-seek/article_3400bf9e-18c2-4850-9dd9-e336d3ff217c.html"
     publication: "Miami Times"
@@ -30,9 +34,12 @@ references:
 
 The North Corridor extension would add roughly 10 miles of elevated heavy rail to the Metrorail system, branching north from the existing Dr. Martin Luther King Jr. Station (Gladeview) along NW 27th Avenue through unincorporated Miami-Dade County and Opa-locka to the Broward County line. Nine new elevated stations are proposed, including stops serving Miami Gardens near Hard Rock Stadium and Opa-locka Executive Airport.
 
-The corridor concept dates to the 1990s and was originally studied as bus rapid transit before evolving into a rail proposal under the county's SMART Plan. It is currently in a Transit-Oriented Development master-planning phase, ahead of formal environmental review.
+The corridor concept dates to the 1990s and was originally studied as bus rapid transit before evolving into a rail proposal under the county's SMART Plan. It is currently in a Transit-Oriented Development master-planning phase, ahead of formal environmental review. In April 2026 the county's Transportation Planning Organization asked for a broader review, and the state plans to shelve its heavy rail study once it is finished and start a new study open to all modes, including light rail and streetcar.
 
 ## Updates
+
+### 2026-07 — Heavy rail plan shelved; "all options" back on the table
+Miami Today reported that FDOT will shelve its $4.2 billion heavy rail study once it is complete, after the Transportation Planning Organization asked in April 2026 for a broader review. Heavy rail would cost about $54 per trip, above the $35 federal cost-effectiveness ceiling. A new study, which could consider heavy rail, light rail, or streetcar, still needs funding and has no completion date.
 
 ### 2025-10 — Cost estimate rises to $4.7B amid community input process
 Miami-Dade officials continued TOD master-planning workshops along the corridor as the projected cost climbed to $4.7 billion, up from an earlier $2.2 billion estimate, raising concerns about federal funding competitiveness.

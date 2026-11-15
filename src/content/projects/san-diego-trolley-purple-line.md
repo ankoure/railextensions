@@ -11,7 +11,7 @@ lengthMiles: 11
 estimatedCost: "$11.3–15.6B (estimates vary by source and scope)"
 coordinates: { lat: 32.7900, lng: -117.1300 }
 hasGeometry: true
-lastUpdated: 2026-02-09
+lastUpdated: 2026-11-15
 references:
   - title: "SANDAG - Purple Line"
     url: "https://www.sandag.org/projects-and-programs/transit/transit-projects/purple-line"

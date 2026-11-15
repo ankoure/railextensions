@@ -12,7 +12,7 @@ estimatedCost: "$2.0-2.5B"
 proposedOpening: "2032"
 coordinates: { lat: 42.9547, lng: -78.8206 }
 hasGeometry: true
-lastUpdated: 2026-02-10
+lastUpdated: 2026-11-15
 references:
   - title: "NFTA Metro Transit Expansion Project"
     url: "https://www.nftametrotransitexpansion.com/"

@@ -9,7 +9,7 @@ status: "planning"
 mode: "light-rail"
 coordinates: { lat: 37.8060, lng: -122.4103 }
 hasGeometry: true
-lastUpdated: 2026-06-01
+lastUpdated: 2026-11-15
 references:
   - title: "Central Subway Extension"
     url: "https://www.sfmta.com/projects/central-subway-extension"

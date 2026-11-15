@@ -9,7 +9,7 @@ status: "proposed"
 estimatedCost: "$10M feasibility study grant (construction cost not yet determined)"
 coordinates: { lat: 18.4655, lng: -66.1057 }
 hasGeometry: false
-lastUpdated: 2026-07-13
+lastUpdated: 2026-11-15
 references:
   - title: "Otorgan subvención de $10 millones para estudiar viabilidad de extensión del Tren Urbano"
     url: "https://noticel.com/en/noticias/20260713/otorgan-subvencion-de-10-millones-para-estudiar-viabilidad-de-extension-del-tren-urbano/"

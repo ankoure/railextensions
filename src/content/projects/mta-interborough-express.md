@@ -12,8 +12,12 @@ estimatedCost: "$5.5B"
 proposedOpening: "early 2030s"
 coordinates: { lat: 40.6905, lng: -73.9100 }
 hasGeometry: true
-lastUpdated: 2025-07-01
+lastUpdated: 2026-11-15
 references:
+  - title: "Governor Hochul Announces Interborough Express Project Design and Environmental Review Milestones"
+    url: "https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-project-design-and-environmental-review"
+    publication: "Office of Governor Hochul"
+    date: 2026-09-09
   - title: "Interborough Express"
     url: "https://en.wikipedia.org/wiki/Interborough_Express"
     publication: "Wikipedia"
@@ -27,11 +31,14 @@ references:
 
 ## Alignment
 
-The Interborough Express would create a new 14-mile light rail line connecting the Brooklyn Army Terminal in Bay Ridge to Jackson Heights, Queens, largely reusing the existing Bay Ridge Branch freight right-of-way. With 18–19 stations, it is designed to link up to 17 subway lines and the Long Island Rail Road without requiring a trip through Manhattan, serving a travel market that currently has no direct rapid transit connection.
+The Interborough Express would create a new 14-mile light rail line connecting the Brooklyn Army Terminal in Bay Ridge to Jackson Heights, Queens, largely reusing the existing Bay Ridge Branch freight right-of-way. With 18 stations, it is designed to link up to 17 subway lines and the Long Island Rail Road without requiring a trip through Manhattan, serving a travel market that currently has no direct rapid transit connection.
 
-The MTA formally selected light rail transit as the project's mode in January 2023, after earlier concepts that included street-running segments were dropped in favor of a fully grade-separated alignment. The project is now in design and environmental review, with about half its funding secured through the MTA's 2025–2029 Capital Plan.
+The MTA formally selected light rail transit as the project's mode in January 2023, after earlier concepts that included street-running segments were dropped in favor of a fully grade-separated alignment. The project is now in design and environmental review under New York's State Environmental Quality Review Act, with a Draft Environmental Impact Statement due in late 2026. The MTA's 2025–2029 Capital Plan includes $2.75 billion, about half of the estimated $5.5 billion cost.
 
 ## Updates
+
+### 2026-09 — Draft EIS set for late 2026
+Governor Hochul announced that the MTA would release the project's Draft Environmental Impact Statement in the fourth quarter of 2026, ahead of schedule, followed by public meetings. The design contract awarded in October 2025 is expected to take about two years. The release confirmed 18 fully accessible stations, more than 160,000 projected weekday riders, and $2.75 billion for the project in the 2025–2029 Capital Plan.
 
 ### 2025 — Design contract awarded, environmental assessment advances
 A Jacobs/HDR joint venture was awarded a $165.98 million design contract, and the MTA commenced formal environmental assessment of the project, with ridership estimates revised upward from 115,000 to 160,000 weekday riders.

@@ -11,8 +11,12 @@ lengthMiles: 10
 estimatedCost: "$3.3B (initial ~10-mile segment)"
 coordinates: { lat: 35.2200, lng: -80.8900 }
 hasGeometry: true
-lastUpdated: 2026-04-01
+lastUpdated: 2026-11-15
 references:
+  - title: "Airport gives details about proposed seven-minute people mover from light rail to terminal"
+    url: "https://www.wfae.org/text/politics/2026-08-13/airport-gives-details-about-proposed-seven-minute-people-mover-from-light-rail-to-terminal"
+    publication: "WFAE"
+    date: 2026-08-13
   - title: "Lynx Silver Line"
     url: "https://en.wikipedia.org/wiki/Lynx_Silver_Line"
     publication: "Wikipedia"
@@ -27,11 +31,14 @@ references:
 
 ## Alignment
 
-The LYNX Silver Line is planned as a new east-west light rail line running from Belmont through Uptown Charlotte and the airport area, then east through Matthews and Stallings toward Indian Trail — a full corridor of roughly 26–29 miles and 29–30 stations when built out. Given cost pressures, CATS is currently prioritizing a fiscally constrained initial segment of about 10 miles and 16 stations running from the airport to the Coliseum/Ovens area.
+The LYNX Silver Line is planned as a new east-west light rail line running from Belmont through Uptown Charlotte and the airport area, then east through Matthews and Stallings toward Indian Trail — a full corridor of roughly 26–29 miles and 29–30 stations when built out. Given cost pressures, CATS is currently prioritizing a fiscally constrained initial segment of about 10 miles and 16 stations running from the airport to the Coliseum/Ovens area. CATS has proposed placing the airport station on Wilkinson Boulevard, about a mile from the terminal, with the airport planning a people mover to link the two.
 
 In November 2025, Mecklenburg County voters approved a one-cent sales tax that provides a dedicated local funding source covering roads, the planned Red Line commuter rail, and Silver Line light rail. Under the enabling legislation, Silver Line construction can only begin once the Red Line project reaches 50% completion.
 
 ## Updates
+
+### 2026-08 — Airport station site and people mover detailed
+CATS has proposed placing the Silver Line's airport station on Wilkinson Boulevard, about a mile from the terminal and next to a planned redevelopment area. Charlotte Douglas International Airport described a people mover to link the station to the terminal: a roughly seven-minute ride with five stops at parking lots, ending at the hourly parking deck. The airport has not decided between an elevated automated train and self-driving buses.
 
 ### 2026-04 — CATS studies scaled-back initial segment
 Reporting indicated CATS is evaluating a roughly 10-mile initial segment to improve the project's competitiveness for federal funding, with ongoing debate over how far east the line should extend into Matthews and Indian Trail.
